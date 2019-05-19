@@ -8,7 +8,7 @@ const img2_1 = require(`../assets/images/web/pigalle-tokyo/2-1.png`)
 const img2_2 = require(`../assets/images/web/pigalle-tokyo/2-2.png`)
 
 const PigalleTokyo = () => (
-  <ProjectPageLayout heading="06/Pigalle Tokyo" slides={3}>
+  <ProjectPageLayout heading="06/Pigalle Tokyo">
     <Fragment>
       <img src={main} alt="Pigalle Tokyo" />
     </Fragment>

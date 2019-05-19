@@ -35,6 +35,11 @@ const StyledCarousel = styled(Carousel)`
     line-height: 1.4;
   }
 
+  video {
+    height: 100%;
+    width: auto;
+  }
+
   /* figcaption {
     font-size: 1.6rem;
     font-family: "Grotesk Light";
