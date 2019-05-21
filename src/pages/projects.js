@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import AllProjectsLink from "../components/allProjectsLink"
 import archiveLogo from "../assets/logos/red.svg"
-import Navbar from "../components/navbar"
 
 import SEO from "../components/seo"
 

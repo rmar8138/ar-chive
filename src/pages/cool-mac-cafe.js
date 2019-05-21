@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react"
+import React, { Fragment } from "react"
 import styled from "styled-components"
 import ProjectPageLayout from "../components/projectPageLayout"
 
@@ -15,8 +15,29 @@ const Grid = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 19.15% 5.38% 25.36% 3.83% 25.36% 1.75% 19.15%;
+  /* grid-template-rows: 6.21% 9.57% 9.57% 6.21% 9.57% 9.57%; */
+  /* grid-template-rows: 6.21% 9.57% 9.57% 6.21% 9.57% 9.57%; */
+
+  .img1 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 3;
+  }
+
+  .img2 {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 2;
+  }
+
+  .img3 {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 2;
+  }
+
+  .img4 {
+    grid-column: 7 / span 1;
+    grid-row: 1 / span 3;
+  }
 `
 
 const CoolMacCafe = () => (
@@ -48,14 +69,10 @@ const CoolMacCafe = () => (
     </Fragment>
     <Fragment>
       <Grid>
-        <img
-         
-          src={img3_1}
-          alt="Cool Mac Cafe"
-        />
-        <img src={img3_2} alt="Cool Mac Cafe" />
-        <img src={img3_3} alt="Cool Mac Cafe" />
-        <img src={img3_4} alt="Cool Mac Cafe" />
+        <img className="img1" src={img3_1} alt="Cool Mac Cafe" />
+        <img className="img2" src={img3_2} alt="Cool Mac Cafe" />
+        <img className="img3" src={img3_3} alt="Cool Mac Cafe" />
+        <img className="img4" src={img3_4} alt="Cool Mac Cafe" />
       </Grid>
     </Fragment>
   </ProjectPageLayout>

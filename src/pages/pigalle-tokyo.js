@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react"
+import React, { Fragment } from "react"
 import ProjectPageLayout from "../components/projectPageLayout"
 
 const main = require(`../assets/images/web/6.png`)

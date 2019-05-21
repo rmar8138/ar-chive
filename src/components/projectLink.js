@@ -39,7 +39,6 @@ class ProjectLink extends Component {
             remove: /[*+~.()'"!:@]/g,
             lower: true,
           })}
-          isHovered={this.state.isHovered}
           onMouseOver={this.onHover}
           onMouseOut={this.onHover}
           spotlight={this.props.spotlight}
