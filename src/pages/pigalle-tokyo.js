@@ -13,12 +13,12 @@ const PigalleTokyo = () => (
       <img src={main} alt="Pigalle Tokyo" />
     </Fragment>
     <Fragment>
-      <img src={img1_1} alt="Pigalle Tokyo" />
-      <img src={img1_2} alt="Pigalle Tokyo" />
+      <img src={img1_1} alt="Pigalle Tokyo" style={{ width: "30%" }} />
+      <img src={img1_2} alt="Pigalle Tokyo" style={{ width: "30%" }} />
     </Fragment>
     <Fragment>
-      <img src={img2_1} alt="Pigalle Tokyo" />
-      <img src={img2_2} alt="Pigalle Tokyo" />
+      <img src={img2_1} alt="Pigalle Tokyo" style={{ width: "30%" }} />
+      <img src={img2_2} alt="Pigalle Tokyo" style={{ width: "30%" }} />
     </Fragment>
   </ProjectPageLayout>
 )

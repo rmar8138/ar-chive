@@ -8,14 +8,16 @@ import SEO from "../components/seo"
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
-  height: 100%;
-  display: flex;
+  height: 100vh;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 
   h1 {
+    position: relative;
     font-family: "Grotesk Regular";
     font-weight: 300;
+    z-index: 100000000;
   }
 
   @media only screen and (max-width: 640px) {
@@ -24,8 +26,21 @@ const Container = styled.div`
 `
 
 const StyledCarousel = styled(Carousel)`
-  position: relative;
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* z-index: -100000; */
+`
+
+const FirstSlide = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
   p {
     display: inline-block;
@@ -34,25 +49,6 @@ const StyledCarousel = styled(Carousel)`
     font-size: ${props => props.theme.fs_medium};
     line-height: 1.4;
   }
-
-  video {
-    height: 100%;
-    width: auto;
-  }
-
-  /* figcaption {
-    font-size: 1.6rem;
-    font-family: "Grotesk Light";
-  } */
-`
-
-const Slide = styled.div`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 
   figure {
     height: 100%;
@@ -63,9 +59,10 @@ const Slide = styled.div`
     align-items: center;
   }
 
-  img {
-    height: 100%;
-    width: auto;
+  figcaption {
+    position: absolute;
+    bottom: -5%;
+    right: 0;
   }
 
   img:not(:last-child) {
@@ -73,8 +70,64 @@ const Slide = styled.div`
   }
 `
 
+const Slide = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    display: inline-block;
+    width: 60%;
+    font-family: "Grotesk Light";
+    font-size: ${props => props.theme.fs_medium};
+    line-height: 1.4;
+  }
+
+  figure {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figcaption {
+    font-size: ${props => props.theme.fs_small};
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    transform: translate(-100%, -100%);
+  }
+
+  img {
+    position: relative;
+    width: 50%;
+  }
+
+  img:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  video {
+    height: 70vh;
+  }
+`
+
 const PageCounter = styled.div`
-  margin-left: auto;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  z-index: 10000;
+`
+
+const ProjectNavbarContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 2rem 2.5rem;
 `
 
 // const LeftScrollDiv = styled.div`
@@ -149,16 +202,22 @@ class ProjectPageLayout extends Component {
             value={this.state.value}
             onChange={this.onChange}
           >
-            {React.Children.map(this.props.children, child => (
-              <Slide>{child}</Slide>
-            ))}
+            {React.Children.map(this.props.children, (child, index) =>
+              index === 0 ? (
+                <FirstSlide>{child}</FirstSlide>
+              ) : (
+                <Slide>{child}</Slide>
+              )
+            )}
           </StyledCarousel>
           {/* <Dots
             value={this.state.value}
             onChange={this.onChange}
             number={this.props.children.length}
           /> */}
-          <Navbar empty />
+          <ProjectNavbarContainer>
+            <Navbar empty />
+          </ProjectNavbarContainer>
         </Container>
       </Layout>
     )

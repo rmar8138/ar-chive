@@ -38,12 +38,12 @@ const RiseToUbiquity = () => (
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img1} alt="Rise to Ubiquity" />
+        <img src={img1} alt="Rise to Ubiquity" style={{ width: "70%" }} />
       </figure>
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img2} alt="Rise to Ubiquity" />
+        <img src={img2} alt="Rise to Ubiquity" style={{ width: "70%" }} />
       </figure>
     </Fragment>
     <Fragment>
@@ -82,23 +82,23 @@ const RiseToUbiquity = () => (
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img5_1} alt="Rise to Ubiquity" />
-        <img src={img5_2} alt="Rise to Ubiquity" />
+        <img src={img5_1} alt="Rise to Ubiquity" style={{ width: "45%" }} />
+        <img src={img5_2} alt="Rise to Ubiquity" style={{ width: "30%" }} />
       </figure>
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img6} alt="Rise to Ubiquity" />
+        <img src={img6} alt="Rise to Ubiquity" style={{ width: "70%" }} />
       </figure>
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img7} alt="Rise to Ubiquity" />
+        <img src={img7} alt="Rise to Ubiquity" style={{ width: "70%" }} />
       </figure>
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img8} alt="Rise to Ubiquity" />
+        <img src={img8} alt="Rise to Ubiquity" style={{ width: "70%" }} />
       </figure>
     </Fragment>
   </ProjectPageLayout>

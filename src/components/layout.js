@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import { BreakpointProvider, setDefaultBreakpoints } from "react-socks"
 
 import OrpheusProRegular from "../assets/fonts/OrpheusPro-Regular.woff"
 import GroteskRegular from "../assets/fonts/Grotesk-Regular.woff"
@@ -12,6 +13,14 @@ const theme = {
   fs_medium: "2.6rem",
   fs_large: "4.6rem",
 }
+
+setDefaultBreakpoints([
+  { xs: 0 },
+  { s: 376 },
+  { m: 426 },
+  { l: 769 },
+  { xl: 1025 },
+])
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -67,9 +76,11 @@ const Padding = styled.div`
 
 export default ({ children }) => (
   <ThemeProvider theme={theme}>
-    <Padding>
-      <GlobalStyle />
-      {children}
-    </Padding>
+    <BreakpointProvider>
+      <Padding>
+        <GlobalStyle />
+        {children}
+      </Padding>
+    </BreakpointProvider>
   </ThemeProvider>
 )

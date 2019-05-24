@@ -19,14 +19,18 @@ const MontelBlac = () => (
       </p>
     </Fragment>
     <Fragment>
-      <video autoPlay loop muted>
-        <source src={vid1} type="video/mp4" />
-      </video>
+      <figure>
+        <video autoPlay loop muted>
+          <source src={vid1} type="video/mp4" />
+        </video>
+      </figure>
     </Fragment>
     <Fragment>
-      <video autoPlay loop muted>
-        <source src={vid2} type="video/mp4" />
-      </video>
+      <figure>
+        <video autoPlay loop muted>
+          <source src={vid2} type="video/mp4" />
+        </video>
+      </figure>
     </Fragment>
   </ProjectPageLayout>
 )

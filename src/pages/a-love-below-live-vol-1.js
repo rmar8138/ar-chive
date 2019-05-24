@@ -22,16 +22,26 @@ const ALoveBelow = () => (
     </Fragment>
     <Fragment>
       <figure>
-        <img src={img1} alt="a Love Below: Live! Vol. 1 - 2" />
+        <img
+          src={img1}
+          alt="a Love Below: Live! Vol. 1 - 2"
+          style={{ width: "60%" }}
+        />
         {/* <figcaption>Photos by Naylin Aung</figcaption> */}
       </figure>
     </Fragment>
     <Fragment>
-      <figure>
-        <div style={{ height: "100%", width: "auto", marginRight: "auto" }}>
-          <img src={img2} alt="a Love Below: Live! Vol. 1 - 3" />
-          <img src={img3} alt="a Love Below: Live! Vol. 1 - 4" />
-        </div>
+      <figure style={{ justifyContent: "flex-start", paddingLeft: "2.5rem" }}>
+        <img
+          src={img2}
+          alt="a Love Below: Live! Vol. 1 - 3"
+          style={{ width: "30%" }}
+        />
+        <img
+          src={img3}
+          alt="a Love Below: Live! Vol. 1 - 4"
+          style={{ width: "30%" }}
+        />
       </figure>
     </Fragment>
   </ProjectPageLayout>

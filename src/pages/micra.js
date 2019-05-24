@@ -30,14 +30,14 @@ const Micra = () => (
       </p>
     </Fragment>
     <Fragment>
-      <img src={img1_1} alt="Micra" />
-      <img src={img1_2} alt="Micra" />
+      <img src={img1_1} alt="Micra" style={{ width: "30%" }} />
+      <img src={img1_2} alt="Micra" style={{ width: "30%" }} />
     </Fragment>
     <Fragment>
-      <img src={img2} alt="Micra" />
+      <img src={img2} alt="Micra" style={{ width: "40%" }} />
     </Fragment>
     <Fragment>
-      <img src={img3} alt="Micra" />
+      <img src={img3} alt="Micra" style={{ width: "60%" }} />
     </Fragment>
     <Fragment>
       <p>

@@ -30,38 +30,46 @@ const VaughanMills = () => (
       </p>
     </Fragment>
     <Fragment>
-      <img src={img1} alt="Vaughan Mills" />
+      <img
+        src={img1}
+        alt="Vaughan Mills"
+        style={{ width: "30%", marginLeft: "20%" }}
+      />
     </Fragment>
     <Fragment>
       <img src={img2} alt="Vaughan Mills" />
     </Fragment>
     <Fragment>
-      <img src={img3} alt="Vaughan Mills" />
+      <img src={img3} alt="Vaughan Mills" style={{ marginLeft: "30%" }} />
     </Fragment>
     <Fragment>
-      <img src={img4_1} alt="Vaughan Mills" />
-      <img src={img4_2} alt="Vaughan Mills" />
+      <img src={img4_1} alt="Vaughan Mills" style={{ width: "40%" }} />
+      <img src={img4_2} alt="Vaughan Mills" style={{ width: "30%" }} />
     </Fragment>
     <Fragment>
-      <img src={img5} alt="Vaughan Mills" />
+      <img
+        src={img5}
+        alt="Vaughan Mills"
+        style={{ width: "40%", marginLeft: "30%", marginTop: "10%" }}
+      />
     </Fragment>
     <Fragment>
-      <img src={img6_1} alt="Vaughan Mills" />
-      <img src={img6_2} alt="Vaughan Mills" />
+      <img src={img6_1} alt="Vaughan Mills" style={{ width: "30%" }} />
+      <img src={img6_2} alt="Vaughan Mills" style={{ width: "30%" }} />
     </Fragment>
     <Fragment>
-      <img src={img7} alt="Vaughan Mills" />
+      <img src={img7} alt="Vaughan Mills" style={{ width: "35%" }} />
     </Fragment>
     <Fragment>
-      <img src={img8} alt="Vaughan Mills" />
+      <img src={img8} alt="Vaughan Mills" style={{ width: "60%" }} />
     </Fragment>
     <Fragment>
-      <img src={img9_1} alt="Vaughan Mills" />
-      <img src={img9_2} alt="Vaughan Mills" />
+      <img src={img9_1} alt="Vaughan Mills" style={{ width: "30%" }} />
+      <img src={img9_2} alt="Vaughan Mills" style={{ width: "20%" }} />
     </Fragment>
     <Fragment>
-      <img src={img10_1} alt="Vaughan Mills" />
-      <img src={img10_2} alt="Vaughan Mills" />
+      <img src={img10_1} alt="Vaughan Mills" style={{ width: "30%" }} />
+      <img src={img10_2} alt="Vaughan Mills" style={{ width: "30%" }} />
     </Fragment>
   </ProjectPageLayout>
 )

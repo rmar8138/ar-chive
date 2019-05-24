@@ -61,11 +61,11 @@ const CoolMacCafe = () => (
       </p>
     </Fragment>
     <Fragment>
-      <img src={img1} alt="Cool Mac Cafe" />
+      <img src={img1} alt="Cool Mac Cafe" style={{ width: "70%" }} />
     </Fragment>
     <Fragment>
-      <img src={img2_1} alt="Cool Mac Cafe" />
-      <img src={img2_2} alt="Cool Mac Cafe" />
+      <img src={img2_1} alt="Cool Mac Cafe" style={{ width: "30%" }} />
+      <img src={img2_2} alt="Cool Mac Cafe" style={{ width: "30%" }} />
     </Fragment>
     <Fragment>
       <Grid>
