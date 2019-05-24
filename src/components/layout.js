@@ -24,17 +24,17 @@ setDefaultBreakpoints([
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Orpheus Pro Regular';
+    font-family: 'Orpheus Pro Regular', 'serif';
     src: url(${OrpheusProRegular}) format('woff');
   }
 
   @font-face {
-    font-family: 'Grotesk Regular';
+    font-family: 'Grotesk Regular', 'sans-serif';
     src: url(${GroteskRegular}) format('woff');
   }
 
   @font-face {
-    font-family: 'Grotesk Light';
+    font-family: 'Grotesk Light', 'sans-serif';
     src: url(${GroteskLight}) format('woff');
   }
 
@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Orpheus Pro Regular';
+    font-family: 'Orpheus Pro Regular', 'serif';
     min-height: 100%;
     font-size: ${props => props.theme.fs_medium};
   }
