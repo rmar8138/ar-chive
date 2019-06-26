@@ -15,7 +15,7 @@ const Image = styled.img`
   z-index: -1;
 `
 
-class ProjectLink extends Component {
+class MobileProjectLink extends Component {
   state = {
     isHovered: false,
   }
@@ -32,7 +32,7 @@ class ProjectLink extends Component {
     return (
       <li>
         <StyledLink
-          to={slugify(this.props.children[1], {
+          to={slugify(this.props.projectName.title, {
             remove: /[*+~.()'"!:@]/g,
             lower: true,
           })}
@@ -53,4 +53,4 @@ class ProjectLink extends Component {
   }
 }
 
-export default ProjectLink
+export default MobileProjectLink

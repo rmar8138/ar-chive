@@ -17,7 +17,7 @@ const Container = styled.div`
   justify-content: space-between;
   padding-right: 10rem;
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     padding-right: 2.5rem;
   }
 `
@@ -27,14 +27,14 @@ const CopyText = styled.div`
   letter-spacing: 0.6px;
   line-height: 1.4;
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     font-size: 2rem;
   }
 
   img {
     width: 13rem;
 
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
       width: 9rem;
     }
   }

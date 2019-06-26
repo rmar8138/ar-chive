@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import ProjectLink from "../components/projectLink"
+import MobileProjectLink from "../components/mobileProjectLink"
+import MobileMenu from "../components/mobileMenu"
 import ArchiveLogoSmall from "../assets/logos/red.svg"
 
 import SEO from "../components/seo"
@@ -17,20 +18,26 @@ const Container = styled.div`
 `
 
 const ProjectsList = styled.ul`
-  font-size: 4.6rem;
+  font-size: 18vw;
+  font-family: "Grotesk Regular";
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
   margin-top: 2rem;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 
   li {
-    display: flex;
-    justify-items: stretch;
-    align-items: stretch;
-  }
+    display: inline-flex; /* make li the size of contents */
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: -5px;
 
-  li:not(:last-child) {
-    margin-right: 2rem;
+    a {
+      width: 100%;
+      /* margin-left: -2px;
+      margin-right: -2px; */
+    }
   }
 
   a:hover {
@@ -54,14 +61,17 @@ const MobileNav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 100000;
 
   img {
-    width: 5.2rem;
+    width: 7rem;
+    cursor: pointer;
   }
 `
 
 export class mobileHomePage extends Component {
   state = {
+    menuOpen: false,
     projects: [
       {
         title: "a Love Below: Live! Vol. 1",
@@ -94,6 +104,10 @@ export class mobileHomePage extends Component {
     ],
   }
 
+  toggleMenu = () => {
+    this.setState(prevState => ({ menuOpen: !prevState.menuOpen }))
+  }
+
   spotlightHover = hoveredIndex => {
     // set spotlight to true for every project link besides hovered link
     this.setState(prevState => ({
@@ -113,32 +127,40 @@ export class mobileHomePage extends Component {
   render() {
     return (
       <Layout>
-        <Container>
-          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        {this.state.menuOpen ? (
+          <MobileMenu toggleMenu={this.toggleMenu} />
+        ) : (
+          <Container>
+            <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-          <ProjectsList>
-            {this.state.projects.map((project, index) => {
-              if (index < this.state.projects.length) {
-                return (
-                  <ProjectLink
-                    key={index}
-                    index={index}
-                    projectName={project}
-                    device="mobile"
-                    spotlight={this.state.projects[index].spotlight}
-                    spotlightHover={this.spotlightHover}
-                  >
-                    {index + 1 < 10 ? `0${index + 1}` : `${index + 1}`}
-                  </ProjectLink>
-                )
-              }
-            })}
-          </ProjectsList>
-          <MobileNav>
-            <img src={ArchiveLogoSmall} alt="Archive Studio" />
-            <AllProjectsLink to="/projects">All</AllProjectsLink>
-          </MobileNav>
-        </Container>
+            <ProjectsList>
+              {this.state.projects.map((project, index) => {
+                if (index < this.state.projects.length) {
+                  return (
+                    <MobileProjectLink
+                      key={index}
+                      index={index}
+                      projectName={project}
+                      device="mobile"
+                      spotlight={this.state.projects[index].spotlight}
+                      spotlightHover={this.spotlightHover}
+                    >
+                      {index + 1 < 10 ? `0${index + 1}` : `${index + 1}`}
+                    </MobileProjectLink>
+                  )
+                }
+              })}
+            </ProjectsList>
+            <MobileNav>
+              <img
+                src={ArchiveLogoSmall}
+                alt="Archive Studio"
+                onClick={this.toggleMenu}
+              />
+              <AllProjectsLink to="/projects">All</AllProjectsLink>
+            </MobileNav>
+          </Container>
+        )}
       </Layout>
     )
   }

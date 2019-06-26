@@ -22,7 +22,7 @@ const Container = styled.div`
     display: inline-block;
     font-weight: 300;
 
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
       font-family: "Grotesk Regular";
     }
   }
@@ -45,10 +45,14 @@ const AllProjectsList = styled.ul`
   overflow: scroll;
   z-index: 10;
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     padding: 2rem;
-    font-size: ${props => props.theme.fs_small};
+    font-size: ${props => props.theme.fs_medium};
     margin-top: 3rem;
+
+    a:hover {
+      font-family: "Grotesk Regular";
+    }
   }
 
   li:first-child {
@@ -88,8 +92,6 @@ class Projects extends Component {
       "Micra",
       "Pigalle Tokyo",
       "Vaughan Mills",
-      // "KIAH",
-      // "Apollo 4000",
     ],
   }
 

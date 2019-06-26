@@ -1,10 +1,11 @@
-import React, { Component } from "react"
+import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
 import Carousel, { Dots } from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import SEO from "../components/seo"
+import { DesktopBreakpoint, MobileBreakpoint } from "./utilities/breakpoints"
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -20,8 +21,24 @@ const Container = styled.div`
     z-index: 100000000;
   }
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     padding-right: 2.5rem;
+  }
+`
+
+const MobileHeading = styled.div`
+  display: flex;
+
+  span {
+    font-size: 2.5rem;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  h1 {
+    display: inline-block;
+    font-family: "Orpheus Pro Regular";
   }
 `
 
@@ -42,12 +59,21 @@ const FirstSlide = styled.div`
   align-items: center;
   justify-content: center;
 
+  img {
+    max-width: 100%;
+  }
+
   p {
     display: inline-block;
     width: 60%;
     font-family: "Grotesk Light";
     font-size: ${props => props.theme.fs_medium};
     line-height: 1.4;
+
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+      width: 100%;
+      padding: 2.5rem;
+    }
   }
 
   figure {
@@ -83,6 +109,11 @@ const Slide = styled.div`
     font-family: "Grotesk Light";
     font-size: ${props => props.theme.fs_medium};
     line-height: 1.4;
+
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+      width: 100%;
+      padding: 2.5rem;
+    }
   }
 
   figure {
@@ -102,17 +133,13 @@ const Slide = styled.div`
     transform: translate(-100%, -100%);
   }
 
-  img {
-    position: relative;
-    width: 50%;
-  }
-
   img:not(:last-child) {
     margin-right: 2rem;
   }
 
   video {
     height: 70vh;
+    max-width: 100%;
   }
 `
 
@@ -120,6 +147,13 @@ const PageCounter = styled.div`
   position: absolute;
   top: 15%;
   right: 5%;
+  z-index: 10000;
+`
+
+const MobilePageCounter = styled.div`
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2.5rem;
   z-index: 10000;
 `
 
@@ -184,42 +218,78 @@ class ProjectPageLayout extends Component {
 
   render() {
     return (
-      <Layout>
-        <Container>
-          <SEO
-            title={this.props.heading}
-            keywords={[`gatsby`, `application`, `react`]}
-          />
-          <h1>{this.props.heading}</h1>
-          <PageCounter>
-            <p>
-              {this.state.value + 1} of {this.props.children.length}
-            </p>
-          </PageCounter>
-          <StyledCarousel
-            centered
-            clickToChange
-            value={this.state.value}
-            onChange={this.onChange}
-          >
-            {React.Children.map(this.props.children, (child, index) =>
-              index === 0 ? (
-                <FirstSlide>{child}</FirstSlide>
-              ) : (
-                <Slide>{child}</Slide>
-              )
-            )}
-          </StyledCarousel>
-          {/* <Dots
-            value={this.state.value}
-            onChange={this.onChange}
-            number={this.props.children.length}
-          /> */}
-          <ProjectNavbarContainer>
-            <Navbar empty />
-          </ProjectNavbarContainer>
-        </Container>
-      </Layout>
+      <Fragment>
+        <DesktopBreakpoint>
+          <Layout>
+            <Container>
+              <SEO
+                title={this.props.heading}
+                keywords={[`gatsby`, `application`, `react`]}
+              />
+              <h1>{this.props.heading}</h1>
+              <PageCounter>
+                <p>
+                  {this.state.value + 1} of {this.props.children.length}
+                </p>
+              </PageCounter>
+              <StyledCarousel
+                centered
+                clickToChange
+                value={this.state.value}
+                onChange={this.onChange}
+              >
+                {React.Children.map(this.props.children, (child, index) =>
+                  index === 0 ? (
+                    <FirstSlide>{child}</FirstSlide>
+                  ) : (
+                    <Slide>{child}</Slide>
+                  )
+                )}
+              </StyledCarousel>
+              <ProjectNavbarContainer>
+                <Navbar empty />
+              </ProjectNavbarContainer>
+            </Container>
+          </Layout>
+        </DesktopBreakpoint>
+
+        <MobileBreakpoint>
+          <Layout>
+            <Container>
+              <SEO
+                title={this.props.heading}
+                keywords={[`gatsby`, `application`, `react`]}
+              />
+              <MobileHeading>
+                <span>{this.props.heading.split("/")[0]}</span>
+                <h1>{this.props.heading.split("/")[1]}</h1>
+              </MobileHeading>
+              <MobilePageCounter>
+                <p>
+                  {this.state.value + 1} / {this.props.children.length}
+                </p>
+              </MobilePageCounter>
+              <StyledCarousel
+                centered
+                clickToChange
+                value={this.state.value}
+                onChange={this.onChange}
+              >
+                {React.Children.map(this.props.children, (child, index) =>
+                  index === 0 ? (
+                    <FirstSlide>{child}</FirstSlide>
+                  ) : (
+                    <Slide>{child}</Slide>
+                  )
+                )}
+              </StyledCarousel>
+              <ProjectNavbarContainer>
+                <Navbar empty />
+              </ProjectNavbarContainer>
+            </Container>
+          </Layout>
+        </MobileBreakpoint>
+      </Fragment>
     )
   }
 }

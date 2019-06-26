@@ -34,9 +34,9 @@ const ProjectsList = styled.ul`
     margin-right: 2rem;
   }
 
-  a:hover {
+  /* a:hover {
     font-family: "Grotesk Regular";
-  }
+  } */
 `
 
 const AllProjectsLink = styled(Link)`

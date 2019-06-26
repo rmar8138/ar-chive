@@ -12,6 +12,7 @@ const theme = {
   fs_small: "1.6rem",
   fs_medium: "2.6rem",
   fs_large: "4.6rem",
+  bp_mobile: "540px",
 }
 
 setDefaultBreakpoints([
