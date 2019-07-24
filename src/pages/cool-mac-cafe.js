@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import styled from "styled-components"
 import ProjectPageLayout from "../components/projectPageLayout"
+import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import {
   DesktopBreakpoint,
   MobileBreakpoint,
@@ -87,7 +88,7 @@ const CoolMacCafe = () => (
     </DesktopBreakpoint>
 
     <MobileBreakpoint>
-      <ProjectPageLayout heading="04/Cool Mac Cafe">
+      <MobileProjectPageLayout heading="04/Cool Mac Cafe">
         <Fragment>
           <img src={main} alt="Cool Mac Cafe" />
         </Fragment>
@@ -166,7 +167,7 @@ const CoolMacCafe = () => (
             />
           </figure>
         </Fragment>
-      </ProjectPageLayout>
+      </MobileProjectPageLayout>
     </MobileBreakpoint>
   </Fragment>
 )

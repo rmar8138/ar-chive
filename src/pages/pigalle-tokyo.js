@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import ProjectPageLayout from "../components/projectPageLayout"
+import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import {
   DesktopBreakpoint,
   MobileBreakpoint,
@@ -30,7 +31,7 @@ const PigalleTokyo = () => (
     </DesktopBreakpoint>
 
     <MobileBreakpoint>
-      <ProjectPageLayout heading="06/Pigalle Tokyo">
+      <MobileProjectPageLayout heading="06/Pigalle Tokyo">
         <Fragment>
           <img
             src={main}
@@ -46,7 +47,7 @@ const PigalleTokyo = () => (
           <img src={img2_1} alt="Pigalle Tokyo" style={{ width: "45%" }} />
           <img src={img2_2} alt="Pigalle Tokyo" style={{ width: "45%" }} />
         </Fragment>
-      </ProjectPageLayout>
+      </MobileProjectPageLayout>
     </MobileBreakpoint>
   </Fragment>
 )

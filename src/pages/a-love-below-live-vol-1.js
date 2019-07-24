@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import ProjectPageLayout from "../components/projectPageLayout"
+import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import {
   DesktopBreakpoint,
   MobileBreakpoint,
@@ -57,7 +58,7 @@ const ALoveBelow = () => (
     </DesktopBreakpoint>
 
     <MobileBreakpoint>
-      <ProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
+      <MobileProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
         <Fragment>
           <figure>
             <img src={main} alt="a Love Below: Live! Vol. 1 - 1" />
@@ -99,7 +100,7 @@ const ALoveBelow = () => (
             />
           </figure>
         </Fragment>
-      </ProjectPageLayout>
+      </MobileProjectPageLayout>
     </MobileBreakpoint>
   </Fragment>
 )

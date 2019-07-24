@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import styled from "styled-components"
 import ProjectPageLayout from "../components/projectPageLayout"
+import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import {
   DesktopBreakpoint,
   MobileBreakpoint,
@@ -65,7 +66,7 @@ const Micra = () => (
     </DesktopBreakpoint>
 
     <MobileBreakpoint>
-      <ProjectPageLayout heading="05/Micra">
+      <MobileProjectPageLayout heading="05/Micra">
         <Fragment>
           <p>
             Micra brings together multi-instrumentalist, Robbie Cain and
@@ -127,7 +128,7 @@ const Micra = () => (
             style={{ width: "90%", marginRight: "auto" }}
           />
         </Fragment>
-      </ProjectPageLayout>
+      </MobileProjectPageLayout>
     </MobileBreakpoint>
   </Fragment>
 )

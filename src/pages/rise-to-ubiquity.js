@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import ProjectPageLayout from "../components/projectPageLayout"
+import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import {
   DesktopBreakpoint,
   MobileBreakpoint,
@@ -112,7 +113,7 @@ const RiseToUbiquity = () => (
     </DesktopBreakpoint>
 
     <MobileBreakpoint>
-      <ProjectPageLayout heading="03/Rise To Ubiquity">
+      <MobileProjectPageLayout heading="03/Rise To Ubiquity">
         <Fragment>
           <figure>
             <img src={main} alt="Rise to Ubiquity" />
@@ -217,7 +218,7 @@ const RiseToUbiquity = () => (
             <img src={img8} alt="Rise to Ubiquity" style={{ width: "100%" }} />
           </figure>
         </Fragment>
-      </ProjectPageLayout>
+      </MobileProjectPageLayout>
     </MobileBreakpoint>
   </Fragment>
 )

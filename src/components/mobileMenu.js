@@ -13,6 +13,7 @@ const Container = styled.div`
 `
 
 const Menu = styled.div`
+  padding: 2rem 2.5rem;
   height: 100vh;
   width: 100vw;
   z-index: 1000;
@@ -33,6 +34,8 @@ const Menu = styled.div`
 `
 
 const MobileNav = styled.div`
+  position: absolute;
+  bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

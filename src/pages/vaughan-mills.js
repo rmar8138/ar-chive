@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import ProjectPageLayout from "../components/projectPageLayout"
+import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import {
   DesktopBreakpoint,
   MobileBreakpoint,
@@ -81,7 +82,7 @@ const VaughanMills = () => (
     </DesktopBreakpoint>
 
     <MobileBreakpoint>
-      <ProjectPageLayout heading="07/Vaughan Mills">
+      <MobileProjectPageLayout heading="07/Vaughan Mills">
         <Fragment>
           <img
             src={main}
@@ -166,7 +167,7 @@ const VaughanMills = () => (
         <Fragment>
           <img src={img10_2} alt="Vaughan Mills" style={{ width: "80%" }} />
         </Fragment>
-      </ProjectPageLayout>
+      </MobileProjectPageLayout>
     </MobileBreakpoint>
   </Fragment>
 )
