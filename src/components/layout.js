@@ -12,7 +12,7 @@ const theme = {
   fs_small: "1.6rem",
   fs_medium: "2.6rem",
   fs_large: "4.6rem",
-  bp_mobile: "540px",
+  bp_mobile: "780px",
 }
 
 setDefaultBreakpoints([
@@ -58,6 +58,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Orpheus Pro Regular';
     min-height: 100%;
     font-size: ${props => props.theme.fs_medium};
+    overflow: hidden;
   }
 
   h1 {
