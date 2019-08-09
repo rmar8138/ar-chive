@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Orpheus Pro Regular';
-    min-height: 100%;
+    height: 100%;
     font-size: ${props => props.theme.fs_medium};
     overflow: hidden;
   }

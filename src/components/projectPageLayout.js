@@ -158,10 +158,9 @@ const MobilePageCounter = styled.div`
 `
 
 const ProjectNavbarContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 2rem 2.5rem;
+  position: sticky;
+  bottom: 2rem;
+  left: 2.5rem;
 `
 
 // const LeftScrollDiv = styled.div`

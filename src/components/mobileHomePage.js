@@ -61,6 +61,9 @@ const MobileNav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  /* position: absolute;
+  bottom: 2rem;
+  left: 2.5rem; */
   z-index: 100000;
 
   img {
