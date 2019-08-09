@@ -6,6 +6,7 @@ import Carousel, { Dots } from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import SEO from "../components/seo"
 import { DesktopBreakpoint, MobileBreakpoint } from "./utilities/breakpoints"
+import { BrowserView, MobileView } from "react-device-detect"
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -158,7 +159,7 @@ const MobilePageCounter = styled.div`
 `
 
 const ProjectNavbarContainer = styled.div`
-  position: sticky;
+  position: absolute;
   bottom: 2rem;
   left: 2.5rem;
 `
@@ -218,7 +219,7 @@ class ProjectPageLayout extends Component {
   render() {
     return (
       <Fragment>
-        <DesktopBreakpoint>
+        <BrowserView>
           <Layout>
             <Container>
               <SEO
@@ -250,9 +251,9 @@ class ProjectPageLayout extends Component {
               </ProjectNavbarContainer>
             </Container>
           </Layout>
-        </DesktopBreakpoint>
+        </BrowserView>
 
-        <MobileBreakpoint>
+        <MobileView>
           <Layout>
             <Container>
               <SEO
@@ -287,7 +288,7 @@ class ProjectPageLayout extends Component {
               </ProjectNavbarContainer>
             </Container>
           </Layout>
-        </MobileBreakpoint>
+        </MobileView>
       </Fragment>
     )
   }
