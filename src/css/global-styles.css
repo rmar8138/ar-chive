@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Orpheus Pro Regular";
+  src: url("../assets/fonts/OrpheusPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Grotesk Regular";
+  src: url("../assets/fonts/Grotesk-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Grotesk Light";
+  src: url("../assets/fonts/Grotesk-Light.woff") format("woff");
+}

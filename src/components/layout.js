@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { BreakpointProvider, setDefaultBreakpoints } from "react-socks"
+import "../css/global-styles.css"
 
 import OrpheusProRegular from "../assets/fonts/OrpheusPro-Regular.woff"
 import GroteskRegular from "../assets/fonts/Grotesk-Regular.woff"
@@ -24,20 +25,6 @@ setDefaultBreakpoints([
 ])
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Orpheus Pro Regular';
-    src: url(${OrpheusProRegular}) format('woff');
-  }
-
-  @font-face {
-    font-family: 'Grotesk Regular';
-    src: url(${GroteskRegular}) format('woff');
-  }
-
-  @font-face {
-    font-family: 'Grotesk Light';
-    src: url(${GroteskLight}) format('woff');
-  }
 
   * {
     margin: 0;
