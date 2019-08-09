@@ -7,19 +7,16 @@ import {
   DesktopBreakpoint,
   MobileBreakpoint,
 } from "../components/utilities/breakpoints"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect"
 
 class Home extends Component {
   render() {
-    return (
-      <Fragment>
-        <DesktopBreakpoint>
-          <DesktopHomePage />
-        </DesktopBreakpoint>
-        <MobileBreakpoint>
-          <MobileHomePage />
-        </MobileBreakpoint>
-      </Fragment>
-    )
+    return isBrowser ? <DesktopHomePage /> : <MobileHomePage />
   }
 }
 
