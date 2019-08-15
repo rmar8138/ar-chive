@@ -2,10 +2,7 @@ import React, { Fragment } from "react"
 import styled from "styled-components"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
-import {
-  DesktopBreakpoint,
-  MobileBreakpoint,
-} from "../components/utilities/breakpoints"
+import { isBrowser } from "react-device-detect"
 
 const main = require(`../assets/images/web/4.png`)
 const img1 = require(`../assets/images/web/cool-mac-cafe/1.png`)
@@ -46,130 +43,119 @@ const Grid = styled.div`
   }
 `
 
-const CoolMacCafe = () => (
-  <Fragment>
-    <DesktopBreakpoint>
-      <ProjectPageLayout heading="04/Cool Mac Cafe">
-        <Fragment>
-          <img src={main} alt="Cool Mac Cafe" />
-        </Fragment>
-        <Fragment>
-          <p>
-            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and
-            Japanese inspired dishes for locals and tourists alike. We were
-            commissioned to created a permanent mural for their six metre
-            feature wall that would brighten up the space.
-          </p>
-        </Fragment>
-        <Fragment>
-          <p>
-            We wanted to produce a collaged piece that would resonate with the
-            locals and therefore drew from the structural features of
-            Kirribilli, highlighting the often overlooked details.
-          </p>
-        </Fragment>
-        <Fragment>
-          <img src={img1} alt="Cool Mac Cafe" style={{ width: "70%" }} />
-        </Fragment>
-        <Fragment>
-          <img src={img2_1} alt="Cool Mac Cafe" style={{ width: "30%" }} />
-          <img src={img2_2} alt="Cool Mac Cafe" style={{ width: "30%" }} />
-        </Fragment>
-        <Fragment>
-          {/* <Grid>
-        <img className="img1" src={img3_1} alt="Cool Mac Cafe" />
-        <img className="img2" src={img3_2} alt="Cool Mac Cafe" />
-        <img className="img3" src={img3_3} alt="Cool Mac Cafe" />
-        <img className="img4" src={img3_4} alt="Cool Mac Cafe" />
-      </Grid> */}
-          <img src={img3} alt="Cool Mac Cafe" style={{ width: "70%" }} />
-        </Fragment>
-      </ProjectPageLayout>
-    </DesktopBreakpoint>
-
-    <MobileBreakpoint>
-      <MobileProjectPageLayout heading="04/Cool Mac Cafe">
-        <Fragment>
-          <img src={main} alt="Cool Mac Cafe" />
-        </Fragment>
-        <Fragment>
-          <p>
-            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and
-            Japanese inspired dishes for locals and tourists alike. We were
-            commissioned to created a permanent mural for their six metre
-            feature wall that would brighten up the space.
-          </p>
-        </Fragment>
-        <Fragment>
-          <p>
-            We wanted to produce a collaged piece that would resonate with the
-            locals and therefore drew from the structural features of
-            Kirribilli, highlighting the often overlooked details.
-          </p>
-        </Fragment>
-        <Fragment>
-          <img src={img1} alt="Cool Mac Cafe" style={{ width: "100%" }} />
-        </Fragment>
-        <Fragment>
-          <figure>
-            <img
-              src={img2_1}
-              alt="Cool Mac Cafe"
-              style={{ width: "45%", marginTop: "-15rem" }}
-            />
-            <img
-              src={img2_2}
-              alt="Cool Mac Cafe"
-              style={{ width: "45%", marginTop: "15rem" }}
-            />
-          </figure>
-        </Fragment>
-        <Fragment>
-          <figure
+const CoolMacCafe = () =>
+  isBrowser ? (
+    <ProjectPageLayout heading="04/Cool Mac Cafe">
+      <Fragment>
+        <img src={main} alt="Cool Mac Cafe" />
+      </Fragment>
+      <Fragment>
+        <p>
+          Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
+          inspired dishes for locals and tourists alike. We were commissioned to
+          created a permanent mural for their six metre feature wall that would
+          brighten up the space.
+        </p>
+      </Fragment>
+      <Fragment>
+        <p>
+          We wanted to produce a collaged piece that would resonate with the
+          locals and therefore drew from the structural features of Kirribilli,
+          highlighting the often overlooked details.
+        </p>
+      </Fragment>
+      <Fragment>
+        <img src={img1} alt="Cool Mac Cafe" style={{ width: "70%" }} />
+      </Fragment>
+      <Fragment>
+        <img src={img2_1} alt="Cool Mac Cafe" style={{ width: "30%" }} />
+        <img src={img2_2} alt="Cool Mac Cafe" style={{ width: "30%" }} />
+      </Fragment>
+      <Fragment>
+        <img src={img3} alt="Cool Mac Cafe" style={{ width: "70%" }} />
+      </Fragment>
+    </ProjectPageLayout>
+  ) : (
+    <MobileProjectPageLayout heading="04/Cool Mac Cafe">
+      <Fragment>
+        <img src={main} alt="Cool Mac Cafe" />
+      </Fragment>
+      <Fragment>
+        <p>
+          Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
+          inspired dishes for locals and tourists alike. We were commissioned to
+          created a permanent mural for their six metre feature wall that would
+          brighten up the space.
+        </p>
+      </Fragment>
+      <Fragment>
+        <p>
+          We wanted to produce a collaged piece that would resonate with the
+          locals and therefore drew from the structural features of Kirribilli,
+          highlighting the often overlooked details.
+        </p>
+      </Fragment>
+      <Fragment>
+        <img src={img1} alt="Cool Mac Cafe" style={{ width: "100%" }} />
+      </Fragment>
+      <Fragment>
+        <figure>
+          <img
+            src={img2_1}
+            alt="Cool Mac Cafe"
+            style={{ width: "45%", marginTop: "-15rem" }}
+          />
+          <img
+            src={img2_2}
+            alt="Cool Mac Cafe"
+            style={{ width: "45%", marginTop: "15rem" }}
+          />
+        </figure>
+      </Fragment>
+      <Fragment>
+        <figure
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            marginLeft: "35%",
+          }}
+        >
+          <img
+            className="img1"
+            src={img3_1}
+            alt="Cool Mac Cafe"
+            style={{ marginBottom: "2rem" }}
+          />
+          <img className="img2" src={img3_2} alt="Cool Mac Cafe" />
+        </figure>
+      </Fragment>
+      <Fragment>
+        <figure
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <img
+            className="img3"
+            src={img3_3}
+            alt="Cool Mac Cafe"
             style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              marginLeft: "35%",
+              marginBottom: "2rem",
+              marginLeft: "2rem",
+              alignSelf: "flex-start",
             }}
-          >
-            <img
-              className="img1"
-              src={img3_1}
-              alt="Cool Mac Cafe"
-              style={{ marginBottom: "2rem" }}
-            />
-            <img className="img2" src={img3_2} alt="Cool Mac Cafe" />
-          </figure>
-        </Fragment>
-        <Fragment>
-          <figure
-            style={{
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <img
-              className="img3"
-              src={img3_3}
-              alt="Cool Mac Cafe"
-              style={{
-                marginBottom: "2rem",
-                marginLeft: "2rem",
-                alignSelf: "flex-start",
-              }}
-            />
-            <img
-              className="img4"
-              src={img3_4}
-              alt="Cool Mac Cafe"
-              style={{ marginRight: "2rem", alignSelf: "flex-end" }}
-            />
-          </figure>
-        </Fragment>
-      </MobileProjectPageLayout>
-    </MobileBreakpoint>
-  </Fragment>
-)
+          />
+          <img
+            className="img4"
+            src={img3_4}
+            alt="Cool Mac Cafe"
+            style={{ marginRight: "2rem", alignSelf: "flex-end" }}
+          />
+        </figure>
+      </Fragment>
+    </MobileProjectPageLayout>
+  )
 
 export default CoolMacCafe

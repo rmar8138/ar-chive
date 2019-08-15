@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import AllProjectsLink from "../components/allProjectsLink"
-import archiveLogo from "../assets/logos/red.svg"
+import { BackButton } from "../components/buttons"
 
 import SEO from "../components/seo"
 
@@ -21,10 +21,6 @@ const Container = styled.div`
     left: 2.5rem;
     display: inline-block;
     font-weight: 300;
-
-    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
-      font-family: "Grotesk Regular";
-    }
   }
 `
 
@@ -46,13 +42,10 @@ const AllProjectsList = styled.ul`
   z-index: 10;
 
   @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
-    padding: 2rem;
+    /* padding: 2rem; */
     font-size: ${props => props.theme.fs_medium};
+    margin-left: -6rem;
     margin-top: 3rem;
-
-    a:hover {
-      font-family: "Grotesk Regular";
-    }
   }
 
   li:first-child {
@@ -65,21 +58,6 @@ const AllProjectsList = styled.ul`
   li:not(:last-child) {
     margin-bottom: 2rem;
   }
-
-  a:hover {
-    font-size: 5.2rem;
-    font-family: "Grotesk Regular";
-  }
-`
-
-const BackButton = styled(Link)`
-  font-family: "Grotesk Regular";
-  text-transform: uppercase;
-  font-size: ${props => props.theme.fs_small};
-  position: absolute;
-  bottom: 2rem;
-  right: 2.5rem;
-  z-index: 100;
 `
 
 class Projects extends Component {
@@ -119,7 +97,6 @@ class Projects extends Component {
               }
             })}
           </AllProjectsList>
-          <Logo src={archiveLogo} alt="ar-chive logo" />
           <BackButton to="/">Back</BackButton>
         </Container>
       </Layout>

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import archiveLogo from "../assets/logos/red.svg"
+import archiveLogo from "../assets/logos/ar.svg"
 
 const Navbar = styled.div`
   display: flex;
@@ -50,9 +50,7 @@ const BackButton = styled(Link)`
 export default props => (
   <Navbar>
     <Logo>
-      <Link to="/">
-        <img src={archiveLogo} alt="ar-chive logo" />
-      </Link>
+      <img src={archiveLogo} alt="ar-chive logo" />
     </Logo>
     {!props.empty && (
       <Navlist>

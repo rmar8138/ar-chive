@@ -1,12 +1,10 @@
 import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Navbar from "../components/navbar"
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import SEO from "../components/seo"
-import { DesktopBreakpoint, MobileBreakpoint } from "./utilities/breakpoints"
-import { BrowserView, MobileView } from "react-device-detect"
+import { BackButton } from "../components/buttons"
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -218,78 +216,35 @@ class ProjectPageLayout extends Component {
 
   render() {
     return (
-      <Fragment>
-        <BrowserView>
-          <Layout>
-            <Container>
-              <SEO
-                title={this.props.heading}
-                keywords={[`gatsby`, `application`, `react`]}
-              />
-              <h1>{this.props.heading}</h1>
-              <PageCounter>
-                <p>
-                  {this.state.value + 1} of {this.props.children.length}
-                </p>
-              </PageCounter>
-              <StyledCarousel
-                centered
-                clickToChange
-                value={this.state.value}
-                onChange={this.onChange}
-              >
-                {React.Children.map(this.props.children, (child, index) =>
-                  index === 0 ? (
-                    <FirstSlide>{child}</FirstSlide>
-                  ) : (
-                    <Slide>{child}</Slide>
-                  )
-                )}
-              </StyledCarousel>
-              <ProjectNavbarContainer>
-                <Navbar empty />
-              </ProjectNavbarContainer>
-            </Container>
-          </Layout>
-        </BrowserView>
-
-        <MobileView>
-          <Layout>
-            <Container>
-              <SEO
-                title={this.props.heading}
-                keywords={[`gatsby`, `application`, `react`]}
-              />
-              <MobileHeading>
-                <span>{this.props.heading.split("/")[0]}</span>
-                <h1>{this.props.heading.split("/")[1]}</h1>
-              </MobileHeading>
-              <MobilePageCounter>
-                <p>
-                  {this.state.value + 1} / {this.props.children.length}
-                </p>
-              </MobilePageCounter>
-              <StyledCarousel
-                centered
-                clickToChange
-                value={this.state.value}
-                onChange={this.onChange}
-              >
-                {React.Children.map(this.props.children, (child, index) =>
-                  index === 0 ? (
-                    <FirstSlide>{child}</FirstSlide>
-                  ) : (
-                    <Slide>{child}</Slide>
-                  )
-                )}
-              </StyledCarousel>
-              <ProjectNavbarContainer>
-                <Navbar empty />
-              </ProjectNavbarContainer>
-            </Container>
-          </Layout>
-        </MobileView>
-      </Fragment>
+      <Layout>
+        <Container>
+          <SEO
+            title={this.props.heading}
+            keywords={[`gatsby`, `application`, `react`]}
+          />
+          <h1>{this.props.heading}</h1>
+          <PageCounter>
+            <p>
+              {this.state.value + 1} of {this.props.children.length}
+            </p>
+          </PageCounter>
+          <StyledCarousel
+            centered
+            clickToChange
+            value={this.state.value}
+            onChange={this.onChange}
+          >
+            {React.Children.map(this.props.children, (child, index) =>
+              index === 0 ? (
+                <FirstSlide>{child}</FirstSlide>
+              ) : (
+                <Slide>{child}</Slide>
+              )
+            )}
+          </StyledCarousel>
+          <BackButton />
+        </Container>
+      </Layout>
     )
   }
 }
