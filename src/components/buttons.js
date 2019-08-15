@@ -8,5 +8,5 @@ export const BackButton = styled(Link)`
   position: absolute;
   bottom: 2rem;
   right: 2.5rem;
-  z-index: 100000000000;
+  z-index: 10000000;
 `
