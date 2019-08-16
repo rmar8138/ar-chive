@@ -21,7 +21,11 @@ const RiseToUbiquity = () =>
     <ProjectPageLayout heading="03/Rise To Ubiquity">
       <Fragment>
         <figure>
-          <img src={main} alt="Rise to Ubiquity" />
+          <img
+            src={main}
+            alt="Rise to Ubiquity"
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
@@ -41,12 +45,22 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img1} alt="Rise to Ubiquity" style={{ width: "70%" }} />
+          <img
+            src={img1}
+            alt="Rise to Ubiquity"
+            style={{ width: "70%" }}
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img2} alt="Rise to Ubiquity" style={{ width: "70%" }} />
+          <img
+            src={img2}
+            alt="Rise to Ubiquity"
+            style={{ width: "70%" }}
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
@@ -91,17 +105,29 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img6} alt="Rise to Ubiquity" style={{ width: "70%" }} />
+          <img
+            src={img6}
+            alt="Rise to Ubiquity"
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img7} alt="Rise to Ubiquity" style={{ width: "70%" }} />
+          <img
+            src={img7}
+            alt="Rise to Ubiquity"
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img8} alt="Rise to Ubiquity" style={{ width: "70%" }} />
+          <img
+            src={img8}
+            alt="Rise to Ubiquity"
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+          />
         </figure>
       </Fragment>
     </ProjectPageLayout>

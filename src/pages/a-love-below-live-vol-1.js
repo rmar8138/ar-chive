@@ -13,7 +13,11 @@ const ALoveBelow = () =>
     <ProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
       <Fragment>
         <figure>
-          <img src={main} alt="a Love Below: Live! Vol. 1 - 1" />
+          <img
+            src={main}
+            alt="a Love Below: Live! Vol. 1 - 1"
+            style={{ width: "40%", minWidth: "30rem", maxWidth: "40rem" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
@@ -28,7 +32,7 @@ const ALoveBelow = () =>
           <img
             src={img1}
             alt="a Love Below: Live! Vol. 1 - 2"
-            style={{ width: "60%" }}
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "70rem" }}
           />
           {/* <figcaption>Photos by Naylin Aung</figcaption> */}
         </figure>
@@ -38,12 +42,12 @@ const ALoveBelow = () =>
           <img
             src={img2}
             alt="a Love Below: Live! Vol. 1 - 3"
-            style={{ width: "30%" }}
+            style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem" }}
           />
           <img
             src={img3}
             alt="a Love Below: Live! Vol. 1 - 4"
-            style={{ width: "30%" }}
+            style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem" }}
           />
         </figure>
       </Fragment>

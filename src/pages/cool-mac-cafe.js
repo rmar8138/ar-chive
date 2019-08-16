@@ -47,7 +47,11 @@ const CoolMacCafe = () =>
   isBrowser ? (
     <ProjectPageLayout heading="04/Cool Mac Cafe">
       <Fragment>
-        <img src={main} alt="Cool Mac Cafe" />
+        <img
+          src={main}
+          alt="Cool Mac Cafe"
+          style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
+        />
       </Fragment>
       <Fragment>
         <p>
@@ -65,14 +69,30 @@ const CoolMacCafe = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img src={img1} alt="Cool Mac Cafe" style={{ width: "70%" }} />
+        <img
+          src={img1}
+          alt="Cool Mac Cafe"
+          style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img2_1} alt="Cool Mac Cafe" style={{ width: "30%" }} />
-        <img src={img2_2} alt="Cool Mac Cafe" style={{ width: "30%" }} />
+        <img
+          src={img2_1}
+          alt="Cool Mac Cafe"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
+        />
+        <img
+          src={img2_2}
+          alt="Cool Mac Cafe"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img3} alt="Cool Mac Cafe" style={{ width: "70%" }} />
+        <img
+          src={img3}
+          alt="Cool Mac Cafe"
+          style={{ width: "70%", minWidth: "45rem" }}
+        />
       </Fragment>
     </ProjectPageLayout>
   ) : (

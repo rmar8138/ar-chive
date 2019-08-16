@@ -71,6 +71,7 @@ const Slide = styled.div`
   video {
     height: 70vh;
     max-width: 100%;
+    z-index: 1000000;
   }
 `
 
@@ -78,7 +79,7 @@ const PageCounter = styled.div`
   position: absolute;
   top: 15%;
   right: 5%;
-  z-index: 10000;
+  z-index: 100000000;
 `
 
 const ContentContainer = styled.div`

@@ -35,13 +35,25 @@ const Micra = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img src={img1} alt="Micra" style={{ width: "50%" }} />
+        <img
+          src={img1}
+          alt="Micra"
+          style={{ width: "50%", minWidth: "30rem", maxWidth: "50rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img2} alt="Micra" style={{ width: "40%" }} />
+        <img
+          src={img2}
+          alt="Micra"
+          style={{ width: "40%", minWidth: "30rem", maxWidth: "40rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img3} alt="Micra" style={{ width: "60%" }} />
+        <img
+          src={img3}
+          alt="Micra"
+          style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
+        />
       </Fragment>
       <Fragment>
         <p>
@@ -50,13 +62,25 @@ const Micra = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img src={img4} alt="Micra" />
+        <img
+          src={img4}
+          alt="Micra"
+          style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img5} alt="Micra" />
+        <img
+          src={img5}
+          alt="Micra"
+          style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img6} alt="Micra" style={{ width: "80%" }} />
+        <img
+          src={img6}
+          alt="Micra"
+          style={{ width: "80%", minWidth: "40rem", maxWidth: "80rem" }}
+        />
       </Fragment>
     </ProjectPageLayout>
   ) : (

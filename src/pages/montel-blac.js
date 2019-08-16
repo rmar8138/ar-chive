@@ -11,7 +11,11 @@ const MontelBlac = () =>
   isBrowser ? (
     <ProjectPageLayout heading="02/Montel Blac">
       <Fragment>
-        <img src={main} alt="Montel Blac" />
+        <img
+          src={main}
+          alt="Montel Blac"
+          style={{ maxWidth: "50%", minWidth: "30rem" }}
+        />
       </Fragment>
       <Fragment>
         <p>
@@ -23,14 +27,14 @@ const MontelBlac = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <video autoPlay loop muted>
+          <video loop muted controls="controls">
             <source src={vid1} type="video/mp4" />
           </video>
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <video autoPlay loop muted>
+          <video loop muted controls="controls">
             <source src={vid2} type="video/mp4" />
           </video>
         </figure>

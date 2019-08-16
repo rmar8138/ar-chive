@@ -23,7 +23,11 @@ const VaughanMills = () =>
   isBrowser ? (
     <ProjectPageLayout heading="07/Vaughan Mills">
       <Fragment>
-        <img src={main} alt="Vaughan Mills" />
+        <img
+          src={main}
+          alt="Vaughan Mills"
+          style={{ width: "50%", minWidth: "35rem", maxWidth: "45rem" }}
+        />
       </Fragment>
       <Fragment>
         <p>
@@ -36,43 +40,107 @@ const VaughanMills = () =>
         <img
           src={img1}
           alt="Vaughan Mills"
-          style={{ width: "30%", marginLeft: "20%" }}
+          style={{
+            width: "30%",
+            minWidth: "25rem",
+            maxWidth: "45rem",
+            marginLeft: "20%",
+          }}
         />
       </Fragment>
       <Fragment>
-        <img src={img2} alt="Vaughan Mills" />
+        <img
+          src={img2}
+          alt="Vaughan Mills"
+          style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img3} alt="Vaughan Mills" style={{ marginLeft: "30%" }} />
+        <img
+          src={img3}
+          alt="Vaughan Mills"
+          style={{
+            width: "45%",
+            minWidth: "40rem",
+            maxWidth: "60rem",
+            marginLeft: "30%",
+          }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img4_1} alt="Vaughan Mills" style={{ width: "40%" }} />
-        <img src={img4_2} alt="Vaughan Mills" style={{ width: "30%" }} />
+        <img
+          src={img4_1}
+          alt="Vaughan Mills"
+          style={{ width: "40%", minWidth: "25rem" }}
+        />
+        <img
+          src={img4_2}
+          alt="Vaughan Mills"
+          style={{ width: "30%", minWidth: "20rem" }}
+        />
       </Fragment>
       <Fragment>
         <img
           src={img5}
           alt="Vaughan Mills"
-          style={{ width: "40%", marginLeft: "30%", marginTop: "10%" }}
+          style={{
+            width: "40%",
+            minWidth: "30rem",
+            maxWidth: "50rem",
+            marginLeft: "30%",
+            marginTop: "10%",
+          }}
         />
       </Fragment>
       <Fragment>
-        <img src={img6_1} alt="Vaughan Mills" style={{ width: "30%" }} />
-        <img src={img6_2} alt="Vaughan Mills" style={{ width: "30%" }} />
+        <img
+          src={img6_1}
+          alt="Vaughan Mills"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
+        <img
+          src={img6_2}
+          alt="Vaughan Mills"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img7} alt="Vaughan Mills" style={{ width: "35%" }} />
+        <img
+          src={img7}
+          alt="Vaughan Mills"
+          style={{ width: "35%", minWidth: "30rem", maxWidth: "50rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img8} alt="Vaughan Mills" style={{ width: "60%" }} />
+        <img
+          src={img8}
+          alt="Vaughan Mills"
+          style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img9_1} alt="Vaughan Mills" style={{ width: "30%" }} />
-        <img src={img9_2} alt="Vaughan Mills" style={{ width: "20%" }} />
+        <img
+          src={img9_1}
+          alt="Vaughan Mills"
+          style={{ width: "30%", minWidth: "20rem" }}
+        />
+        <img
+          src={img9_2}
+          alt="Vaughan Mills"
+          style={{ width: "20%", minWidth: "13.33rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img10_1} alt="Vaughan Mills" style={{ width: "30%" }} />
-        <img src={img10_2} alt="Vaughan Mills" style={{ width: "30%" }} />
+        <img
+          src={img10_1}
+          alt="Vaughan Mills"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
+        <img
+          src={img10_2}
+          alt="Vaughan Mills"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
       </Fragment>
     </ProjectPageLayout>
   ) : (

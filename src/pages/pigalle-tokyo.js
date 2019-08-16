@@ -13,15 +13,35 @@ const PigalleTokyo = () =>
   isBrowser ? (
     <ProjectPageLayout heading="06/Pigalle Tokyo">
       <Fragment>
-        <img src={main} alt="Pigalle Tokyo" />
+        <img
+          src={main}
+          alt="Pigalle Tokyo"
+          style={{ width: "40%", minWidth: "30rem", maxWidth: "40rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img1_1} alt="Pigalle Tokyo" style={{ width: "30%" }} />
-        <img src={img1_2} alt="Pigalle Tokyo" style={{ width: "30%" }} />
+        <img
+          src={img1_1}
+          alt="Pigalle Tokyo"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
+        <img
+          src={img1_2}
+          alt="Pigalle Tokyo"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img2_1} alt="Pigalle Tokyo" style={{ width: "30%" }} />
-        <img src={img2_2} alt="Pigalle Tokyo" style={{ width: "30%" }} />
+        <img
+          src={img2_1}
+          alt="Pigalle Tokyo"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
+        <img
+          src={img2_2}
+          alt="Pigalle Tokyo"
+          style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
+        />
       </Fragment>
     </ProjectPageLayout>
   ) : (
