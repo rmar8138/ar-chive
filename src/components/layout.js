@@ -10,6 +10,7 @@ import GroteskLight from "../assets/fonts/Grotesk-Light.woff"
 const theme = {
   lightGrey: "rgba(233, 233, 234)",
   darkGrey: "rgba(147, 149, 152)",
+  darkBlue: "rgba(39, 41, 99)",
   fs_small: "1.6rem",
   fs_medium: "2.6rem",
   fs_large: "4.6rem",
