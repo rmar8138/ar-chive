@@ -63,14 +63,61 @@ const AllProjectsList = styled.ul`
 class Projects extends Component {
   state = {
     projects: [
-      "a Love Below: Live! Vol. 1",
-      "Montel Blac",
-      "Rise to Ubiquity",
-      "Cool Mac Cafe",
-      "Micra",
-      "Pigalle Tokyo",
-      "Vaughan Mills",
+      {
+        title: "a Love Below: Live! Vol. 1",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Montel Blac",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Rise to Ubiquity",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Cool Mac Cafe",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Micra",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Pigalle Tokyo",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Vaughan Mills",
+        spotlight: false,
+        hovered: false,
+      },
     ],
+  }
+
+  spotlightHover = hoveredIndex => {
+    // set spotlight to true for every project link besides hovered link
+    this.setState(prevState => ({
+      projects: prevState.projects.map((project, projectIndex) => {
+        if (hoveredIndex !== projectIndex) {
+          return {
+            title: project.title,
+            spotlight: !prevState.projects[projectIndex].spotlight,
+          }
+        } else {
+          return {
+            ...project,
+            hovered: !prevState.projects[projectIndex].hovered,
+          }
+        }
+      }),
+    }))
   }
 
   render() {
@@ -88,10 +135,12 @@ class Projects extends Component {
                     key={index}
                     index={index}
                     projectName={project}
+                    spotlight={project.spotlight}
+                    spotlightHover={this.spotlightHover}
                     page="All Projects"
                   >
                     {index + 1 < 10 ? `0${index + 1}/` : `${index + 1}/`}
-                    {project}
+                    {project.title}
                   </AllProjectsLink>
                 )
               }
