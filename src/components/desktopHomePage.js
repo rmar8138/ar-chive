@@ -16,6 +16,9 @@ const coolMacCafe = require("../assets/images/web/4.png")
 const micra = require("../assets/images/web/5.png")
 const pigalleTokyo = require("../assets/images/web/6.png")
 const vaughanMills = require("../assets/images/web/7.png")
+const spectre = require("../assets/images/web/spectre/1.png")
+const kirribilli = require("../assets/images/web/kirribilli/1.png")
+const otherWorlds = require("../assets/images/web/other-worlds/1.png")
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -41,6 +44,10 @@ const ProjectsList = styled.ul`
 
   li:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    font-size: 3.2rem;
   }
 `
 
@@ -97,6 +104,21 @@ export class desktopHomePage extends Component {
       },
       {
         title: "Vaughan Mills",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Spectre",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Kirribilli Home",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Other Worlds",
         spotlight: false,
         hovered: false,
       },
@@ -202,6 +224,30 @@ export class desktopHomePage extends Component {
             left="30%"
             width="35%"
             hovered={this.state.projects[6].hovered}
+          />
+          <Image
+            src={spectre}
+            alt="Spectre"
+            top="50%"
+            left="80%"
+            width="35%"
+            hovered={this.state.projects[7].hovered}
+          />
+          <Image
+            src={kirribilli}
+            alt="Kirribilli"
+            top="50%"
+            left="25%"
+            width="30%"
+            hovered={this.state.projects[8].hovered}
+          />
+          <Image
+            src={otherWorlds}
+            alt="Other Worlds"
+            top="50%"
+            left="70%"
+            width="40%"
+            hovered={this.state.projects[9].hovered}
           />
           <Navbar />
         </Container>

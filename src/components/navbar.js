@@ -25,6 +25,10 @@ const Logo = styled.div`
   img {
     width: 7rem;
     align-self: flex-end;
+
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+      width: 5.5rem;
+    }
   }
 `
 
@@ -35,6 +39,10 @@ const Navlist = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    font-size: ${props => props.theme.fs_small};
+  }
 `
 
 const BackButton = styled(Link)`
