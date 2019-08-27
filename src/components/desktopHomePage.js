@@ -17,7 +17,7 @@ const micra = require("../assets/images/web/5.png")
 const pigalleTokyo = require("../assets/images/web/6.png")
 const vaughanMills = require("../assets/images/web/7.png")
 const spectre = require("../assets/images/web/spectre/1.png")
-const kirribilli = require("../assets/images/web/kirribilli/1.png")
+const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
 const otherWorlds = require("../assets/images/web/other-worlds/1.png")
 
 const Container = styled.div`
@@ -234,8 +234,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[7].hovered}
           />
           <Image
-            src={kirribilli}
-            alt="Kirribilli"
+            src={kirribilliHome}
+            alt="Kirribilli Home"
             top="50%"
             left="25%"
             width="30%"
