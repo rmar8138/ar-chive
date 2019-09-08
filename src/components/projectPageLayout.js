@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react"
+import PageTransition from "gatsby-plugin-page-transitions"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -152,35 +153,37 @@ class ProjectPageLayout extends Component {
 
   render() {
     return (
-      <Layout>
-        <Container>
-          <SEO
-            title={this.props.heading}
-            keywords={[`gatsby`, `application`, `react`]}
-          />
-          <h1>{this.props.heading}</h1>
-          <PageCounter>
-            <p>
-              {this.state.value + 1} of {this.props.children.length}
-            </p>
-          </PageCounter>
-          <ContentContainer>
-            {React.Children.map(this.props.children, (child, index) => (
-              <Slide
-                index={index}
-                style={{
-                  display: this.state.value === index ? "flex" : "none",
-                }}
-              >
-                {child}
-              </Slide>
-            ))}
-            <LeftScrollDiv onClick={this.changeSlideLeft} />
-            <RightScrollDiv onClick={this.changeSlideRight} />
-          </ContentContainer>
-          <BackButton to="/">Back</BackButton>
-        </Container>
-      </Layout>
+      <PageTransition>
+        <Layout>
+          <Container>
+            <SEO
+              title={this.props.heading}
+              keywords={[`gatsby`, `application`, `react`]}
+            />
+            <h1>{this.props.heading}</h1>
+            <PageCounter>
+              <p>
+                {this.state.value + 1} of {this.props.children.length}
+              </p>
+            </PageCounter>
+            <ContentContainer>
+              {React.Children.map(this.props.children, (child, index) => (
+                <Slide
+                  index={index}
+                  style={{
+                    display: this.state.value === index ? "flex" : "none",
+                  }}
+                >
+                  {child}
+                </Slide>
+              ))}
+              <LeftScrollDiv onClick={this.changeSlideLeft} />
+              <RightScrollDiv onClick={this.changeSlideRight} />
+            </ContentContainer>
+            <BackButton to="/">Back</BackButton>
+          </Container>
+        </Layout>
+      </PageTransition>
     )
   }
 }

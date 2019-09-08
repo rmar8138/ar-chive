@@ -3,10 +3,10 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const main = require(`../assets/images/web/1.png`)
 const img1 = require(`../assets/images/web/a-love-below/1.png`)
 const img2 = require(`../assets/images/web/a-love-below/2.png`)
 const img3 = require(`../assets/images/web/a-love-below/3.png`)
+const img4 = require(`../assets/images/web/a-love-below/4.png`)
 
 const ALoveBelow = () =>
   isBrowser ? (
@@ -14,7 +14,7 @@ const ALoveBelow = () =>
       <Fragment>
         <figure>
           <img
-            src={main}
+            src={img1}
             alt="a Love Below: Live! Vol. 1 - 1"
             style={{ width: "40%", minWidth: "30rem", maxWidth: "40rem" }}
           />
@@ -30,7 +30,7 @@ const ALoveBelow = () =>
       <Fragment>
         <figure>
           <img
-            src={img1}
+            src={img2}
             alt="a Love Below: Live! Vol. 1 - 2"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "70rem" }}
           />
@@ -40,12 +40,12 @@ const ALoveBelow = () =>
       <Fragment>
         <figure style={{ justifyContent: "flex-start", paddingLeft: "2.5rem" }}>
           <img
-            src={img2}
+            src={img3}
             alt="a Love Below: Live! Vol. 1 - 3"
             style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem" }}
           />
           <img
-            src={img3}
+            src={img4}
             alt="a Love Below: Live! Vol. 1 - 4"
             style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem" }}
           />
@@ -56,7 +56,7 @@ const ALoveBelow = () =>
     <MobileProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
       <Fragment>
         <figure>
-          <img src={main} alt="a Love Below: Live! Vol. 1 - 1" />
+          <img src={img1} alt="a Love Below: Live! Vol. 1 - 1" />
         </figure>
       </Fragment>
       <Fragment>
@@ -69,7 +69,7 @@ const ALoveBelow = () =>
       <Fragment>
         <figure>
           <img
-            src={img1}
+            src={img2}
             alt="a Love Below: Live! Vol. 1 - 2"
             style={{ width: "100%" }}
           />
@@ -79,7 +79,7 @@ const ALoveBelow = () =>
       <Fragment>
         <figure>
           <img
-            src={img2}
+            src={img3}
             alt="a Love Below: Live! Vol. 1 - 3"
             style={{ width: "80%" }}
           />
@@ -88,7 +88,7 @@ const ALoveBelow = () =>
       <Fragment>
         <figure>
           <img
-            src={img3}
+            src={img4}
             alt="a Love Below: Live! Vol. 1 - 4"
             style={{ width: "80%", marginLeft: "auto" }}
           />

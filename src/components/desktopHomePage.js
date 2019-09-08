@@ -9,13 +9,13 @@ import SEO from "../components/seo"
 
 /* IMAGES */
 
-const aLoveBelow = require("../assets/images/web/1.png")
-const montelBlac = require("../assets/images/web/2.png")
-const riseToUbiquity = require("../assets/images/web/3.png")
-const coolMacCafe = require("../assets/images/web/4.png")
-const micra = require("../assets/images/web/5.png")
-const pigalleTokyo = require("../assets/images/web/6.png")
-const vaughanMills = require("../assets/images/web/7.png")
+const aLoveBelow = require("../assets/images/web/a-love-below/1.png")
+const montelBlac = require("../assets/images/web/montel-blac/1.png")
+const riseToUbiquity = require("../assets/images/web/rise-to-ubiquity/1.png")
+const coolMacCafe = require("../assets/images/web/cool-mac-cafe/1.png")
+const micra = require("../assets/images/web/micra/1.png")
+const pigalleTokyo = require("../assets/images/web/pigalle-tokyo/1.png")
+const vaughanMills = require("../assets/images/web/vaughan-mills/1.png")
 const spectre = require("../assets/images/web/spectre/1.png")
 const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
 const otherWorlds = require("../assets/images/web/other-worlds/1.png")

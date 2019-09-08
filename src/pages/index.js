@@ -1,12 +1,7 @@
-import React, { Component, Fragment } from "react"
-import styled from "styled-components"
-import Breakpoint from "react-socks"
+import React, { Component } from "react"
+import PageTransition from "gatsby-plugin-page-transitions"
 import DesktopHomePage from "../components/desktopHomePage"
 import MobileHomePage from "../components/mobileHomePage"
-import {
-  DesktopBreakpoint,
-  MobileBreakpoint,
-} from "../components/utilities/breakpoints"
 import {
   BrowserView,
   MobileView,
@@ -16,7 +11,15 @@ import {
 
 class Home extends Component {
   render() {
-    return isBrowser ? <DesktopHomePage /> : <MobileHomePage />
+    return isBrowser ? (
+      <PageTransition>
+        <DesktopHomePage />
+      </PageTransition>
+    ) : (
+      <PageTransition>
+        <MobileHomePage />
+      </PageTransition>
+    )
   }
 }
 

@@ -4,70 +4,20 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const main = require(`../assets/images/web/4.png`)
 const img1 = require(`../assets/images/web/cool-mac-cafe/1.png`)
-const img2_1 = require(`../assets/images/web/cool-mac-cafe/2-1.png`)
-const img2_2 = require(`../assets/images/web/cool-mac-cafe/2-2.png`)
-const img3 = require(`../assets/images/web/cool-mac-cafe/3.png`)
+const img2 = require(`../assets/images/web/cool-mac-cafe/2.png`)
 const img3_1 = require(`../assets/images/web/cool-mac-cafe/3-1.png`)
 const img3_2 = require(`../assets/images/web/cool-mac-cafe/3-2.png`)
-const img3_3 = require(`../assets/images/web/cool-mac-cafe/3-3.png`)
-const img3_4 = require(`../assets/images/web/cool-mac-cafe/3-4.png`)
+const img4 = require(`../assets/images/web/cool-mac-cafe/4.png`)
 
-const Grid = styled.div`
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 19.15% 5.38% 25.36% 3.83% 25.36% 1.75% 19.15%;
-  /* grid-template-rows: 6.21% 9.57% 9.57% 6.21% 9.57% 9.57%; */
-  /* grid-template-rows: 6.21% 9.57% 9.57% 6.21% 9.57% 9.57%; */
-
-  .img1 {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 3;
-  }
-
-  .img2 {
-    grid-column: 3 / span 1;
-    grid-row: 5 / span 2;
-  }
-
-  .img3 {
-    grid-column: 5 / span 1;
-    grid-row: 2 / span 2;
-  }
-
-  .img4 {
-    grid-column: 7 / span 1;
-    grid-row: 1 / span 3;
-  }
-`
+const img4_1 = require(`../assets/images/web/cool-mac-cafe/4-1.png`)
+const img4_2 = require(`../assets/images/web/cool-mac-cafe/4-2.png`)
+const img4_3 = require(`../assets/images/web/cool-mac-cafe/4-3.png`)
+const img4_4 = require(`../assets/images/web/cool-mac-cafe/4-4.png`)
 
 const CoolMacCafe = () =>
   isBrowser ? (
     <ProjectPageLayout heading="04/Cool Mac Cafe">
-      <Fragment>
-        <img
-          src={main}
-          alt="Cool Mac Cafe"
-          style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
-        />
-      </Fragment>
-      <Fragment>
-        <p>
-          Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
-          inspired dishes for locals and tourists alike. We were commissioned to
-          created a permanent mural for their six metre feature wall that would
-          brighten up the space.
-        </p>
-      </Fragment>
-      <Fragment>
-        <p>
-          We wanted to produce a collaged piece that would resonate with the
-          locals and therefore drew from the structural features of Kirribilli,
-          highlighting the often overlooked details.
-        </p>
-      </Fragment>
       <Fragment>
         <img
           src={img1}
@@ -76,20 +26,42 @@ const CoolMacCafe = () =>
         />
       </Fragment>
       <Fragment>
+        <p>
+          Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
+          inspired dishes for locals and tourists alike. We were commissioned to
+          created a permanent mural for their six metre feature wall that would
+          brighten up the space.
+        </p>
+      </Fragment>
+      <Fragment>
+        <p>
+          We wanted to produce a collaged piece that would resonate with the
+          locals and therefore drew from the structural features of Kirribilli,
+          highlighting the often overlooked details.
+        </p>
+      </Fragment>
+      <Fragment>
         <img
-          src={img2_1}
+          src={img2}
+          alt="Cool Mac Cafe"
+          style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
+        />
+      </Fragment>
+      <Fragment>
+        <img
+          src={img3_1}
           alt="Cool Mac Cafe"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
         />
         <img
-          src={img2_2}
+          src={img3_2}
           alt="Cool Mac Cafe"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
         />
       </Fragment>
       <Fragment>
         <img
-          src={img3}
+          src={img4}
           alt="Cool Mac Cafe"
           style={{ width: "70%", minWidth: "45rem" }}
         />
@@ -98,7 +70,7 @@ const CoolMacCafe = () =>
   ) : (
     <MobileProjectPageLayout heading="04/Cool Mac Cafe">
       <Fragment>
-        <img src={main} alt="Cool Mac Cafe" />
+        <img src={img1} alt="Cool Mac Cafe" />
       </Fragment>
       <Fragment>
         <p>
@@ -116,17 +88,17 @@ const CoolMacCafe = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img src={img1} alt="Cool Mac Cafe" style={{ width: "100%" }} />
+        <img src={img2} alt="Cool Mac Cafe" style={{ width: "100%" }} />
       </Fragment>
       <Fragment>
         <figure>
           <img
-            src={img2_1}
+            src={img3_1}
             alt="Cool Mac Cafe"
             style={{ width: "45%", marginTop: "-15rem" }}
           />
           <img
-            src={img2_2}
+            src={img3_2}
             alt="Cool Mac Cafe"
             style={{ width: "45%", marginTop: "15rem" }}
           />
@@ -143,11 +115,11 @@ const CoolMacCafe = () =>
         >
           <img
             className="img1"
-            src={img3_1}
+            src={img4_1}
             alt="Cool Mac Cafe"
             style={{ marginBottom: "2rem" }}
           />
-          <img className="img2" src={img3_2} alt="Cool Mac Cafe" />
+          <img className="img2" src={img4_2} alt="Cool Mac Cafe" />
         </figure>
       </Fragment>
       <Fragment>
@@ -159,7 +131,7 @@ const CoolMacCafe = () =>
         >
           <img
             className="img3"
-            src={img3_3}
+            src={img4_3}
             alt="Cool Mac Cafe"
             style={{
               marginBottom: "2rem",
@@ -169,7 +141,7 @@ const CoolMacCafe = () =>
           />
           <img
             className="img4"
-            src={img3_4}
+            src={img4_4}
             alt="Cool Mac Cafe"
             style={{ marginRight: "2rem", alignSelf: "flex-end" }}
           />

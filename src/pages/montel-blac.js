@@ -3,7 +3,7 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const main = require(`../assets/images/web/2.png`)
+const img1 = require(`../assets/images/web/montel-blac/1.png`)
 const vid1 = require(`../assets/videos/montel-blac/1.mp4`)
 const vid2 = require(`../assets/videos/montel-blac/2.mp4`)
 
@@ -12,7 +12,7 @@ const MontelBlac = () =>
     <ProjectPageLayout heading="02/Montel Blac">
       <Fragment>
         <img
-          src={main}
+          src={img1}
           alt="Montel Blac"
           style={{ maxWidth: "50%", minWidth: "30rem" }}
         />
@@ -43,7 +43,7 @@ const MontelBlac = () =>
   ) : (
     <MobileProjectPageLayout heading="02/Montel Blac">
       <Fragment>
-        <img src={main} alt="Montel Blac" />
+        <img src={img1} alt="Montel Blac" />
       </Fragment>
       <Fragment>
         <p>

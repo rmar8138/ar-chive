@@ -7,6 +7,19 @@ import { BackButton } from "../components/buttons"
 
 import SEO from "../components/seo"
 
+/* IMAGES */
+
+const aLoveBelow = require("../assets/images/web/a-love-below/1.png")
+const montelBlac = require("../assets/images/web/montel-blac/1.png")
+const riseToUbiquity = require("../assets/images/web/rise-to-ubiquity/1.png")
+const coolMacCafe = require("../assets/images/web/cool-mac-cafe/1.png")
+const micra = require("../assets/images/web/micra/1.png")
+const pigalleTokyo = require("../assets/images/web/pigalle-tokyo/1.png")
+const vaughanMills = require("../assets/images/web/vaughan-mills/1.png")
+const spectre = require("../assets/images/web/spectre/1.png")
+const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
+const otherWorlds = require("../assets/images/web/other-worlds/1.png")
+
 const Container = styled.div`
   position: relative;
   height: 100%;
@@ -67,36 +80,61 @@ class Projects extends Component {
         title: "a Love Below: Live! Vol. 1",
         spotlight: false,
         hovered: false,
+        image: aLoveBelow,
       },
       {
         title: "Montel Blac",
         spotlight: false,
         hovered: false,
+        image: montelBlac,
       },
       {
         title: "Rise to Ubiquity",
         spotlight: false,
         hovered: false,
+        image: require("../assets/images/web/rise-to-ubiquity/1.png"),
       },
       {
         title: "Cool Mac Cafe",
         spotlight: false,
         hovered: false,
+        image: require("../assets/images/web/cool-mac-cafe/1.png"),
       },
       {
         title: "Micra",
         spotlight: false,
         hovered: false,
+        image: require("../assets/images/web/micra/1.png"),
       },
       {
         title: "Pigalle Tokyo",
         spotlight: false,
         hovered: false,
+        image: require("../assets/images/web/pigalle-tokyo/1.png"),
       },
       {
         title: "Vaughan Mills",
         spotlight: false,
         hovered: false,
+        image: require("../assets/images/web/vaughan-mills/1.png"),
+      },
+      {
+        title: "Spectre",
+        spotlight: false,
+        hovered: false,
+        image: require("../assets/images/web/spectre/1.png"),
+      },
+      {
+        title: "Kirribilli Home",
+        spotlight: false,
+        hovered: false,
+        image: require("../assets/images/web/kirribilli-home/1.png"),
+      },
+      {
+        title: "Other Worlds",
+        spotlight: false,
+        hovered: false,
+        image: require("../assets/images/web/other-worlds/1.png"),
       },
     ],
   }
@@ -129,11 +167,13 @@ class Projects extends Component {
           <AllProjectsList>
             <li>Featured</li>
             {this.state.projects.map((project, index) => {
+              console.log(project)
               if (index < this.state.projects.length) {
                 return (
                   <AllProjectsLink
                     key={index}
                     index={index}
+                    image={project.image}
                     projectName={project}
                     spotlight={project.spotlight}
                     spotlightHover={this.spotlightHover}

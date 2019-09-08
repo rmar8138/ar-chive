@@ -43,7 +43,8 @@ class ProjectLink extends Component {
   }
 
   render() {
-    const image = require(`../assets/images/web/${this.props.index + 1}.png`)
+    const image = this.props.image
+    console.log(image)
     return (
       <Project>
         <StyledLink
