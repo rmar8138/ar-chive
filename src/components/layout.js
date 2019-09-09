@@ -1,11 +1,8 @@
 import React from "react"
+import PageTransition from "gatsby-v2-plugin-page-transitions"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { BreakpointProvider, setDefaultBreakpoints } from "react-socks"
 import "../css/global-styles.css"
-
-import OrpheusProRegular from "../assets/fonts/OrpheusPro-Regular.woff"
-import GroteskRegular from "../assets/fonts/Grotesk-Regular.woff"
-import GroteskLight from "../assets/fonts/Grotesk-Light.woff"
 
 const theme = {
   lightGrey: "rgba(233, 233, 234)",
@@ -24,6 +21,18 @@ setDefaultBreakpoints([
   { l: 769 },
   { xl: 1025 },
 ])
+
+const styles = {
+  entering: {
+    opacity: 0,
+  },
+  entered: {
+    opacity: 1,
+  },
+  exiting: {
+    opacity: 0,
+  },
+}
 
 const GlobalStyle = createGlobalStyle`
 
@@ -65,12 +74,22 @@ const Padding = styled.div`
 `
 
 export default ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <BreakpointProvider>
-      <Padding>
-        <GlobalStyle />
-        {children}
-      </Padding>
-    </BreakpointProvider>
-  </ThemeProvider>
+  <PageTransition
+    transitionStyles={{
+      entering: { opacity: "0" },
+      entered: { opacity: "1" },
+      exiting: { opacity: "1" },
+      exited: { opacity: "0" },
+    }}
+    transitionTime={350}
+  >
+    <ThemeProvider theme={theme}>
+      <BreakpointProvider>
+        <Padding>
+          <GlobalStyle />
+          {children}
+        </Padding>
+      </BreakpointProvider>
+    </ThemeProvider>
+  </PageTransition>
 )

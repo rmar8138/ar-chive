@@ -11,15 +11,7 @@ import {
 
 class Home extends Component {
   render() {
-    return isBrowser ? (
-      <PageTransition>
-        <DesktopHomePage />
-      </PageTransition>
-    ) : (
-      <PageTransition>
-        <MobileHomePage />
-      </PageTransition>
-    )
+    return isBrowser ? <DesktopHomePage /> : <MobileHomePage />
   }
 }
 

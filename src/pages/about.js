@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react"
 import { Link } from "gatsby"
+import PageTransition from "gatsby-plugin-page-transitions"
 import MediaQuery from "react-responsive"
 import styled from "styled-components"
 import Layout from "../components/layout"
@@ -64,45 +65,54 @@ class About extends Component {
 
   render() {
     return (
-      <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <PageTransition
+        transitionStyles={{
+          entering: { opacity: "0" },
+          entered: { opacity: "1" },
+          exiting: { opacity: "0" },
+        }}
+        transitionTime={500}
+      >
+        <Layout>
+          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-        <Container>
-          {this.state.isMenuOpen ? (
-            <MobileMenu />
-          ) : (
-            <Fragment>
-              <CopyText>
-                <p>
-                  <Link to="/">
-                    <img src={archiveLogo} alt="ar-chive logo" />
-                  </Link>{" "}
-                  is an independent creative partnership founded by Angela Tam
-                  and Rowland Reyes Martinez where concept driven ideas meet
-                  thoughtful design. Grounded in empathy, intention, and an eye
-                  for detail, our artistic approach leads us to projects within
-                  the spheres of art direction, strategy, design, photography
-                  and curation.
-                </p>
-              </CopyText>
-              <MediaQuery minDeviceWidth={640}>
-                <Contact>
-                  <a href="mailto:a@ar-chive.studio">a@ar-chive.studio</a>
-                  <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
-                </Contact>
-              </MediaQuery>
-            </Fragment>
-          )}
+          <Container>
+            {this.state.isMenuOpen ? (
+              <MobileMenu />
+            ) : (
+              <Fragment>
+                <CopyText>
+                  <p>
+                    <Link to="/">
+                      <img src={archiveLogo} alt="ar-chive logo" />
+                    </Link>{" "}
+                    is an independent creative partnership founded by Angela Tam
+                    and Rowland Reyes Martinez where concept driven ideas meet
+                    thoughtful design. Grounded in empathy, intention, and an
+                    eye for detail, our artistic approach leads us to projects
+                    within the spheres of art direction, strategy, design,
+                    photography and curation.
+                  </p>
+                </CopyText>
+                <MediaQuery minDeviceWidth={640}>
+                  <Contact>
+                    <a href="mailto:a@ar-chive.studio">a@ar-chive.studio</a>
+                    <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
+                  </Contact>
+                </MediaQuery>
+              </Fragment>
+            )}
 
-          <MediaQuery maxDeviceWidth={640}>
-            <LogoSmall
-              onClick={this.toggleMenu}
-              src={archiveLogoSmall}
-              alt="Archive Studio"
-            />
-          </MediaQuery>
-        </Container>
-      </Layout>
+            <MediaQuery maxDeviceWidth={640}>
+              <LogoSmall
+                onClick={this.toggleMenu}
+                src={archiveLogoSmall}
+                alt="Archive Studio"
+              />
+            </MediaQuery>
+          </Container>
+        </Layout>
+      </PageTransition>
     )
   }
 }
