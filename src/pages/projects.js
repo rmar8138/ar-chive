@@ -92,49 +92,49 @@ class Projects extends Component {
         title: "Rise to Ubiquity",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/rise-to-ubiquity/1.png"),
+        image: riseToUbiquity,
       },
       {
         title: "Cool Mac Cafe",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/cool-mac-cafe/1.png"),
+        image: coolMacCafe,
       },
       {
         title: "Micra",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/micra/1.png"),
+        image: micra,
       },
       {
         title: "Pigalle Tokyo",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/pigalle-tokyo/1.png"),
+        image: pigalleTokyo,
       },
       {
         title: "Vaughan Mills",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/vaughan-mills/1.png"),
+        image: vaughanMills,
       },
       {
         title: "Spectre",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/spectre/1.png"),
+        image: spectre,
       },
       {
         title: "Kirribilli Home",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/kirribilli-home/1.png"),
+        image: kirribilliHome,
       },
       {
         title: "Other Worlds",
         spotlight: false,
         hovered: false,
-        image: require("../assets/images/web/other-worlds/1.png"),
+        image: otherWorlds,
       },
     ],
   }
@@ -145,7 +145,7 @@ class Projects extends Component {
       projects: prevState.projects.map((project, projectIndex) => {
         if (hoveredIndex !== projectIndex) {
           return {
-            title: project.title,
+            ...project,
             spotlight: !prevState.projects[projectIndex].spotlight,
           }
         } else {
