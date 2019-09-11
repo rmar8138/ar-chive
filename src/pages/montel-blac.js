@@ -1,4 +1,6 @@
 import React, { Fragment } from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
@@ -7,14 +9,14 @@ const img1 = require(`../assets/images/web/montel-blac/1.png`)
 const vid1 = require(`../assets/videos/montel-blac/1.mp4`)
 const vid2 = require(`../assets/videos/montel-blac/2.mp4`)
 
-const MontelBlac = () =>
+const MontelBlac = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="02/Montel Blac">
       <Fragment>
-        <img
-          src={img1}
+        <Img
+          fluid={data.img1.childImageSharp.fluid}
           alt="Montel Blac"
-          style={{ maxWidth: "50%", minWidth: "30rem" }}
+          style={{ maxWidth: "50%", minWidth: "50rem" }}
         />
       </Fragment>
       <Fragment>
@@ -43,7 +45,11 @@ const MontelBlac = () =>
   ) : (
     <MobileProjectPageLayout heading="02/Montel Blac">
       <Fragment>
-        <img src={img1} alt="Montel Blac" />
+        <Img
+          fluid={data.img1.childImageSharp.fluid}
+          alt="Montel Blac"
+          style={{ maxWidth: "50%", minWidth: "30rem" }}
+        />
       </Fragment>
       <Fragment>
         <p>
@@ -56,14 +62,22 @@ const MontelBlac = () =>
       <Fragment>
         <figure>
           <video autoPlay loop muted>
-            <source src={vid1} type="video/mp4" />
+            <source
+              src={vid1}
+              type="video/mp4"
+              style={{ maxWidth: "50%", minWidth: "20rem" }}
+            />
           </video>
         </figure>
       </Fragment>
       <Fragment>
         <figure>
           <video autoPlay loop muted>
-            <source src={vid2} type="video/mp4" />
+            <source
+              src={vid2}
+              type="video/mp4"
+              style={{ maxWidth: "50%", minWidth: "20rem" }}
+            />
           </video>
         </figure>
       </Fragment>
@@ -71,3 +85,15 @@ const MontelBlac = () =>
   )
 
 export default MontelBlac
+
+export const query = graphql`
+  query {
+    img1: file(relativePath: { eq: "web/montel-blac/1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

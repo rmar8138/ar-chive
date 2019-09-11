@@ -51,7 +51,11 @@ const ALoveBelow = ({ data }) =>
     <MobileProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
       <Fragment>
         <figure>
-          <Img fluid={data.img1.childImageSharp.fluid} />
+          <Img
+            fluid={data.img1.childImageSharp.fluid}
+            alt="a Love Below: Live! Vol. 1 - 1"
+            style={{ width: "80%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
