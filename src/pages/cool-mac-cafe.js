@@ -1,26 +1,16 @@
 import React, { Fragment } from "react"
-import styled from "styled-components"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const img1 = require(`../assets/images/web/cool-mac-cafe/1.png`)
-const img2 = require(`../assets/images/web/cool-mac-cafe/2.png`)
-const img3_1 = require(`../assets/images/web/cool-mac-cafe/3-1.png`)
-const img3_2 = require(`../assets/images/web/cool-mac-cafe/3-2.png`)
-const img4 = require(`../assets/images/web/cool-mac-cafe/4.png`)
-
-const img4_1 = require(`../assets/images/web/cool-mac-cafe/4-1.png`)
-const img4_2 = require(`../assets/images/web/cool-mac-cafe/4-2.png`)
-const img4_3 = require(`../assets/images/web/cool-mac-cafe/4-3.png`)
-const img4_4 = require(`../assets/images/web/cool-mac-cafe/4-4.png`)
-
-const CoolMacCafe = () =>
+const CoolMacCafe = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="04/Cool Mac Cafe">
       <Fragment>
-        <img
-          src={img1}
+        <Img
+          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
           alt="Cool Mac Cafe"
           style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
         />
@@ -41,27 +31,27 @@ const CoolMacCafe = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img
-          src={img2}
+        <Img
+          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
           alt="Cool Mac Cafe"
           style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
         />
       </Fragment>
       <Fragment>
-        <img
-          src={img3_1}
+        <Img
+          fluid={data.allFile.edges[8].node.childImageSharp.fluid}
           alt="Cool Mac Cafe"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
         />
-        <img
-          src={img3_2}
+        <Img
+          fluid={data.allFile.edges[7].node.childImageSharp.fluid}
           alt="Cool Mac Cafe"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
         />
       </Fragment>
       <Fragment>
-        <img
-          src={img4}
+        <Img
+          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
           alt="Cool Mac Cafe"
           style={{ width: "70%", minWidth: "45rem" }}
         />
@@ -70,7 +60,11 @@ const CoolMacCafe = () =>
   ) : (
     <MobileProjectPageLayout heading="04/Cool Mac Cafe">
       <Fragment>
-        <img src={img1} alt="Cool Mac Cafe" />
+        <Img
+          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+          alt="Cool Mac Cafe"
+          style={{ width: "100%" }}
+        />
       </Fragment>
       <Fragment>
         <p>
@@ -88,17 +82,21 @@ const CoolMacCafe = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img src={img2} alt="Cool Mac Cafe" style={{ width: "100%" }} />
+        <Img
+          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+          alt="Cool Mac Cafe"
+          style={{ width: "100%" }}
+        />
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img3_1}
+          <Img
+            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "45%", marginTop: "-15rem" }}
           />
-          <img
-            src={img3_2}
+          <Img
+            fluid={data.allFile.edges[7].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "45%", marginTop: "15rem" }}
           />
@@ -113,13 +111,17 @@ const CoolMacCafe = () =>
             marginLeft: "35%",
           }}
         >
-          <img
+          <Img
             className="img1"
-            src={img4_1}
+            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ marginBottom: "2rem" }}
           />
-          <img className="img2" src={img4_2} alt="Cool Mac Cafe" />
+          <Img
+            className="img2"
+            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+            alt="Cool Mac Cafe"
+          />
         </figure>
       </Fragment>
       <Fragment>
@@ -129,9 +131,9 @@ const CoolMacCafe = () =>
             flexDirection: "column",
           }}
         >
-          <img
+          <Img
             className="img3"
-            src={img4_3}
+            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{
               marginBottom: "2rem",
@@ -139,9 +141,9 @@ const CoolMacCafe = () =>
               alignSelf: "flex-start",
             }}
           />
-          <img
+          <Img
             className="img4"
-            src={img4_4}
+            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ marginRight: "2rem", alignSelf: "flex-end" }}
           />
@@ -151,3 +153,20 @@ const CoolMacCafe = () =>
   )
 
 export default CoolMacCafe
+
+export const query = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "web/cool-mac-cafe" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

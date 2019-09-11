@@ -260,7 +260,7 @@ const RiseToUbiquity = ({ data }) =>
 export default RiseToUbiquity
 
 export const query = graphql`
-  {
+  query {
     allFile(filter: { relativeDirectory: { eq: "web/rise-to-ubiquity" } }) {
       edges {
         node {
