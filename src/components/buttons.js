@@ -10,3 +10,10 @@ export const BackButton = styled(Link)`
   right: 2.5rem;
   z-index: 10000000;
 `
+export const AllProjectsLink = styled(Link)`
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  align-self: flex-start;
+  margin-top: 1rem;
+`
