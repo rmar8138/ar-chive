@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { isBrowser } from "react-device-detect"
+import { AllProjectsLink } from "./buttons"
 import archiveLogo from "../assets/logos/ar.svg"
 
 const Navbar = styled.div`
@@ -55,12 +57,12 @@ const BackButton = styled(Link)`
   z-index: 100;
 `
 
-export default props => (
+export default () => (
   <Navbar>
     <Logo>
       <img src={archiveLogo} alt="ar-chive logo" />
     </Logo>
-    {!props.empty && (
+    {isBrowser ? (
       <Navlist>
         <li>
           <Link to="/about">about</Link>
@@ -72,6 +74,8 @@ export default props => (
           <a href="#">shop</a>
         </li>
       </Navlist>
+    ) : (
+      <AllProjectsLink to="/projects">All</AllProjectsLink>
     )}
   </Navbar>
 )

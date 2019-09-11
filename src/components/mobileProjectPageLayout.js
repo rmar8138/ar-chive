@@ -2,15 +2,13 @@ import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
+import { BackButton } from "./buttons"
 import SEO from "../components/seo"
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
   height: 100vh;
   overflow: scroll;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 
   h1 {
     position: relative;
@@ -34,6 +32,7 @@ const MobileHeading = styled.div`
   top: 2rem;
   left: 2.5rem;
   display: flex;
+  z-index: 100000000;
 
   span {
     font-size: 2.5rem;
@@ -140,13 +139,6 @@ const Slide = styled.div`
   }
 `
 
-const ProjectNavbarContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 2rem 2.5rem;
-`
-
 class MobileProjectPageLayout extends Component {
   componentDidMount() {
     // add event listener to listen for left/right arrow key
@@ -195,9 +187,7 @@ class MobileProjectPageLayout extends Component {
                 )
               )}
             </Content>
-            <ProjectNavbarContainer>
-              <Navbar empty />
-            </ProjectNavbarContainer>
+            <BackButton to="/">Back</BackButton>
           </Container>
         </Layout>
       </Fragment>

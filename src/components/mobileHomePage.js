@@ -1,10 +1,11 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import MobileProjectLink from "../components/mobileProjectLink"
-import MobileMenu from "../components/mobileMenu"
-import ArchiveLogoSmall from "../assets/logos/red.svg"
+import Layout from "./layout"
+import NavBar from "./navbar"
+import MobileProjectLink from "./mobileProjectLink"
+import MobileMenu from "./mobileMenu"
+import archiveLogo from "../assets/logos/ar.svg"
 
 import SEO from "../components/seo"
 
@@ -51,10 +52,6 @@ const AllProjectsLink = styled(Link)`
 
   align-self: flex-start;
   margin-top: 1rem;
-
-  :hover {
-    font-size: 1.8rem;
-  }
 `
 
 const MobileNav = styled.div`
@@ -154,14 +151,16 @@ export class mobileHomePage extends Component {
                 }
               })}
             </ProjectsList>
-            <MobileNav>
+            <NavBar />
+            {/* <MobileNav>
               <img
-                src={ArchiveLogoSmall}
+                src={archiveLogo}
                 alt="Archive Studio"
                 onClick={this.toggleMenu}
+                style={{ width: "7rem" }}
               />
               <AllProjectsLink to="/projects">All</AllProjectsLink>
-            </MobileNav>
+            </MobileNav> */}
           </Container>
         )}
       </Layout>
