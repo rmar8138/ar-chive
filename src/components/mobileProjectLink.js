@@ -26,7 +26,6 @@ class MobileProjectLink extends Component {
   }
 
   render() {
-    const webImage = require(`../assets/images/web/${this.props.index + 1}.png`)
     const mobileImage = require(`../assets/images/mobile/${this.props.index +
       1}.png`)
     return (
@@ -44,7 +43,7 @@ class MobileProjectLink extends Component {
         </StyledLink>
         {this.state.isHovered && (
           <Image
-            src={this.props.device === "mobile" ? mobileImage : webImage}
+            src={mobileImage}
             alt={this.props.projectName}
           />
         )}
