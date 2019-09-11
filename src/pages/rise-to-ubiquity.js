@@ -53,12 +53,12 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
             alt="Rise to Ubiquity"
           />
           <Img
-            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[10].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
             alt="Rise to Ubiquity"
           />
@@ -67,12 +67,12 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[9].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
             alt="Rise to Ubiquity"
           />
           <Img
-            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
             alt="Rise to Ubiquity"
           />
@@ -92,7 +92,7 @@ const RiseToUbiquity = ({ data }) =>
             style={{ width: "45%" }}
           />
           <Img
-            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "30%" }}
           />
@@ -101,7 +101,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -110,7 +110,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[10].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -119,7 +119,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -133,6 +133,7 @@ const RiseToUbiquity = ({ data }) =>
           <Img
             fluid={data.allFile.edges[0].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
+            style={{ width: "100%" }}
           />
         </figure>
       </Fragment>
@@ -170,34 +171,36 @@ const RiseToUbiquity = ({ data }) =>
         </figure>
       </Fragment>
       <Fragment>
-        <figure
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+        <figure>
           <Img
-            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
-            style={{ width: "100%", marginRight: "0rem" }}
-            alt="Rise to Ubiquity"
-          />
-          <Img
-            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
             style={{ width: "100%", marginRight: "0rem" }}
             alt="Rise to Ubiquity"
           />
         </figure>
       </Fragment>
       <Fragment>
-        <figure style={{ display: "flex", flexDirection: "column" }}>
+        <figure>
           <Img
-            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[10].node.childImageSharp.fluid}
             style={{ width: "100%", marginRight: "0rem" }}
             alt="Rise to Ubiquity"
           />
+        </figure>
+      </Fragment>
+      <Fragment>
+        <figure>
           <Img
-            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+            style={{ width: "100%", marginRight: "0rem" }}
+            alt="Rise to Ubiquity"
+          />
+        </figure>
+      </Fragment>
+      <Fragment>
+        <figure>
+          <Img
+            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
             style={{ width: "100%", marginRight: "0rem" }}
             alt="Rise to Ubiquity"
           />
@@ -221,7 +224,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "80%" }}
           />
@@ -230,7 +233,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "100%" }}
           />
@@ -239,7 +242,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[10].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "100%" }}
           />
@@ -248,7 +251,7 @@ const RiseToUbiquity = ({ data }) =>
       <Fragment>
         <figure>
           <Img
-            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "100%" }}
           />
