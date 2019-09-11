@@ -93,12 +93,12 @@ const CoolMacCafe = ({ data }) =>
           <Img
             fluid={data.allFile.edges[8].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "45%", marginTop: "-15rem" }}
+            style={{ width: "45%", marginTop: "-15rem", marginRight: "1rem" }}
           />
           <Img
             fluid={data.allFile.edges[7].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "45%", marginTop: "15rem" }}
+            style={{ width: "45%", marginTop: "15rem", marginLeft: "1rem" }}
           />
         </figure>
       </Fragment>
@@ -108,19 +108,23 @@ const CoolMacCafe = ({ data }) =>
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            marginLeft: "35%",
+            marginBottom: "-1rem",
           }}
         >
           <Img
-            className="img1"
             fluid={data.allFile.edges[6].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ marginBottom: "2rem" }}
+            style={{
+              width: "40%",
+              marginBottom: "2rem",
+              alignSelf: "center",
+            }}
           />
           <Img
             className="img2"
             fluid={data.allFile.edges[5].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
+            style={{ width: "60%", alignSelf: "flex-end" }}
           />
         </figure>
       </Fragment>
@@ -137,15 +141,16 @@ const CoolMacCafe = ({ data }) =>
             alt="Cool Mac Cafe"
             style={{
               marginBottom: "2rem",
-              marginLeft: "2rem",
+              marginRight: "2rem",
               alignSelf: "flex-start",
+              width: "60%",
             }}
           />
           <Img
             className="img4"
             fluid={data.allFile.edges[3].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ marginRight: "2rem", alignSelf: "flex-end" }}
+            style={{ width: "40%", marginLeft: "2rem", alignSelf: "flex-end" }}
           />
         </figure>
       </Fragment>
