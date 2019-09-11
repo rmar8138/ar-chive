@@ -1,44 +1,40 @@
 import React, { Fragment } from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const img1 = require(`../assets/images/web/pigalle-tokyo/1.png`)
-const img2_1 = require(`../assets/images/web/pigalle-tokyo/2-1.png`)
-const img2_2 = require(`../assets/images/web/pigalle-tokyo/2-2.png`)
-const img3_1 = require(`../assets/images/web/pigalle-tokyo/3-1.png`)
-const img3_2 = require(`../assets/images/web/pigalle-tokyo/3-2.png`)
-
-const PigalleTokyo = () =>
+const PigalleTokyo = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="06/Pigalle Tokyo">
       <Fragment>
-        <img
-          src={img1}
+        <Img
+          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
           alt="Pigalle Tokyo"
           style={{ width: "40%", minWidth: "30rem", maxWidth: "40rem" }}
         />
       </Fragment>
       <Fragment>
-        <img
-          src={img2_2}
+        <Img
+          fluid={data.allFile.edges[4].node.childImageSharp.fluid}
           alt="Pigalle Tokyo"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
         />
-        <img
-          src={img2_2}
+        <Img
+          fluid={data.allFile.edges[3].node.childImageSharp.fluid}
           alt="Pigalle Tokyo"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
         />
       </Fragment>
       <Fragment>
-        <img
-          src={img3_1}
+        <Img
+          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
           alt="Pigalle Tokyo"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
         />
-        <img
-          src={img3_2}
+        <Img
+          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
           alt="Pigalle Tokyo"
           style={{ width: "30%", minWidth: "20rem", maxWidth: "30rem" }}
         />
@@ -47,21 +43,54 @@ const PigalleTokyo = () =>
   ) : (
     <MobileProjectPageLayout heading="06/Pigalle Tokyo">
       <Fragment>
-        <img
-          src={img1}
+        <Img
+          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
           alt="Pigalle Tokyo"
           style={{ width: "85%", marginRight: "auto" }}
         />
       </Fragment>
       <Fragment>
-        <img src={img2_1} alt="Pigalle Tokyo" style={{ width: "45%" }} />
-        <img src={img2_2} alt="Pigalle Tokyo" style={{ width: "45%" }} />
+        <Img
+          fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+          alt="Pigalle Tokyo"
+          style={{ width: "45%", marginRight: "1.5rem" }}
+        />
+        <Img
+          fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+          alt="Pigalle Tokyo"
+          style={{ width: "45%", marginLeft: "1.5rem" }}
+        />
       </Fragment>
       <Fragment>
-        <img src={img3_1} alt="Pigalle Tokyo" style={{ width: "45%" }} />
-        <img src={img3_2} alt="Pigalle Tokyo" style={{ width: "45%" }} />
+        <Img
+          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+          alt="Pigalle Tokyo"
+          style={{ width: "45%", marginRight: "1.5rem" }}
+        />
+        <Img
+          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+          alt="Pigalle Tokyo"
+          style={{ width: "45%", marginLeft: "1.5rem" }}
+        />
       </Fragment>
     </MobileProjectPageLayout>
   )
 
 export default PigalleTokyo
+
+export const query = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "web/pigalle-tokyo" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
