@@ -148,7 +148,98 @@ const KirribilliHome = ({ data }) =>
     </ProjectPageLayout>
   ) : (
     <MobileProjectPageLayout heading="09/Kirribilli House">
-      <Fragment />
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[11].node.childImageSharp.fluid}
+          alt=""
+          style={{
+            width: "100%",
+          }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+          alt=""
+          style={{
+            width: "100%",
+          }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+          alt=""
+          style={{
+            width: "100%",
+          }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </Fragment>
+      <Fragment>
+        <p>
+          Following from our mural at Cool Mac Cafe, one of their local
+          customers approached us to create two bespoke artworks for their home.
+          With the process and aesthetic drawing from our previous work, we
+          explored Kirribilli again taking note of ephemeral shadow lines
+          against concrete existing structures.
+        </p>
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "60%", marginRight: "auto" }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "60%", marginLeft: "auto" }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "60%", marginLeft: "auto" }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[10].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </Fragment>
     </MobileProjectPageLayout>
   )
 
