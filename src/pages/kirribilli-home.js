@@ -1,4 +1,6 @@
 import React, { Fragment } from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
@@ -15,34 +17,50 @@ const img10 = require(`../assets/images/web/kirribilli-home/10.png`)
 const img11 = require(`../assets/images/web/kirribilli-home/11.png`)
 const img12 = require(`../assets/images/web/kirribilli-home/12.png`)
 
-const KirribilliHome = () =>
+const KirribilliHome = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="09/Kirribilli Home">
       <Fragment>
-        <div style={{ marginRight: "auto" }}>
-          <img
-            src={img2}
+        <div style={{ display: "flex", width: "100%", marginRight: "auto" }}>
+          <Img
+            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
             alt=""
-            style={{ height: "30vw", minHeight: "20rem", maxHeight: "50rem" }}
+            style={{
+              width: "50%",
+              marginRight: "2rem",
+            }}
           />
-          <img
-            src={img3}
+          <Img
+            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
             alt=""
-            style={{ height: "30vw", minHeight: "20rem", maxHeight: "50rem" }}
+            style={{
+              width: "25%",
+            }}
           />
         </div>
       </Fragment>
       <Fragment>
-        <div style={{ marginLeft: "10rem" }}>
-          <img
-            src={img4}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
+          <Img
+            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
             alt=""
-            style={{ width: "40%", minWidth: "15rem", maxWidth: "40rem" }}
+            style={{
+              width: "30%",
+              minWidth: "20rem",
+              maxWidth: "45rem",
+              marginRight: "2rem",
+            }}
           />
-          <img
-            src={img5}
+          <Img
+            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
             alt=""
-            style={{ width: "40%", minWidth: "15rem", maxWidth: "40rem" }}
+            style={{ width: "30%", minWidth: "20rem", maxWidth: "45rem" }}
           />
         </div>
       </Fragment>
@@ -56,39 +74,75 @@ const KirribilliHome = () =>
         </p>
       </Fragment>
       <Fragment>
-        <img
-          src={img6}
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Img
+            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+            alt=""
+            style={{
+              width: "25%",
+              minWidth: "13rem",
+              maxWidth: "30rem",
+              marginRight: "1rem",
+            }}
+          />
+          <Img
+            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+            alt=""
+            style={{
+              width: "25%",
+              minWidth: "13rem",
+              maxWidth: "30rem",
+              marginLeft: "1rem",
+              marginRight: "1rem",
+            }}
+          />
+          <Img
+            fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+            alt=""
+            style={{
+              width: "25%",
+              minWidth: "13rem",
+              maxWidth: "30rem",
+              marginLeft: "1rem",
+            }}
+          />
+        </div>
+      </Fragment>
+      <Fragment>
+        <Img
+          fluid={data.allFile.edges[10].node.childImageSharp.fluid}
           alt=""
-          style={{ width: "25%", minWidth: "13rem", maxWidth: "30rem" }}
+          style={{ width: "30%", marginRight: "1rem" }}
         />
-        <img
-          src={img7}
+        <Img
+          fluid={data.allFile.edges[9].node.childImageSharp.fluid}
           alt=""
-          style={{ width: "25%", minWidth: "13rem", maxWidth: "30rem" }}
-        />
-        <img
-          src={img8}
-          alt=""
-          style={{ width: "25%", minWidth: "13rem", maxWidth: "30rem" }}
+          style={{ width: "35%", marginLeft: "1rem" }}
         />
       </Fragment>
       <Fragment>
-        <img src={img9} alt="" style={{ width: "30%" }} />
-        <img src={img10} alt="" style={{ width: "35%" }} />
-      </Fragment>
-      <Fragment>
-        <div style={{ display: "flex", marginRight: "auto" }}>
-          <img
-            src={img11}
+        <div style={{ display: "flex", marginRight: "auto", width: "100%" }}>
+          <Img
+            fluid={data.allFile.edges[2].node.childImageSharp.fluid}
             alt=""
             style={{
               width: "35%",
               maxWidth: "40rem",
-              marginTop: "",
               alignSelf: "flex-start",
+              marginRight: "1rem",
             }}
           />
-          <img src={img12} alt="" style={{ width: "35%", maxWidth: "40rem" }} />
+          <Img
+            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+            alt=""
+            style={{ width: "35%", maxWidth: "40rem", marginLeft: "1rem" }}
+          />
         </div>
       </Fragment>
     </ProjectPageLayout>
@@ -99,3 +153,20 @@ const KirribilliHome = () =>
   )
 
 export default KirribilliHome
+
+export const query = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "web/kirribilli-home" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
