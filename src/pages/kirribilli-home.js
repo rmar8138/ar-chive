@@ -5,18 +5,6 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const img2 = require(`../assets/images/web/kirribilli-home/2.png`)
-const img3 = require(`../assets/images/web/kirribilli-home/3.png`)
-const img4 = require(`../assets/images/web/kirribilli-home/4.png`)
-const img5 = require(`../assets/images/web/kirribilli-home/5.png`)
-const img6 = require(`../assets/images/web/kirribilli-home/6.png`)
-const img7 = require(`../assets/images/web/kirribilli-home/7.png`)
-const img8 = require(`../assets/images/web/kirribilli-home/8.png`)
-const img9 = require(`../assets/images/web/kirribilli-home/9.png`)
-const img10 = require(`../assets/images/web/kirribilli-home/10.png`)
-const img11 = require(`../assets/images/web/kirribilli-home/11.png`)
-const img12 = require(`../assets/images/web/kirribilli-home/12.png`)
-
 const KirribilliHome = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="09/Kirribilli Home">
