@@ -1,28 +1,17 @@
+import { graphql } from "gatsby"
 import React, { Fragment } from "react"
+import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const img1 = require(`../assets/images/web/rise-to-ubiquity/1.png`)
-const img2 = require(`../assets/images/web/rise-to-ubiquity/2.png`)
-const img3 = require(`../assets/images/web/rise-to-ubiquity/3.png`)
-const img4_1 = require(`../assets/images/web/rise-to-ubiquity/4-1.png`)
-const img4_2 = require(`../assets/images/web/rise-to-ubiquity/4-2.png`)
-const img5_1 = require(`../assets/images/web/rise-to-ubiquity/5-1.png`)
-const img5_2 = require(`../assets/images/web/rise-to-ubiquity/5-2.png`)
-const img6_1 = require(`../assets/images/web/rise-to-ubiquity/6-1.png`)
-const img6_2 = require(`../assets/images/web/rise-to-ubiquity/6-2.png`)
-const img7 = require(`../assets/images/web/rise-to-ubiquity/7.png`)
-const img8 = require(`../assets/images/web/rise-to-ubiquity/8.png`)
-const img9 = require(`../assets/images/web/rise-to-ubiquity/9.png`)
-
-const RiseToUbiquity = () =>
+const RiseToUbiquity = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="03/Rise To Ubiquity">
       <Fragment>
         <figure>
-          <img
-            src={img1}
+          <Img
+            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -45,48 +34,46 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img2}
+          <Img
+            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
-            style={{ width: "70%" }}
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img3}
+          <Img
+            fluid={data.allFile.edges[2].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
-            style={{ width: "70%" }}
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img
+          <Img
+            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
-            src={img4_1}
             alt="Rise to Ubiquity"
           />
-          <img
+          <Img
+            fluid={data.allFile.edges[10].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
-            src={img4_2}
             alt="Rise to Ubiquity"
           />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img
+          <Img
+            fluid={data.allFile.edges[9].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
-            src={img5_1}
             alt="Rise to Ubiquity"
           />
-          <img
+          <Img
+            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
             style={{ width: "40%", height: "auto" }}
-            src={img5_2}
             alt="Rise to Ubiquity"
           />
         </figure>
@@ -99,14 +86,22 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img6_1} alt="Rise to Ubiquity" style={{ width: "45%" }} />
-          <img src={img6_1} alt="Rise to Ubiquity" style={{ width: "30%" }} />
+          <Img
+            fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "45%" }}
+          />
+          <Img
+            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "30%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img7}
+          <Img
+            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -114,8 +109,8 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img8}
+          <Img
+            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -123,8 +118,8 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img9}
+          <Img
+            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
           />
@@ -135,7 +130,11 @@ const RiseToUbiquity = () =>
     <MobileProjectPageLayout heading="03/Rise To Ubiquity">
       <Fragment>
         <figure>
-          <img src={img1} alt="Rise to Ubiquity" />
+          <Img
+            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "100%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
@@ -155,8 +154,8 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img2}
+          <Img
+            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "100%", marginRight: "0rem" }}
           />
@@ -164,43 +163,45 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img
-            src={img3}
+          <Img
+            fluid={data.allFile.edges[2].node.childImageSharp.fluid}
             alt="Rise to Ubiquity"
             style={{ width: "100%", marginRight: "0rem" }}
           />
         </figure>
       </Fragment>
       <Fragment>
-        <figure
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <img
+        <figure>
+          <Img
+            fluid={data.allFile.edges[11].node.childImageSharp.fluid}
             style={{ width: "100%", marginRight: "0rem" }}
-            src={img4_1}
-            alt="Rise to Ubiquity"
-          />
-          <img
-            style={{ width: "100%", marginRight: "0rem" }}
-            src={img4_2}
             alt="Rise to Ubiquity"
           />
         </figure>
       </Fragment>
       <Fragment>
-        <figure style={{ display: "flex", flexDirection: "column" }}>
-          <img
+        <figure>
+          <Img
+            fluid={data.allFile.edges[10].node.childImageSharp.fluid}
             style={{ width: "100%", marginRight: "0rem" }}
-            src={img5_1}
             alt="Rise to Ubiquity"
           />
-          <img
+        </figure>
+      </Fragment>
+      <Fragment>
+        <figure>
+          <Img
+            fluid={data.allFile.edges[9].node.childImageSharp.fluid}
             style={{ width: "100%", marginRight: "0rem" }}
-            src={img5_2}
+            alt="Rise to Ubiquity"
+          />
+        </figure>
+      </Fragment>
+      <Fragment>
+        <figure>
+          <Img
+            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+            style={{ width: "100%", marginRight: "0rem" }}
             alt="Rise to Ubiquity"
           />
         </figure>
@@ -213,30 +214,67 @@ const RiseToUbiquity = () =>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img6_1} alt="Rise to Ubiquity" style={{ width: "80%" }} />
+          <Img
+            fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "80%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img6_2} alt="Rise to Ubiquity" style={{ width: "80%" }} />
+          <Img
+            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "80%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img7} alt="Rise to Ubiquity" style={{ width: "100%" }} />
+          <Img
+            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "100%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img8} alt="Rise to Ubiquity" style={{ width: "100%" }} />
+          <Img
+            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "100%" }}
+          />
         </figure>
       </Fragment>
       <Fragment>
         <figure>
-          <img src={img9} alt="Rise to Ubiquity" style={{ width: "100%" }} />
+          <Img
+            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+            alt="Rise to Ubiquity"
+            style={{ width: "100%" }}
+          />
         </figure>
       </Fragment>
     </MobileProjectPageLayout>
   )
 
 export default RiseToUbiquity
+
+export const query = graphql`
+  query {
+    allFile(filter: { relativeDirectory: { eq: "web/rise-to-ubiquity" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
