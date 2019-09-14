@@ -21,10 +21,10 @@ class ProjectLink extends Component {
     return (
       <li>
         <StyledLink
-          to={slugify(this.props.children[1], {
+          to={`/${slugify(this.props.children[1], {
             remove: /[*+~.()'"!:@]/g,
             lower: true,
-          })}
+          })}`}
           onMouseOver={this.onHover}
           onMouseOut={this.onHover}
           spotlight={this.props.spotlight}
