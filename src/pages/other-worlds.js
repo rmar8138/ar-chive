@@ -5,18 +5,6 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const img1 = require("../assets/images/web/other-worlds/1.png")
-const img2 = require("../assets/images/web/other-worlds/2.png")
-const img3 = require("../assets/images/web/other-worlds/3.png")
-const img4 = require("../assets/images/web/other-worlds/4.png")
-const img5 = require("../assets/images/web/other-worlds/5.png")
-const img6 = require("../assets/images/web/other-worlds/6.png")
-const img7 = require("../assets/images/web/other-worlds/7.png")
-const img8 = require("../assets/images/web/other-worlds/8.png")
-const img9 = require("../assets/images/web/other-worlds/9.png")
-const img10 = require("../assets/images/web/other-worlds/10.png")
-const img11 = require("../assets/images/web/other-worlds/11.png")
-
 const OtherWorlds = ({ data }) =>
   isBrowser ? (
     <ProjectPageLayout heading="10/Other Worlds">

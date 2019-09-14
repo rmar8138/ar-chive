@@ -4,8 +4,6 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import slugify from "slugify"
 import Layout from "./layout"
-import NavBar from "./navbar"
-import MobileProjectLink from "./mobileProjectLink"
 import MobileMenu from "./mobileMenu"
 import { AllProjectsLink } from "./buttons"
 import archiveLogo from "../assets/logos/ar.svg"
@@ -160,7 +158,7 @@ export class MobileHomePage extends Component {
     this.setState(prevState => ({ menuOpen: !prevState.menuOpen }))
   }
 
-  handleClick = (index, e) => {
+  handleClick = index => {
     this.setState(prevState => ({
       projects: prevState.projects.map((project, projectIndex) => {
         if (index !== projectIndex) {
