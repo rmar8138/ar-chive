@@ -1,5 +1,4 @@
-import React, { Component, Fragment } from "react"
-import PageTransition from "gatsby-plugin-page-transitions"
+import React, { Component } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
