@@ -207,10 +207,10 @@ export class MobileHomePage extends Component {
             {this.state.projects.map((project, index) => (
               <StyledLink
                 clicked={this.state.projects[index].clicked}
-                to={slugify(this.state.projects[index].title, {
+                to={`/${slugify(this.state.projects[index].title, {
                   remove: /[*+~.()'"!:@]/g,
                   lower: true,
-                })}
+                })}`}
               >
                 <Img fluid={this.state.projects[index].image} />
               </StyledLink>

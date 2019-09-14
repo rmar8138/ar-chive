@@ -10,7 +10,7 @@ const VaughanMills = ({ data }) =>
     <ProjectPageLayout heading="07/Vaughan Mills">
       <Fragment>
         <Img
-          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+          fluid={data.img1.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "50%", minWidth: "35rem", maxWidth: "45rem" }}
         />
@@ -24,7 +24,7 @@ const VaughanMills = ({ data }) =>
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+          fluid={data.img2.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "30%",
@@ -36,14 +36,14 @@ const VaughanMills = ({ data }) =>
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+          fluid={data.img3.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+          fluid={data.img4.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "45%",
@@ -55,19 +55,19 @@ const VaughanMills = ({ data }) =>
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[14].node.childImageSharp.fluid}
+          fluid={data.img5.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "40%", minWidth: "25rem", marginRight: "2rem" }}
         />
         <Img
-          fluid={data.allFile.edges[13].node.childImageSharp.fluid}
+          fluid={data.img6.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "30%", minWidth: "20rem", marginLeft: "2rem" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[12].node.childImageSharp.fluid}
+          fluid={data.img7.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "40%",
@@ -80,7 +80,7 @@ const VaughanMills = ({ data }) =>
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[11].node.childImageSharp.fluid}
+          fluid={data.img8.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "30%",
@@ -90,7 +90,7 @@ const VaughanMills = ({ data }) =>
           }}
         />
         <Img
-          fluid={data.allFile.edges[10].node.childImageSharp.fluid}
+          fluid={data.img9.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "30%",
@@ -102,33 +102,33 @@ const VaughanMills = ({ data }) =>
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+          fluid={data.img10.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "35%", minWidth: "30rem", maxWidth: "50rem" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+          fluid={data.img11.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "60%", minWidth: "40rem", maxWidth: "60rem" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+          fluid={data.img12.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "30%", minWidth: "20rem", marginRight: "2rem" }}
         />
         <Img
-          fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+          fluid={data.img13.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "20%", minWidth: "13.33rem", marginLeft: "2rem" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+          fluid={data.img14.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "30%",
@@ -138,7 +138,7 @@ const VaughanMills = ({ data }) =>
           }}
         />
         <Img
-          fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+          fluid={data.img15.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{
             width: "30%",
@@ -153,7 +153,7 @@ const VaughanMills = ({ data }) =>
     <MobileProjectPageLayout heading="07/Vaughan Mills">
       <Fragment>
         <Img
-          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+          fluid={data.img1.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginRight: "auto" }}
         />
@@ -167,98 +167,98 @@ const VaughanMills = ({ data }) =>
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+          fluid={data.img2.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginLeft: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+          fluid={data.img3.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "100%" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+          fluid={data.img4.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginRight: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[14].node.childImageSharp.fluid}
+          fluid={data.img5.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "100%" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[13].node.childImageSharp.fluid}
+          fluid={data.img6.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "100%" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[12].node.childImageSharp.fluid}
+          fluid={data.img7.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginRight: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[11].node.childImageSharp.fluid}
+          fluid={data.img8.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginLeft: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[10].node.childImageSharp.fluid}
+          fluid={data.img9.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginRight: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+          fluid={data.img10.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginRight: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+          fluid={data.img11.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "100%" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+          fluid={data.img12.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "100%" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+          fluid={data.img13.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "80%" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+          fluid={data.img14.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "85%", marginRight: "auto" }}
         />
       </Fragment>
       <Fragment>
         <Img
-          fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+          fluid={data.img15.childImageSharp.fluid}
           alt="Vaughan Mills"
           style={{ width: "80%" }}
         />
@@ -270,15 +270,108 @@ export default VaughanMills
 
 export const query = graphql`
   query {
-    allFile(filter: { relativeDirectory: { eq: "web/vaughan-mills" } }) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+    img1: file(relativePath: { eq: "web/vaughan-mills/1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "web/vaughan-mills/2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img3: file(relativePath: { eq: "web/vaughan-mills/3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img4: file(relativePath: { eq: "web/vaughan-mills/4.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "web/vaughan-mills/5.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img6: file(relativePath: { eq: "web/vaughan-mills/6.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img7: file(relativePath: { eq: "web/vaughan-mills/7.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img8: file(relativePath: { eq: "web/vaughan-mills/8.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img9: file(relativePath: { eq: "web/vaughan-mills/9.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img10: file(relativePath: { eq: "web/vaughan-mills/10.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img11: file(relativePath: { eq: "web/vaughan-mills/11.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img12: file(relativePath: { eq: "web/vaughan-mills/12.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img13: file(relativePath: { eq: "web/vaughan-mills/13.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img14: file(relativePath: { eq: "web/vaughan-mills/14.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img15: file(relativePath: { eq: "web/vaughan-mills/15.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
