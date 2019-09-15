@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import AllProjectsLink from "../components/allProjectsLink"
@@ -35,14 +34,6 @@ const Container = styled.div`
     display: inline-block;
     font-weight: 300;
   }
-`
-
-const Logo = styled.img`
-  width: 7rem;
-  position: absolute;
-  bottom: 2rem;
-  left: 2.5rem;
-  z-index: 100;
 `
 
 const AllProjectsList = styled.ul`
@@ -167,7 +158,6 @@ class Projects extends Component {
           <AllProjectsList>
             <li>Featured</li>
             {this.state.projects.map((project, index) => {
-              console.log(project)
               if (index < this.state.projects.length) {
                 return (
                   <AllProjectsLink
