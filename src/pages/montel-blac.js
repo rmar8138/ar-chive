@@ -5,7 +5,6 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 import { isBrowser } from "react-device-detect"
 
-const img1 = require(`../assets/images/web/montel-blac/1.png`)
 const vid1 = require(`../assets/videos/montel-blac/1.mp4`)
 const vid2 = require(`../assets/videos/montel-blac/2.mp4`)
 

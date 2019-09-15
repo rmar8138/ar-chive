@@ -47,16 +47,6 @@ const Navlist = styled.ul`
   }
 `
 
-const BackButton = styled(Link)`
-  font-family: "Grotesk Regular";
-  text-transform: uppercase;
-  font-size: ${props => props.theme.fs_small};
-  position: absolute;
-  bottom: 2rem;
-  right: 2.5rem;
-  z-index: 100;
-`
-
 export default () => (
   <Navbar>
     <Logo>
@@ -68,10 +58,10 @@ export default () => (
           <Link to="/about">about</Link>
         </li>
         <li>
-          <a href="#">instagram</a>
+          <a href="/">instagram</a>
         </li>
         <li>
-          <a href="#">shop</a>
+          <a href="/">shop</a>
         </li>
       </Navlist>
     ) : (

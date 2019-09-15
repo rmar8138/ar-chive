@@ -22,18 +22,6 @@ setDefaultBreakpoints([
   { xl: 1025 },
 ])
 
-const styles = {
-  entering: {
-    opacity: 0,
-  },
-  entered: {
-    opacity: 1,
-  },
-  exiting: {
-    opacity: 0,
-  },
-}
-
 const GlobalStyle = createGlobalStyle`
 
   * {

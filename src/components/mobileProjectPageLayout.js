@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Navbar from "../components/navbar"
 import { BackButton } from "./buttons"
 import SEO from "../components/seo"
 
