@@ -4,16 +4,19 @@ import MobileHomePage from "../components/mobileHomePage"
 import { isBrowser, isMobile } from "react-device-detect"
 
 class Home extends Component {
-  renderContent = () => {
-    if (isMobile) {
-      return <MobileHomePage />
-    }
-    return <DesktopHomePage />
-  }
+  // renderContent = () => {
+  //   if (isMobile) {
+  //     return <MobileHomePage />
+  //   }
+  //   return <DesktopHomePage />
+  // }
 
+  // render() {
+  //   // return isBrowser ? <DesktopHomePage /> : <MobileHomePage />
+  //   return this.renderContent()
+  // }
   render() {
-    // return isBrowser ? <DesktopHomePage /> : <MobileHomePage />
-    return this.renderContent()
+    return <MobileHomePage />
   }
 }
 
