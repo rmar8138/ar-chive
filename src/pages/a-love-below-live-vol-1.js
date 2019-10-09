@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
+import { UserAgent } from '@quentin-sommer/react-useragent'
 import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
@@ -7,7 +8,7 @@ import { BrowserView, MobileView } from "react-device-detect"
 
 const ALoveBelow = ({ data }) => (
   <Fragment>
-    <BrowserView>
+    <UserAgent computer>
       <ProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
         <Fragment>
           <figure>
@@ -48,8 +49,8 @@ const ALoveBelow = ({ data }) => (
           </figure>
         </Fragment>
       </ProjectPageLayout>
-    </BrowserView>
-    <MobileView>
+    </UserAgent>
+    <UserAgent mobile>
       <MobileProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
         <Fragment>
           <figure>
@@ -96,7 +97,7 @@ const ALoveBelow = ({ data }) => (
           </figure>
         </Fragment>
       </MobileProjectPageLayout>
-    </MobileView>
+    </UserAgent>
   </Fragment>
 )
   
