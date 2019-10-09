@@ -4,7 +4,6 @@ import { UserAgent } from '@quentin-sommer/react-useragent'
 import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
-import { BrowserView, MobileView } from "react-device-detect"
 
 const ALoveBelow = ({ data }) => (
   <Fragment>
