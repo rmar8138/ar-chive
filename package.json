@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.10.17",
+    "@quentin-sommer/react-useragent": "^3.0.0",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.3",
     "gatsby-cli": "^2.7.49",
