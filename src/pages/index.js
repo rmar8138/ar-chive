@@ -1,22 +1,21 @@
 import React, { Component, Fragment } from "react"
+import { UserAgent } from '@quentin-sommer/react-useragent'
 import DesktopHomePage from "../components/desktopHomePage"
 import MobileHomePage from "../components/mobileHomePage"
-import { isBrowser, isMobile } from "react-device-detect"
 
 class Home extends Component {
-  // renderContent = () => {
-  //   if (isMobile) {
-  //     return <MobileHomePage />
-  //   }
-  //   return <DesktopHomePage />
-  // }
-
-  // render() {
-  //   // return isBrowser ? <DesktopHomePage /> : <MobileHomePage />
-  //   return this.renderContent()
-  // }
+  
   render() {
-    return <MobileHomePage />
+    return (
+      <Fragment>
+        <UserAgent computer>
+          <DesktopHomePage />
+        </UserAgent>
+        <UserAgent mobile>
+          <MobileHomePage />
+        </UserAgent>
+      </Fragment>
+    )
   }
 }
 

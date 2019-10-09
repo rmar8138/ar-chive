@@ -1,161 +1,166 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
+import { UserAgent } from '@quentin-sommer/react-useragent'
 import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
-import { isBrowser } from "react-device-detect"
 
-const CoolMacCafe = ({ data }) =>
-  isBrowser ? (
-    <ProjectPageLayout heading="04/Cool Mac Cafe">
-      <Fragment>
-        <Img
-          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
-        />
-      </Fragment>
-      <Fragment>
-        <p>
-          Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
-          inspired dishes for locals and tourists alike. We were commissioned to
-          created a permanent mural for their six metre feature wall that would
-          brighten up the space.
-        </p>
-      </Fragment>
-      <Fragment>
-        <p>
-          We wanted to produce a collaged piece that would resonate with the
-          locals and therefore drew from the structural features of Kirribilli,
-          highlighting the often overlooked details.
-        </p>
-      </Fragment>
-      <Fragment>
-        <Img
-          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
-        />
-      </Fragment>
-      <Fragment>
-        <Img
-          fluid={data.allFile.edges[8].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
-        />
-        <Img
-          fluid={data.allFile.edges[7].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
-        />
-      </Fragment>
-      <Fragment>
-        <Img
-          fluid={data.allFile.edges[2].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "70%", minWidth: "45rem" }}
-        />
-      </Fragment>
-    </ProjectPageLayout>
-  ) : (
-    <MobileProjectPageLayout heading="04/Cool Mac Cafe">
-      <Fragment>
-        <Img
-          fluid={data.allFile.edges[0].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "100%" }}
-        />
-      </Fragment>
-      <Fragment>
-        <p>
-          Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
-          inspired dishes for locals and tourists alike. We were commissioned to
-          created a permanent mural for their six metre feature wall that would
-          brighten up the space.
-        </p>
-      </Fragment>
-      <Fragment>
-        <p>
-          We wanted to produce a collaged piece that would resonate with the
-          locals and therefore drew from the structural features of Kirribilli,
-          highlighting the often overlooked details.
-        </p>
-      </Fragment>
-      <Fragment>
-        <Img
-          fluid={data.allFile.edges[1].node.childImageSharp.fluid}
-          alt="Cool Mac Cafe"
-          style={{ width: "100%" }}
-        />
-      </Fragment>
-      <Fragment>
-        <figure>
+const CoolMacCafe = ({ data }) => (
+  <Fragment>
+    <UserAgent computer>
+      <ProjectPageLayout heading="04/Cool Mac Cafe">
+        <Fragment>
+          <Img
+            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+            alt="Cool Mac Cafe"
+            style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
+          />
+        </Fragment>
+        <Fragment>
+          <p>
+            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
+            inspired dishes for locals and tourists alike. We were commissioned to
+            created a permanent mural for their six metre feature wall that would
+            brighten up the space.
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            We wanted to produce a collaged piece that would resonate with the
+            locals and therefore drew from the structural features of Kirribilli,
+            highlighting the often overlooked details.
+          </p>
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+            alt="Cool Mac Cafe"
+            style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
+          />
+        </Fragment>
+        <Fragment>
           <Img
             fluid={data.allFile.edges[8].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "45%", marginTop: "-15rem", marginRight: "1rem" }}
+            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
           />
           <Img
             fluid={data.allFile.edges[7].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "45%", marginTop: "15rem", marginLeft: "1rem" }}
+            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
           />
-        </figure>
-      </Fragment>
-      <Fragment>
-        <figure
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            marginBottom: "-1rem",
-          }}
-        >
+        </Fragment>
+        <Fragment>
           <Img
-            fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+            fluid={data.allFile.edges[2].node.childImageSharp.fluid}
             alt="Cool Mac Cafe"
+            style={{ width: "70%", minWidth: "45rem" }}
+          />
+        </Fragment>
+      </ProjectPageLayout>
+    </UserAgent>
+    <UserAgent mobile>
+      <MobileProjectPageLayout heading="04/Cool Mac Cafe">
+        <Fragment>
+          <Img
+            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+            alt="Cool Mac Cafe"
+            style={{ width: "100%" }}
+          />
+        </Fragment>
+        <Fragment>
+          <p>
+            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
+            inspired dishes for locals and tourists alike. We were commissioned to
+            created a permanent mural for their six metre feature wall that would
+            brighten up the space.
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            We wanted to produce a collaged piece that would resonate with the
+            locals and therefore drew from the structural features of Kirribilli,
+            highlighting the often overlooked details.
+          </p>
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+            alt="Cool Mac Cafe"
+            style={{ width: "100%" }}
+          />
+        </Fragment>
+        <Fragment>
+          <figure>
+            <Img
+              fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+              alt="Cool Mac Cafe"
+              style={{ width: "45%", marginTop: "-15rem", marginRight: "1rem" }}
+            />
+            <Img
+              fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+              alt="Cool Mac Cafe"
+              style={{ width: "45%", marginTop: "15rem", marginLeft: "1rem" }}
+            />
+          </figure>
+        </Fragment>
+        <Fragment>
+          <figure
             style={{
-              width: "40%",
-              marginBottom: "2rem",
-              alignSelf: "center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              marginBottom: "-1rem",
             }}
-          />
-          <Img
-            className="img2"
-            fluid={data.allFile.edges[5].node.childImageSharp.fluid}
-            alt="Cool Mac Cafe"
-            style={{ width: "60%", alignSelf: "flex-end" }}
-          />
-        </figure>
-      </Fragment>
-      <Fragment>
-        <figure
-          style={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Img
-            className="img3"
-            fluid={data.allFile.edges[4].node.childImageSharp.fluid}
-            alt="Cool Mac Cafe"
+          >
+            <Img
+              fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+              alt="Cool Mac Cafe"
+              style={{
+                width: "40%",
+                marginBottom: "2rem",
+                alignSelf: "center",
+              }}
+            />
+            <Img
+              className="img2"
+              fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+              alt="Cool Mac Cafe"
+              style={{ width: "60%", alignSelf: "flex-end" }}
+            />
+          </figure>
+        </Fragment>
+        <Fragment>
+          <figure
             style={{
-              marginBottom: "2rem",
-              marginRight: "2rem",
-              alignSelf: "flex-start",
-              width: "60%",
+              display: "flex",
+              flexDirection: "column",
             }}
-          />
-          <Img
-            className="img4"
-            fluid={data.allFile.edges[3].node.childImageSharp.fluid}
-            alt="Cool Mac Cafe"
-            style={{ width: "40%", marginLeft: "2rem", alignSelf: "flex-end" }}
-          />
-        </figure>
-      </Fragment>
-    </MobileProjectPageLayout>
-  )
+          >
+            <Img
+              className="img3"
+              fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+              alt="Cool Mac Cafe"
+              style={{
+                marginBottom: "2rem",
+                marginRight: "2rem",
+                alignSelf: "flex-start",
+                width: "60%",
+              }}
+            />
+            <Img
+              className="img4"
+              fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+              alt="Cool Mac Cafe"
+              style={{ width: "40%", marginLeft: "2rem", alignSelf: "flex-end" }}
+            />
+          </figure>
+        </Fragment>
+      </MobileProjectPageLayout>
+    </UserAgent>
+  </Fragment>
+)
+  
 
 export default CoolMacCafe
 
