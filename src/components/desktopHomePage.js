@@ -19,6 +19,7 @@ const vaughanMills = require("../assets/images/web/vaughan-mills/1.png")
 const spectre = require("../assets/images/web/spectre/1.png")
 const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
 const otherWorlds = require("../assets/images/web/other-worlds/1.png")
+const kurumac = require("../assets/images/web/kurumac/1.png")
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -119,6 +120,11 @@ export class desktopHomePage extends Component {
       },
       {
         title: "Other Worlds",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Kurumac",
         spotlight: false,
         hovered: false,
       },
@@ -248,6 +254,14 @@ export class desktopHomePage extends Component {
             left="70%"
             width="40%"
             hovered={this.state.projects[9].hovered}
+          />
+          <Image
+            src={kurumac}
+            alt="Kurumac"
+            top="50%"
+            left="20%"
+            width="30%"
+            hovered={this.state.projects[10].hovered}
           />
           <Navbar />
         </Container>

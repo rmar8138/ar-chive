@@ -127,6 +127,12 @@ export class MobileHomePage extends Component {
         spotlight: false,
         image: this.props.data.img10.childImageSharp.fluid,
       },
+      {
+        title: "Kurumac",
+        clicked: false,
+        spotlight: false,
+        image: this.props.data.img11.childImageSharp.fluid,
+      },
     ],
   }
 
@@ -296,6 +302,13 @@ export default props => (
           }
         }
         img10: file(relativePath: { eq: "web/other-worlds/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img11: file(relativePath: { eq: "web/kurumac/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
