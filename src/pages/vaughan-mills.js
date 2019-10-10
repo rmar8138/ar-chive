@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { UserAgent } from '@quentin-sommer/react-useragent'
+import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
@@ -19,8 +19,8 @@ const VaughanMills = ({ data }) => (
         <Fragment>
           <p>
             Vaughan Mills is a stylist who we have worked closely with across a
-            variety of creative projects. The following series of images are from
-            recent photoshoots featuring his vintage collection.
+            variety of creative projects. The following series of images are
+            from recent photoshoots featuring his vintage collection.
           </p>
         </Fragment>
         <Fragment>
@@ -163,8 +163,8 @@ const VaughanMills = ({ data }) => (
         <Fragment>
           <p>
             Vaughan Mills is a stylist who we have worked closely with across a
-            variety of creative projects. The following series of images are from
-            recent photoshoots featuring his vintage collection.
+            variety of creative projects. The following series of images are
+            from recent photoshoots featuring his vintage collection.
           </p>
         </Fragment>
         <Fragment>

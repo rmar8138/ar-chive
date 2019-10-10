@@ -11,7 +11,7 @@ const CoolMacCafe = ({ data }) => (
       <ProjectPageLayout heading="04/Cool Mac Cafe">
         <Fragment>
           <Img
-            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+            fluid={data.img1.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
           />
@@ -33,26 +33,26 @@ const CoolMacCafe = ({ data }) => (
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+            fluid={data.img2.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "70%", minWidth: "40rem", maxWidth: "70rem" }}
           />
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+            fluid={data.img3.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
+            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem", marginRight: "1rem" }}
           />
           <Img
-            fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+            fluid={data.img4.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem" }}
+            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem", marginLeft: "1rem" }}
           />
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+            fluid={data.img9.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "70%", minWidth: "45rem" }}
           />
@@ -63,7 +63,7 @@ const CoolMacCafe = ({ data }) => (
       <MobileProjectPageLayout heading="04/Cool Mac Cafe">
         <Fragment>
           <Img
-            fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+            fluid={data.img1.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "100%" }}
           />
@@ -85,7 +85,7 @@ const CoolMacCafe = ({ data }) => (
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+            fluid={data.img2.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             style={{ width: "100%" }}
           />
@@ -93,12 +93,12 @@ const CoolMacCafe = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+              fluid={data.img3.childImageSharp.fluid}
               alt="Cool Mac Cafe"
               style={{ width: "45%", marginTop: "-15rem", marginRight: "1rem" }}
             />
             <Img
-              fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+              fluid={data.img4.childImageSharp.fluid}
               alt="Cool Mac Cafe"
               style={{ width: "45%", marginTop: "15rem", marginLeft: "1rem" }}
             />
@@ -114,7 +114,7 @@ const CoolMacCafe = ({ data }) => (
             }}
           >
             <Img
-              fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+              fluid={data.img5.childImageSharp.fluid}
               alt="Cool Mac Cafe"
               style={{
                 width: "40%",
@@ -124,7 +124,7 @@ const CoolMacCafe = ({ data }) => (
             />
             <Img
               className="img2"
-              fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+              fluid={data.img6.childImageSharp.fluid}
               alt="Cool Mac Cafe"
               style={{ width: "60%", alignSelf: "flex-end" }}
             />
@@ -139,7 +139,7 @@ const CoolMacCafe = ({ data }) => (
           >
             <Img
               className="img3"
-              fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+              fluid={data.img7.childImageSharp.fluid}
               alt="Cool Mac Cafe"
               style={{
                 marginBottom: "2rem",
@@ -150,7 +150,7 @@ const CoolMacCafe = ({ data }) => (
             />
             <Img
               className="img4"
-              fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+              fluid={data.img8.childImageSharp.fluid}
               alt="Cool Mac Cafe"
               style={{ width: "40%", marginLeft: "2rem", alignSelf: "flex-end" }}
             />
@@ -166,15 +166,66 @@ export default CoolMacCafe
 
 export const query = graphql`
   query {
-    allFile(filter: { relativeDirectory: { eq: "web/cool-mac-cafe" } }) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+    img1: file(relativePath: { eq: "web/cool-mac-cafe/1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "web/cool-mac-cafe/2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img3: file(relativePath: { eq: "web/cool-mac-cafe/3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img4: file(relativePath: { eq: "web/cool-mac-cafe/4.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "web/cool-mac-cafe/5.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img6: file(relativePath: { eq: "web/cool-mac-cafe/6.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img7: file(relativePath: { eq: "web/cool-mac-cafe/7.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img8: file(relativePath: { eq: "web/cool-mac-cafe/8.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img9: file(relativePath: { eq: "web/cool-mac-cafe/9.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
