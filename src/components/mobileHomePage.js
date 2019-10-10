@@ -215,7 +215,11 @@ export class MobileHomePage extends Component {
                 <Img fluid={this.state.projects[index].image} />
               </StyledLink>
             ))}
-            <Logo src={archiveLogo} alt="ar-chive logo" />
+            <Logo
+              src={archiveLogo}
+              alt="ar-chive logo"
+              onClick={this.toggleMenu}
+            />
             <AllProjectsLink to="/projects">All</AllProjectsLink>
           </Container>
         )}
