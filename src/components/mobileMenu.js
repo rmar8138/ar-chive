@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import ArchiveLogoSmall from "../assets/logos/red.svg"
+import archiveLogo from "../assets/logos/ar.svg"
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -13,14 +13,15 @@ const Container = styled.div`
 `
 
 const Menu = styled.div`
-  padding: 2rem 2.5rem;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1000;
-  position: absolute;
   background-color: ${props => props.theme.lightGrey};
+  height: 100vh;
+
+  /* z-index: 1000;
+  position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+  display: flex;
+  flex-direction: column;
 
   ul {
     list-style: none;
@@ -40,11 +41,11 @@ const MobileNav = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   z-index: 100000;
+`
 
-  img {
-    width: 7rem;
-    cursor: pointer;
-  }
+const Logo = styled.img`
+  width: 5.5rem;
+  position: absolute;
 `
 
 export default props => (
@@ -55,19 +56,16 @@ export default props => (
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link>Instagram</Link>
+          <a href="https://www.instagram.com/ar.chive_/">Instagram</a>
         </li>
         <li>
           <Link>Shop</Link>
         </li>
-        <li>
-          <Link>Contact</Link>
-        </li>
       </ul>
       <MobileNav>
-        <img
-          src={ArchiveLogoSmall}
-          alt="Archive Studio"
+        <Logo
+          src={archiveLogo}
+          alt="ar-chive logo"
           onClick={props.toggleMenu}
         />
       </MobileNav>

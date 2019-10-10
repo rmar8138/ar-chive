@@ -10,6 +10,13 @@ const Micra = ({ data }) => (
     <UserAgent computer>
       <ProjectPageLayout heading="05/Micra">
         <Fragment>
+          <Img
+            fluid={data.img1.childImageSharp.fluid}
+            alt="Micra"
+            style={{ width: "50%", minWidth: "30rem", maxWidth: "50rem" }}
+          />
+        </Fragment>
+        <Fragment>
           <p>
             Micra brings together multi-instrumentalist, Robbie Cain and
             singer-guitarist, Ivana Kay. <br />
@@ -69,6 +76,13 @@ const Micra = ({ data }) => (
     </UserAgent>
     <UserAgent mobile>
       <MobileProjectPageLayout heading="05/Micra">
+        <Fragment>
+          <Img
+            fluid={data.img1.childImageSharp.fluid}
+            alt="Micra"
+            style={{ width: "50%", minWidth: "30rem", maxWidth: "50rem" }}
+          />
+        </Fragment>
         <Fragment>
           <p>
             Micra brings together multi-instrumentalist, Robbie Cain and
