@@ -18,6 +18,7 @@ const vaughanMills = require("../assets/images/web/vaughan-mills/1.png")
 const spectre = require("../assets/images/web/spectre/1.png")
 const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
 const otherWorlds = require("../assets/images/web/other-worlds/1.png")
+const kurumac = require("../assets/images/web/kurumac/1.png")
 
 const Container = styled.div`
   position: relative;
@@ -126,6 +127,12 @@ class Projects extends Component {
         spotlight: false,
         hovered: false,
         image: otherWorlds,
+      },
+      {
+        title: "Kurumac",
+        spotlight: false,
+        hovered: false,
+        image: kurumac,
       },
     ],
   }
