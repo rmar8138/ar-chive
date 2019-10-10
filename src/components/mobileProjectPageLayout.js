@@ -5,7 +5,6 @@ import { BackButton } from "./buttons"
 import SEO from "../components/seo"
 
 const Container = styled.div`
-  padding: 2rem 2.5rem;
   height: 100vh;
   overflow: scroll;
 
@@ -14,10 +13,6 @@ const Container = styled.div`
     font-family: "Grotesk Regular";
     font-weight: 300;
     z-index: 100000000;
-  }
-
-  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
-    padding-right: 2.5rem;
   }
 `
 

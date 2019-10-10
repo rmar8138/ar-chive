@@ -21,10 +21,12 @@ const MontelBlac = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Montel Blac is a beatmaker and producer from Sydney. ar-chive worked
-            with Montel to create the identity of his self titled EP. Our goal was
-            to succinctly showcase both the sound and visual design in a way that
-            heightens Montel’s unearthly sound and off-kilter production style.
+            Montel’s self-titled debut EP sonically melds his style of off-kilter production, rhythmic vocal chops and samples to create a body of work that delivers a short insight into his world. ar–chive was briefed to give this project its visual anchor. 
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            We approached this project with the intention to create an artwork that fuses the nature of Montel’s dark hitting sound scapes to dictate our intuitive mark making approach putting ink onto paper. We experimented with a camera and a light source to sample and manipulate the drawing into its finished form.
           </p>
         </Fragment>
         <Fragment>
@@ -54,15 +56,17 @@ const MontelBlac = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Montel Blac is a beatmaker and producer from Sydney. ar-chive worked
-            with Montel to create the identity of his self titled EP. Our goal was
-            to succinctly showcase both the sound and visual design in a way that
-            heightens Montel’s unearthly sound and off-kilter production style.
+            Montel’s self-titled debut EP sonically melds his style of off-kilter production, rhythmic vocal chops and samples to create a body of work that delivers a short insight into his world. ar–chive was briefed to give this project its visual anchor. 
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            We approached this project with the intention to create an artwork that fuses the nature of Montel’s dark hitting sound scapes to dictate our intuitive mark making approach putting ink onto paper. We experimented with a camera and a light source to sample and manipulate the drawing into its finished form.
           </p>
         </Fragment>
         <Fragment>
           <figure>
-            <video autoPlay loop muted>
+            <video loop muted controls="controls">
               <source
                 src={vid1}
                 type="video/mp4"
@@ -73,7 +77,7 @@ const MontelBlac = ({ data }) => (
         </Fragment>
         <Fragment>
           <figure>
-            <video autoPlay loop muted>
+            <video loop muted controls="controls">
               <source
                 src={vid2}
                 type="video/mp4"
