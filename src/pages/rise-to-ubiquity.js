@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import React, { Fragment } from "react"
 import Img from "gatsby-image"
-import { UserAgent } from '@quentin-sommer/react-useragent'
+import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
@@ -12,7 +12,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+              fluid={data.img1.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
@@ -20,23 +20,17 @@ const RiseToUbiquity = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            A solo exhibition by Rowland Reyes Martinez, Rise To Ubiquity brought
-            light to the unnoticed, the serendipitous encounters and daily
-            occurrences within his landscape.
-          </p>
-        </Fragment>
-        <Fragment>
-          <p>
-            ar-chive curated and produced the exhibition held on 15 February 2019
-            at 9 Ryder Street, Darlinghurst in Sydney. We also designed exhibition
-            posters, his self titled retrospective publication, catalogue, show
-            description flyer and website to accompany the exhibition.
+            A solo exhibition by Rowland Reyes Martinez, Rise To Ubiquity was an
+            exploration of the photographic experience. ar-chive curated and
+            produced the exhibition held on 15 February 2019 at 9 Ryder Street,
+            Darlinghurst in Sydney. We also designed a publication, catalogue,
+            show description flyer and website to accompany the exhibition.
           </p>
         </Fragment>
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+              fluid={data.img2.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
@@ -45,7 +39,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+              fluid={data.img3.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
@@ -54,13 +48,13 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[11].node.childImageSharp.fluid}
-              style={{ width: "40%", height: "auto" }}
+              fluid={data.img4.childImageSharp.fluid}
+              style={{ width: "40%", height: "auto", marginRight: "1rem" }}
               alt="Rise to Ubiquity"
             />
             <Img
-              fluid={data.allFile.edges[10].node.childImageSharp.fluid}
-              style={{ width: "40%", height: "auto" }}
+              fluid={data.img5.childImageSharp.fluid}
+              style={{ width: "40%", height: "auto", marginLeft: "1rem" }}
               alt="Rise to Ubiquity"
             />
           </figure>
@@ -68,16 +62,48 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[9].node.childImageSharp.fluid}
-              style={{ width: "40%", height: "auto" }}
+              fluid={data.img6.childImageSharp.fluid}
+              style={{ width: "40%", height: "auto", marginRight: "1rem" }}
               alt="Rise to Ubiquity"
             />
             <Img
-              fluid={data.allFile.edges[8].node.childImageSharp.fluid}
-              style={{ width: "40%", height: "auto" }}
+              fluid={data.img7.childImageSharp.fluid}
+              style={{ width: "40%", height: "auto", marginLeft: "1rem" }}
               alt="Rise to Ubiquity"
             />
           </figure>
+        </Fragment>
+        <Fragment>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-start",
+            }}
+          >
+            <Img
+              fluid={data.img8.childImageSharp.fluid}
+              style={{ width: "25%", height: "auto", marginRight: "2rem" }}
+              alt="Rise to Ubiquity"
+            />
+            <Img
+              fluid={data.img9.childImageSharp.fluid}
+              style={{ width: "25%", height: "auto", marginRight: "2rem" }}
+              alt="Rise to Ubiquity"
+            />
+            <Img
+              fluid={data.img10.childImageSharp.fluid}
+              style={{ width: "25%", height: "auto" }}
+              alt="Rise to Ubiquity"
+            />
+          </div>
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img11.childImageSharp.fluid}
+            style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
+            alt="Rise to Ubiquity"
+          />
         </Fragment>
         <Fragment>
           <p>Video Recap</p>
@@ -88,21 +114,21 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+              fluid={data.img12.childImageSharp.fluid}
               alt="Rise to Ubiquity"
-              style={{ width: "45%" }}
+              style={{ width: "45%", marginRight: "1rem" }}
             />
             <Img
-              fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+              fluid={data.img13.childImageSharp.fluid}
               alt="Rise to Ubiquity"
-              style={{ width: "30%" }}
+              style={{ width: "30%", marginLeft: "1rem" }}
             />
           </figure>
         </Fragment>
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+              fluid={data.img14.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
@@ -111,7 +137,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+              fluid={data.img15.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
@@ -120,7 +146,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+              fluid={data.img16.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
@@ -133,7 +159,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+              fluid={data.img1.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "100%" }}
             />
@@ -141,23 +167,17 @@ const RiseToUbiquity = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            A solo exhibition by Rowland Reyes Martinez, Rise To Ubiquity brought
-            light to the unnoticed, the serendipitous encounters and daily
-            occurrences within his landscape.
-          </p>
-        </Fragment>
-        <Fragment>
-          <p>
-            ar-chive curated and produced the exhibition held on 15 February 2019
-            at 9 Ryder Street, Darlinghurst in Sydney. We also designed exhibition
-            posters, his self titled retrospective publication, catalogue, show
-            description flyer and website to accompany the exhibition.
+            A solo exhibition by Rowland Reyes Martinez, Rise To Ubiquity was an
+            exploration of the photographic experience. ar-chive curated and
+            produced the exhibition held on 15 February 2019 at 9 Ryder Street,
+            Darlinghurst in Sydney. We also designed a publication, catalogue,
+            show description flyer and website to accompany the exhibition.
           </p>
         </Fragment>
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+              fluid={data.img2.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "100%", marginRight: "0rem" }}
             />
@@ -166,7 +186,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[2].node.childImageSharp.fluid}
+              fluid={data.img3.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "100%", marginRight: "0rem" }}
             />
@@ -175,7 +195,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[11].node.childImageSharp.fluid}
+              fluid={data.img4.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
               alt="Rise to Ubiquity"
             />
@@ -184,7 +204,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[10].node.childImageSharp.fluid}
+              fluid={data.img5.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
               alt="Rise to Ubiquity"
             />
@@ -193,7 +213,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[9].node.childImageSharp.fluid}
+              fluid={data.img6.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
               alt="Rise to Ubiquity"
             />
@@ -202,11 +222,39 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[8].node.childImageSharp.fluid}
+              fluid={data.img7.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
               alt="Rise to Ubiquity"
             />
           </figure>
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img8.childImageSharp.fluid}
+            style={{ width: "80%", marginRight: "auto" }}
+            alt="Rise to Ubiquity"
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img9.childImageSharp.fluid}
+            style={{ width: "80%", marginRight: "auto" }}
+            alt="Rise to Ubiquity"
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img10.childImageSharp.fluid}
+            style={{ width: "80%", marginRight: "auto" }}
+            alt="Rise to Ubiquity"
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img11.childImageSharp.fluid}
+            style={{ width: "80%", marginLeft: "auto" }}
+            alt="Rise to Ubiquity"
+          />
         </Fragment>
         <Fragment>
           <p>Video Recap</p>
@@ -217,7 +265,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[7].node.childImageSharp.fluid}
+              fluid={data.img12.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "80%" }}
             />
@@ -226,7 +274,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[6].node.childImageSharp.fluid}
+              fluid={data.img13.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "80%" }}
             />
@@ -235,7 +283,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[5].node.childImageSharp.fluid}
+              fluid={data.img14.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "100%" }}
             />
@@ -244,7 +292,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[4].node.childImageSharp.fluid}
+              fluid={data.img15.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "100%" }}
             />
@@ -253,7 +301,7 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.allFile.edges[3].node.childImageSharp.fluid}
+              fluid={data.img16.childImageSharp.fluid}
               alt="Rise to Ubiquity"
               style={{ width: "100%" }}
             />
@@ -268,15 +316,115 @@ export default RiseToUbiquity
 
 export const query = graphql`
   query {
-    allFile(filter: { relativeDirectory: { eq: "web/rise-to-ubiquity" } }) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+    img1: file(relativePath: { eq: "web/rise-to-ubiquity/1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img2: file(relativePath: { eq: "web/rise-to-ubiquity/2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img3: file(relativePath: { eq: "web/rise-to-ubiquity/3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img4: file(relativePath: { eq: "web/rise-to-ubiquity/4.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "web/rise-to-ubiquity/5.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img6: file(relativePath: { eq: "web/rise-to-ubiquity/6.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img7: file(relativePath: { eq: "web/rise-to-ubiquity/7.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img8: file(relativePath: { eq: "web/rise-to-ubiquity/8.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img9: file(relativePath: { eq: "web/rise-to-ubiquity/9.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img10: file(relativePath: { eq: "web/rise-to-ubiquity/10.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img11: file(relativePath: { eq: "web/rise-to-ubiquity/11.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img12: file(relativePath: { eq: "web/rise-to-ubiquity/12.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img13: file(relativePath: { eq: "web/rise-to-ubiquity/13.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img14: file(relativePath: { eq: "web/rise-to-ubiquity/14.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img15: file(relativePath: { eq: "web/rise-to-ubiquity/15.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img16: file(relativePath: { eq: "web/rise-to-ubiquity/16.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
