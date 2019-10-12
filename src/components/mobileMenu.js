@@ -45,7 +45,7 @@ const MobileNav = styled.div`
 
 const Logo = styled.img`
   width: 5.5rem;
-  position: absolute;
+  position: fixed;
 `
 
 export default props => (

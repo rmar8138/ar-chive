@@ -58,7 +58,7 @@ const StyledLink = styled(Link)`
 
 const Logo = styled.img`
   width: 5.5rem;
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   left: 2.5rem;
 `
