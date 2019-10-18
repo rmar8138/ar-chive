@@ -38,12 +38,12 @@ const ALoveBelow = ({ data }) => (
             <Img
               fluid={data.img3.childImageSharp.fluid}
               alt="a Love Below: Live! Vol. 1 - 3"
-              style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem" }}
+              style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem", marginRight: "1rem" }}
             />
             <Img
               fluid={data.img4.childImageSharp.fluid}
               alt="a Love Below: Live! Vol. 1 - 4"
-              style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem" }}
+              style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem", marginLeft: "1rem" }}
             />
           </figure>
         </Fragment>

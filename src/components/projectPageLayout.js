@@ -73,6 +73,11 @@ const Slide = styled.div`
     height: 70vh;
     max-width: 100%;
     z-index: 1000000;
+    outline: none;
+  }
+
+  iframe {
+    z-index: 1000000;
   }
 `
 

@@ -131,6 +131,10 @@ const Slide = styled.div`
     height: 70vh;
     max-width: 100%;
   }
+
+  iframe {
+    z-index: 1000000;
+  }
 `
 
 class MobileProjectPageLayout extends Component {

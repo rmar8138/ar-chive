@@ -5,6 +5,8 @@ import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
+const vid1 = require("../assets/videos/rise-to-ubiquity/1.mp4")
+
 const RiseToUbiquity = ({ data }) => (
   <Fragment>
     <UserAgent computer>
@@ -106,7 +108,13 @@ const RiseToUbiquity = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>Video Recap</p>
+          <video autoPlay loop muted controls="controls">
+            <source
+              src={vid1}
+              type="video/mp4"
+              style={{ maxWidth: "50%", minWidth: "20rem" }}
+            />
+          </video>
         </Fragment>
         <Fragment>
           <p>Rise to Ubiquity video</p>
@@ -257,7 +265,13 @@ const RiseToUbiquity = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>Video Recap</p>
+          <video autoPlay loop muted controls="controls">
+            <source
+              src={vid1}
+              type="video/mp4"
+              style={{ maxWidth: "50%", minWidth: "20rem" }}
+            />
+          </video>
         </Fragment>
         <Fragment>
           <p>Rise to Ubiquity video</p>

@@ -5,8 +5,7 @@ import MediaQuery from "react-responsive"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import MobileMenu from "../components/mobileMenu"
-import archiveLogo from "../assets/logos/blue.svg"
-import archiveLogoSmall from "../assets/logos/red.svg"
+import { BackButton } from "../components/buttons"
 
 import SEO from "../components/seo"
 
@@ -32,12 +31,8 @@ const CopyText = styled.div`
     font-size: 2rem;
   }
 
-  img {
-    width: 13rem;
-
-    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
-      width: 9rem;
-    }
+  span {
+    color: ${props => props.theme.darkBlue};
   }
 `
 
@@ -83,15 +78,12 @@ class About extends Component {
               <Fragment>
                 <CopyText>
                   <p>
-                    <Link to="/">
-                      <img src={archiveLogo} alt="ar-chive logo" />
-                    </Link>{" "}
-                    is an independent creative partnership founded by Angela Tam
-                    and Rowland Reyes Martinez where concept driven ideas meet
-                    thoughtful design. Grounded in empathy, intention, and an
-                    eye for detail, our artistic approach leads us to projects
-                    within the spheres of art direction, strategy, design,
-                    photography and curation.
+                    <span>ar–chive</span> is a creative partnership by Angela
+                    Tam and Rowland Reyes Martinez. It is a collection of our
+                    ideas and approach where art and direction intersect. We are
+                    multidisciplinary artists with a design-driven process and
+                    an eye for detail. Our aim as a studio is to evoke emotion
+                    and to spark conversation through any given brief.
                   </p>
                 </CopyText>
                 <MediaQuery minDeviceWidth={640}>
@@ -100,16 +92,9 @@ class About extends Component {
                     <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
                   </Contact>
                 </MediaQuery>
+                <BackButton to="/">Back</BackButton>
               </Fragment>
             )}
-
-            <MediaQuery maxDeviceWidth={640}>
-              <LogoSmall
-                onClick={this.toggleMenu}
-                src={archiveLogoSmall}
-                alt="Archive Studio"
-              />
-            </MediaQuery>
           </Container>
         </Layout>
       </PageTransition>

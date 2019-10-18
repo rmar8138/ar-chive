@@ -58,7 +58,9 @@ export default () => (
           <Link to="/about">about</Link>
         </li>
         <li>
-          <a href="/">instagram</a>
+          <a href="https://www.instagram.com/ar.chive_/" target="_blank">
+            instagram
+          </a>
         </li>
         <li>
           <a href="/">shop</a>
