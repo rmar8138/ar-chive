@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `ar-chive`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `ar–chive`,
+    description: `ar–chive is a creative partnership by Angela Tam and Rowland Reyes Martinez. It is a collection of our ideas and approach where art and direction intersect. We are multidisciplinary artists with a design-driven process and an eye for detail. Our aim as a studio is to evoke emotion and to spark conversation through any given brief.`,
     author: `@gatsbyjs`,
   },
   plugins: [

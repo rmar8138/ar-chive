@@ -33,10 +33,6 @@ const ProjectsList = styled.ul`
   li:not(:last-child) {
     margin-right: 2rem;
   }
-
-  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
-    font-size: 3.2rem;
-  }
 `
 
 const AllProjectsLink = styled(Link)`

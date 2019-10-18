@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
-import { UserAgent } from '@quentin-sommer/react-useragent'
+import { UserAgent } from "@quentin-sommer/react-useragent"
 import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
@@ -14,36 +14,81 @@ const ALoveBelow = ({ data }) => (
             <Img
               fluid={data.img1.childImageSharp.fluid}
               style={{ width: "40%", minWidth: "30rem", maxWidth: "40rem" }}
+              alt="Poster artwork"
             />
           </figure>
         </Fragment>
         <Fragment>
           <p>
-            Poster for a Love Below: Live! Volume 1, an afternoon of original
-            beats and painting created live from Coolmac Cafe in Kirribilli.
-            Featuring wa*sei, Angela Tam, Kase Avila, Montel Blac and Apollo 4000.
+            <span>
+              <a
+                href="https://www.youtube.com/watch?v=cRD46ww3Uv8&t=2329s"
+                target="_blank"
+                style={{
+                  zIndex: "100000",
+                  position: "relative",
+                  color: "rgba(39, 41, 99)",
+                }}
+              >
+                a Love Below: Live!
+              </a>{" "}
+              From Coolmac Cafe is the first installment of live beats and
+              painting by a Love Below - a platform dedicated to building and
+              showcasing artists to local Australian and global communities.
+            </span>{" "}
+            <span>
+              With a diverse range of beat makers and artists involved, the
+              challenge was to create a uniform branding that would translate
+              the sound scapes and art processes for this event.
+            </span>
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            <span>
+              To represent this, ar–chive designed collage inspired shapes with
+              free form hand-written typography in addition with the video live
+              recap of the event.
+            </span>{" "}
+            <span>
+              This event brought awareness to the Kirribilli community with
+              customers of Coolmac Cafe and surrounding pedestrians engaged and
+              involved in the process of the artists.
+            </span>
           </p>
         </Fragment>
         <Fragment>
           <figure>
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 2"
+              alt="Rowland and Angela painting"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "70rem" }}
             />
           </figure>
         </Fragment>
         <Fragment>
-          <figure style={{ justifyContent: "flex-start", paddingLeft: "2.5rem" }}>
+          <figure
+            style={{ justifyContent: "flex-start", paddingLeft: "2.5rem" }}
+          >
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 3"
-              style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem", marginRight: "1rem" }}
+              alt="Inside Coolmac Cafe"
+              style={{
+                width: "30%",
+                minWidth: "15rem",
+                maxWidth: "35rem",
+                marginRight: "1rem",
+              }}
             />
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 4"
-              style={{ width: "30%", minWidth: "15rem", maxWidth: "35rem", marginLeft: "1rem" }}
+              alt="Inside Coolmac Cafe"
+              style={{
+                width: "30%",
+                minWidth: "15rem",
+                maxWidth: "35rem",
+                marginLeft: "1rem",
+              }}
             />
           </figure>
         </Fragment>
@@ -55,7 +100,7 @@ const ALoveBelow = ({ data }) => (
           <figure>
             <Img
               fluid={data.img1.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 1"
+              alt="Poster artwork"
               style={{ width: "80%" }}
             />
           </figure>
@@ -64,14 +109,15 @@ const ALoveBelow = ({ data }) => (
           <p>
             Poster for a Love Below: Live! Volume 1, an afternoon of original
             beats and painting created live from Coolmac Cafe in Kirribilli.
-            Featuring wa*sei, Angela Tam, Kase Avila, Montel Blac and Apollo 4000.
+            Featuring wa*sei, Angela Tam, Kase Avila, Montel Blac and Apollo
+            4000.
           </p>
         </Fragment>
         <Fragment>
           <figure>
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 2"
+              alt="Rowland and Angela painting"
               style={{ width: "100%" }}
             />
             {/* <figcaption>Photos by Naylin Aung</figcaption> */}
@@ -81,7 +127,7 @@ const ALoveBelow = ({ data }) => (
           <figure>
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 3"
+              alt="Inside Coolmac Cafe"
               style={{ width: "80%" }}
             />
           </figure>
@@ -90,7 +136,7 @@ const ALoveBelow = ({ data }) => (
           <figure>
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt="a Love Below: Live! Vol. 1 - 4"
+              alt="Inside Coolmac Cafe"
               style={{ width: "80%", marginLeft: "auto" }}
             />
           </figure>
@@ -99,7 +145,6 @@ const ALoveBelow = ({ data }) => (
     </UserAgent>
   </Fragment>
 )
-  
 
 export default ALoveBelow
 

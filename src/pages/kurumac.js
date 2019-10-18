@@ -117,8 +117,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img2.childImageSharp.fluid}
             alt=""
             style={{
-              width: "60%",
-              minWidth: "40rem",
+              width: "100%",
             }}
           />
         </Fragment>
@@ -137,7 +136,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img3.childImageSharp.fluid}
             alt=""
             style={{
-              width: "80%",
+              width: "60%",
             }}
           />
         </Fragment>
@@ -146,8 +145,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img4.childImageSharp.fluid}
             alt=""
             style={{
-              width: "20%",
-              minWidth: "20rem",
+              width: "60%",
             }}
           />
         </Fragment>
@@ -156,8 +154,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img5.childImageSharp.fluid}
             alt=""
             style={{
-              width: "20%",
-              minWidth: "20rem",
+              width: "60%",
             }}
           />
         </Fragment>
@@ -166,8 +163,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img6.childImageSharp.fluid}
             alt=""
             style={{
-              width: "20%",
-              minWidth: "20rem",
+              width: "60%",
             }}
           />
         </Fragment>
@@ -176,8 +172,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img7.childImageSharp.fluid}
             alt=""
             style={{
-              width: "20%",
-              minWidth: "20rem",
+              width: "60%",
             }}
           />
         </Fragment>
@@ -194,7 +189,7 @@ const Kurumac = ({ data }) => (
             fluid={data.img8.childImageSharp.fluid}
             alt=""
             style={{
-              width: "100%",
+              width: "90%",
               minWidth: "20rem",
             }}
           />

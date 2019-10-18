@@ -9,6 +9,7 @@ export const BackButton = styled(Link)`
   bottom: 2rem;
   right: 2.5rem;
   z-index: 10000000;
+  outline: none;
 `
 export const AllProjectsLink = styled(Link)`
   font-family: "Grotesk Regular";

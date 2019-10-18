@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { BackButton } from "../components/buttons"
+import archiveLogo from "../assets/logos/ar.svg"
 
 /* IMPORTS */
 
@@ -41,6 +42,11 @@ const Slide = styled.div`
     font-family: "Grotesk Light";
     font-size: ${props => props.theme.fs_medium};
     line-height: 1.4;
+
+    span {
+      display: block;
+      margin-bottom: 1rem;
+    }
 
     @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
       width: 100%;
@@ -126,6 +132,15 @@ const RightScrollDiv = styled.div`
   z-index: 1000;
 `
 
+const Logo = styled.div`
+  position: absolute;
+  bottom: 2rem;
+  left: 2.5rem;
+  img {
+    width: 5rem;
+  }
+`
+
 class ProjectPageLayout extends Component {
   state = {
     value: 0,
@@ -190,6 +205,9 @@ class ProjectPageLayout extends Component {
             <LeftScrollDiv onClick={this.changeSlideLeft} />
             <RightScrollDiv onClick={this.changeSlideRight} />
           </ContentContainer>
+          <Logo>
+            <img src={archiveLogo} alt="ar-chive logo" />
+          </Logo>
           <BackButton to="/">Back</BackButton>
         </Container>
       </Layout>

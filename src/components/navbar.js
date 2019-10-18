@@ -25,7 +25,7 @@ const Logo = styled.div`
   }
 
   img {
-    width: 7rem;
+    width: 5rem;
     align-self: flex-end;
 
     @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
