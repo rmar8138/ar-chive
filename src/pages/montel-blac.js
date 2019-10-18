@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { UserAgent } from '@quentin-sommer/react-useragent'
+import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
@@ -15,18 +15,25 @@ const MontelBlac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt="Montel Blac"
+            alt="Montel Blac EP Cover"
             style={{ maxWidth: "50%", minWidth: "50rem" }}
           />
         </Fragment>
         <Fragment>
           <p>
-            Montel’s self-titled debut EP sonically melds his style of off-kilter production, rhythmic vocal chops and samples to create a body of work that delivers a short insight into his world. ar–chive was briefed to give this project its visual anchor. 
+            Montel’s self-titled debut EP sonically melds his style of
+            off-kilter production, rhythmic vocal chops and samples to create a
+            body of work that delivers a short insight into his world. ar–chive
+            was briefed to give this project its visual anchor.
           </p>
         </Fragment>
         <Fragment>
           <p>
-            We approached this project with the intention to create an artwork that fuses the nature of Montel’s dark hitting sound scapes to dictate our intuitive mark making approach putting ink onto paper. We experimented with a camera and a light source to sample and manipulate the drawing into its finished form.
+            We approached this project with the intention to create an artwork
+            that fuses the nature of Montel’s dark hitting sound scapes to
+            dictate our intuitive mark making approach putting ink onto paper.
+            We experimented with a camera and a light source to sample and
+            manipulate the drawing into its finished form.
           </p>
         </Fragment>
         <Fragment>
@@ -56,12 +63,19 @@ const MontelBlac = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Montel’s self-titled debut EP sonically melds his style of off-kilter production, rhythmic vocal chops and samples to create a body of work that delivers a short insight into his world. ar–chive was briefed to give this project its visual anchor. 
+            Montel’s self-titled debut EP sonically melds his style of
+            off-kilter production, rhythmic vocal chops and samples to create a
+            body of work that delivers a short insight into his world. ar–chive
+            was briefed to give this project its visual anchor.
           </p>
         </Fragment>
         <Fragment>
           <p>
-            We approached this project with the intention to create an artwork that fuses the nature of Montel’s dark hitting sound scapes to dictate our intuitive mark making approach putting ink onto paper. We experimented with a camera and a light source to sample and manipulate the drawing into its finished form.
+            We approached this project with the intention to create an artwork
+            that fuses the nature of Montel’s dark hitting sound scapes to
+            dictate our intuitive mark making approach putting ink onto paper.
+            We experimented with a camera and a light source to sample and
+            manipulate the drawing into its finished form.
           </p>
         </Fragment>
         <Fragment>

@@ -6,6 +6,7 @@ import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
 const vid1 = require("../assets/videos/rise-to-ubiquity/1.mp4")
+const vid2 = require("../assets/videos/rise-to-ubiquity/2.mp4")
 
 const RiseToUbiquity = ({ data }) => (
   <Fragment>
@@ -15,7 +16,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img1.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt=" Photo prints hanging display"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -117,7 +118,13 @@ const RiseToUbiquity = ({ data }) => (
           </video>
         </Fragment>
         <Fragment>
-          <p>Rise to Ubiquity video</p>
+          <video loop muted controls="controls">
+            <source
+              src={vid2}
+              type="video/mp4"
+              style={{ maxWidth: "50%", minWidth: "20rem" }}
+            />
+          </video>
         </Fragment>
         <Fragment>
           <figure>
@@ -274,7 +281,13 @@ const RiseToUbiquity = ({ data }) => (
           </video>
         </Fragment>
         <Fragment>
-          <p>Rise to Ubiquity video</p>
+          <video loop muted controls="controls">
+            <source
+              src={vid2}
+              type="video/mp4"
+              style={{ maxWidth: "50%", minWidth: "20rem" }}
+            />
+          </video>
         </Fragment>
         <Fragment>
           <figure>

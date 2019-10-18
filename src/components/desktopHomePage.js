@@ -66,7 +66,7 @@ export class DesktopHomePage extends Component {
         hovered: false,
       },
       {
-        title: "Rise to Ubiquity",
+        title: "Rise To Ubiquity",
         spotlight: false,
         hovered: false,
       },
