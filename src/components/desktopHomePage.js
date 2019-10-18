@@ -1,25 +1,12 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
 import ProjectLink from "../components/projectLink"
 
 import SEO from "../components/seo"
-
-/* IMAGES */
-
-const aLoveBelow = require("../assets/images/web/a-love-below/1.png")
-const montelBlac = require("../assets/images/web/montel-blac/1.png")
-const riseToUbiquity = require("../assets/images/web/rise-to-ubiquity/1.png")
-const coolMacCafe = require("../assets/images/web/cool-mac-cafe/1.png")
-const micra = require("../assets/images/web/micra/1.png")
-const pigalleTokyo = require("../assets/images/web/pigalle-tokyo/1.png")
-const vaughanMills = require("../assets/images/web/vaughan-mills/1.png")
-const spectre = require("../assets/images/web/spectre/1.png")
-const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
-const otherWorlds = require("../assets/images/web/other-worlds/1.png")
-const kurumac = require("../assets/images/web/kurumac/1.png")
 
 const Container = styled.div`
   padding: 2rem 2.5rem;
@@ -60,9 +47,8 @@ const AllProjectsLink = styled(Link)`
   margin-top: 1rem;
 `
 
-const Image = styled.img`
+const Image = styled(Img)`
   display: ${props => (props.hovered ? "block" : "none")};
-  position: absolute;
   top: ${props => props.top};
   left: ${props => props.left};
   width: ${props => props.width};
@@ -70,7 +56,7 @@ const Image = styled.img`
   z-index: -1;
 `
 
-export class desktopHomePage extends Component {
+export class DesktopHomePage extends Component {
   state = {
     projects: [
       {
@@ -151,6 +137,7 @@ export class desktopHomePage extends Component {
   }
 
   render() {
+    const { data } = this.props
     return (
       <Layout>
         <Container>
@@ -176,7 +163,8 @@ export class desktopHomePage extends Component {
             <AllProjectsLink to="/projects">All Projects</AllProjectsLink>
           </ProjectsList>
           <Image
-            src={aLoveBelow}
+            style={{ position: "absolute" }}
+            fluid={data.img1.childImageSharp.fluid}
             alt="A Love Below"
             top="50%"
             left="50%"
@@ -184,7 +172,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[0].hovered}
           />
           <Image
-            src={montelBlac}
+            style={{ position: "absolute" }}
+            fluid={data.img2.childImageSharp.fluid}
             alt="Montel Blac"
             top="50%"
             left="30%"
@@ -192,7 +181,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[1].hovered}
           />
           <Image
-            src={riseToUbiquity}
+            style={{ position: "absolute" }}
+            fluid={data.img3.childImageSharp.fluid}
             alt="Rise To Ubiquity"
             top="55%"
             left="65%"
@@ -200,7 +190,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[2].hovered}
           />
           <Image
-            src={coolMacCafe}
+            style={{ position: "absolute" }}
+            fluid={data.img4.childImageSharp.fluid}
             alt="Cool Mac Cafe"
             top="55%"
             left="55%"
@@ -208,7 +199,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[3].hovered}
           />
           <Image
-            src={micra}
+            style={{ position: "absolute" }}
+            fluid={data.img5.childImageSharp.fluid}
             alt="Micra"
             top="50%"
             left="50%"
@@ -216,7 +208,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[4].hovered}
           />
           <Image
-            src={pigalleTokyo}
+            style={{ position: "absolute" }}
+            fluid={data.img6.childImageSharp.fluid}
             alt="Pigalle Tokyo"
             top="50%"
             left="80%"
@@ -224,7 +217,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[5].hovered}
           />
           <Image
-            src={vaughanMills}
+            style={{ position: "absolute" }}
+            fluid={data.img7.childImageSharp.fluid}
             alt="Vaughan Mills"
             top="55%"
             left="30%"
@@ -232,7 +226,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[6].hovered}
           />
           <Image
-            src={spectre}
+            style={{ position: "absolute" }}
+            fluid={data.img8.childImageSharp.fluid}
             alt="Spectre"
             top="50%"
             left="80%"
@@ -240,7 +235,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[7].hovered}
           />
           <Image
-            src={kirribilliHome}
+            style={{ position: "absolute" }}
+            fluid={data.img9.childImageSharp.fluid}
             alt="Kirribilli Home"
             top="50%"
             left="25%"
@@ -248,7 +244,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[8].hovered}
           />
           <Image
-            src={otherWorlds}
+            style={{ position: "absolute" }}
+            fluid={data.img10.childImageSharp.fluid}
             alt="Other Worlds"
             top="50%"
             left="70%"
@@ -256,7 +253,8 @@ export class desktopHomePage extends Component {
             hovered={this.state.projects[9].hovered}
           />
           <Image
-            src={kurumac}
+            style={{ position: "absolute" }}
+            fluid={data.img11.childImageSharp.fluid}
             alt="Kurumac"
             top="50%"
             left="20%"
@@ -270,4 +268,89 @@ export class desktopHomePage extends Component {
   }
 }
 
-export default desktopHomePage
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        img1: file(relativePath: { eq: "web/a-love-below/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img2: file(relativePath: { eq: "web/montel-blac/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img3: file(relativePath: { eq: "web/rise-to-ubiquity/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img4: file(relativePath: { eq: "web/cool-mac-cafe/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img5: file(relativePath: { eq: "web/micra/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img6: file(relativePath: { eq: "web/pigalle-tokyo/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img7: file(relativePath: { eq: "web/vaughan-mills/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img8: file(relativePath: { eq: "web/spectre/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img9: file(relativePath: { eq: "web/kirribilli-home/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img10: file(relativePath: { eq: "web/other-worlds/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img11: file(relativePath: { eq: "web/kurumac/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <DesktopHomePage data={data} {...props} />}
+  />
+)
