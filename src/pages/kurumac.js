@@ -53,42 +53,19 @@ const Kurumac = ({ data }) => (
             fluid={data.img3.childImageSharp.fluid}
             alt=""
             style={{
-              width: "60%",
+              width: "50%",
               minWidth: "40rem",
             }}
           />
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.img4.childImageSharp.fluid}
+            fluid={data.img9.childImageSharp.fluid}
             alt=""
             style={{
-              width: "20%",
-              minWidth: "20rem",
-            }}
-          />
-          <Img
-            fluid={data.img5.childImageSharp.fluid}
-            alt=""
-            style={{
-              width: "20%",
-              minWidth: "20rem",
-            }}
-          />
-          <Img
-            fluid={data.img6.childImageSharp.fluid}
-            alt=""
-            style={{
-              width: "20%",
-              minWidth: "20rem",
-            }}
-          />
-          <Img
-            fluid={data.img7.childImageSharp.fluid}
-            alt=""
-            style={{
-              width: "20%",
-              minWidth: "20rem",
+              width: "80%",
+              minWidth: "40rem",
+              maxWidth: "80rem",
             }}
           />
         </Fragment>
@@ -281,6 +258,13 @@ export const query = graphql`
       }
     }
     img8: file(relativePath: { eq: "web/kurumac/8.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img9: file(relativePath: { eq: "web/kurumac/9.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
