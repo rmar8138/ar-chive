@@ -82,10 +82,16 @@ const Slide = styled.div`
 `
 
 const PageCounter = styled.div`
-  position: absolute;
-  top: 15%;
-  right: 5%;
-  z-index: 100000000;
+  /* position: absolute;
+  font-size: 2rem;
+  bottom: 1.8rem;
+  right: 20%;
+  z-index: 100000000; */
+  font-size: ${props => props.theme.fs_small};
+  position: fixed;
+  bottom: 2rem;
+  right: 20%;
+  z-index: 10000000;
 `
 
 const ContentContainer = styled.div`

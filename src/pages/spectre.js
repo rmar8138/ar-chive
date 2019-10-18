@@ -15,7 +15,9 @@ const Spectre = ({ data }) => (
             alt="Spectre Front Cover"
             style={{
               marginLeft: "40%",
-              width: "35%",
+              width: "50%",
+              minWidth: "30rem",
+              maxWidth: "50rem",
             }}
           />
         </Fragment>
@@ -25,7 +27,9 @@ const Spectre = ({ data }) => (
             alt="Spectre Back Cover"
             style={{
               marginLeft: "40%",
-              width: "35%",
+              width: "50%",
+              minWidth: "30rem",
+              maxWidth: "50rem",
             }}
           />
         </Fragment>
@@ -33,7 +37,14 @@ const Spectre = ({ data }) => (
           <p>Description</p>
         </Fragment>
         <Fragment>
-          <p>Speak like a child mv</p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/2JHXbGxWVzM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
         </Fragment>
       </ProjectPageLayout>
     </UserAgent>
@@ -57,7 +68,14 @@ const Spectre = ({ data }) => (
           <p>Description</p>
         </Fragment>
         <Fragment>
-          <p>Speak like a child mv</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2JHXbGxWVzM"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
         </Fragment>
       </MobileProjectPageLayout>
     </UserAgent>
