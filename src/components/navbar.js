@@ -28,9 +28,9 @@ const Logo = styled.div`
     width: 5rem;
     align-self: flex-end;
 
-    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    /* @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
       width: 5.5rem;
-    }
+    } */
   }
 `
 
@@ -42,9 +42,9 @@ const Navlist = styled.ul`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+  /* @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     font-size: ${props => props.theme.fs_small};
-  }
+  } */
 `
 
 export default () => (

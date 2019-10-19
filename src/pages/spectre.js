@@ -69,7 +69,6 @@ const Spectre = ({ data }) => (
         </Fragment>
         <Fragment>
           <iframe
-            style={{ marginBottom: "6rem" }}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/2JHXbGxWVzM"

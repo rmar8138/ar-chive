@@ -93,6 +93,10 @@ const Slide = styled.div`
   justify-content: center;
   margin: 1.5rem 0;
 
+  &:last-child {
+    margin-bottom: 6rem;
+  }
+
   p {
     display: inline-block;
     width: 60%;
