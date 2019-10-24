@@ -42,6 +42,19 @@ const Contact = styled.div`
   a:not(:last-child) {
     margin-right: 3rem;
   }
+
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    position: sticky;
+    bottom: 2rem;
+    left: 2.5rem;
+
+    a:not(:last-child) {
+      margin-bottom: 0.2rem;
+    }
+  }
 `
 
 const LogoSmall = styled.img`
@@ -86,12 +99,10 @@ class About extends Component {
                     and to spark conversation through any given brief.
                   </p>
                 </CopyText>
-                <MediaQuery minDeviceWidth={640}>
-                  <Contact>
-                    <a href="mailto:a@ar-chive.studio">a@ar-chive.studio</a>
-                    <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
-                  </Contact>
-                </MediaQuery>
+                <Contact>
+                  <a href="mailto:a@ar-chive.studio">a@ar-chive.studio</a>
+                  <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
+                </Contact>
                 <BackButton to="/">Back</BackButton>
               </Fragment>
             )}

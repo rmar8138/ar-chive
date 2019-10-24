@@ -50,7 +50,6 @@ const AllProjectsList = styled.ul`
     /* padding: 2rem; */
     font-size: ${props => props.theme.fs_medium};
     margin-left: -6rem;
-    margin-top: 3rem;
   }
 
   li:first-child {
@@ -163,7 +162,7 @@ class Projects extends Component {
           <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
           <h1>All Projects</h1>
           <AllProjectsList>
-            <li>Featured</li>
+            <li>2019</li>
             {this.state.projects.map((project, index) => {
               if (index < this.state.projects.length) {
                 return (

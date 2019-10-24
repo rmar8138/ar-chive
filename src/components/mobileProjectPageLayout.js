@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import Layout from "../components/layout"
 import { BackButton } from "./buttons"
 import SEO from "../components/seo"
@@ -181,13 +182,15 @@ class MobileProjectPageLayout extends Component {
               <h1>{this.props.heading.split("/")[1]}</h1>
             </MobileHeading>
             <Content>
-              {React.Children.map(this.props.children, (child, index) =>
-                index === 0 ? (
-                  <FirstSlide>{child}</FirstSlide>
-                ) : (
-                  <Slide>{child}</Slide>
-                )
-              )}
+              <Fade bottom opposite fraction={0.5} distance="30px" cascade>
+                {React.Children.map(this.props.children, (child, index) =>
+                  index === 0 ? (
+                    <FirstSlide>{child}</FirstSlide>
+                  ) : (
+                    <Slide>{child}</Slide>
+                  )
+                )}
+              </Fade>
             </Content>
             <BackButton to="/">Back</BackButton>
           </Container>

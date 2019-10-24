@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Fade from "react-reveal/Fade"
 import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
@@ -30,9 +31,8 @@ const OtherWorlds = ({ data }) => (
             alt="Other Worlds Front Cover"
             style={{
               marginLeft: "40%",
-              width: "35%",
+              width: "40%",
               minWidth: "25rem",
-              maxWidth: "40rem",
             }}
           />
         </Fragment>
