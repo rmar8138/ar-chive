@@ -91,12 +91,13 @@ class About extends Component {
               <Fragment>
                 <CopyText>
                   <p>
-                    <span>ar–chive</span> is a creative partnership by Angela
-                    Tam and Rowland Reyes Martinez. It is a collection of our
-                    ideas and approach where art and direction intersect. We are
-                    multidisciplinary artists with a design-driven process and
-                    an eye for detail. Our aim as a studio is to evoke emotion
-                    and to spark conversation through any given brief.
+                    <span>ar–chive</span> is a creative partnership bringing
+                    together the minds of Angela Tam and Rowland Reyes Martinez.
+                    It is a collection of our ideas and approach where art and
+                    direction intersect. We are multidisciplinary artists with a
+                    design-driven process and an eye for detail. Our aim as a
+                    studio is to evoke emotion and to spark conversation through
+                    any given brief.
                   </p>
                 </CopyText>
                 <Contact>

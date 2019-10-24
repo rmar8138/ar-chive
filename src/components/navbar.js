@@ -9,6 +9,7 @@ const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-end;
   z-index: 1000;
 
   a {
@@ -35,12 +36,18 @@ const Logo = styled.div`
 `
 
 const Navlist = styled.ul`
-  font-size: ${props => props.theme.fs_medium};
-  font-family: "Grotesk Light";
+  font-size: ${props => props.theme.fs_small};
+  text-transform: uppercase;
+  font-family: "Grotesk Regular";
   flex: 1;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+  & > li:not(:last-child) {
+    margin-right: 22%;
+  }
 
   /* @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     font-size: ${props => props.theme.fs_small};
@@ -58,12 +65,13 @@ export default () => (
           <Link to="/about">about</Link>
         </li>
         <li>
+          <Link to="/contact">contact</Link>
+        </li>
+
+        <li>
           <a href="https://www.instagram.com/ar.chive_/" target="_blank">
             instagram
           </a>
-        </li>
-        <li>
-          <a href="/">shop</a>
         </li>
       </Navlist>
     ) : (
