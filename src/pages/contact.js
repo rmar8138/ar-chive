@@ -80,6 +80,24 @@ const Email = styled.div`
 class Contact extends Component {
   state = {
     isMenuOpen: false,
+    clients: [
+      "Hype DC",
+      "And People",
+      "ACC Studio",
+      "ATC",
+      "Miss Bish",
+      "Acclaim Magazine",
+      "Stylerunner",
+      "Cottee Parker JPR Architects",
+      "Pigalle Tokyo",
+      "Sauti Systems",
+      "a Love Below",
+      "Ragan Martinez",
+      "Micra",
+      "Cake Wines",
+      "Kurumac",
+      "Coolmac Cafe",
+    ],
   }
 
   toggleMenu = () => {
@@ -87,6 +105,7 @@ class Contact extends Component {
   }
 
   render() {
+    const { clients } = this.state
     return (
       <PageTransition
         transitionStyles={{
@@ -113,12 +132,14 @@ class Contact extends Component {
               </CopyText>
               <ClientList>
                 <p>
-                  Together, we’ve worked with: Hype DC, Andpeople, Adidas AU,
-                  ACC Studio, Footlocker, Above The Clouds, Miss Bish, Acclaim,
-                  Stylerunner, Honour Sydney, Cottee Parker Architects, Pigalle,
-                  Vaughan Mills, APOLLO4OOO, Ragan Martinez, Montel Blac,
-                  Coolmac Cafe, Kurumac Cafe, Micra, Midnight Swim, Cake Wines,
-                  Sauti Systems and a Love Below.
+                  Together, we’ve worked with:{" "}
+                  {clients.sort().map((client, index) => {
+                    if (index !== clients.length - 1) {
+                      return `${client}, `
+                    } else {
+                      return `and ${client}.`
+                    }
+                  })}
                 </p>
               </ClientList>
               <Email>

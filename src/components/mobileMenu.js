@@ -56,6 +56,12 @@ export default props => (
           <Link to="/about">About</Link>
         </li>
         <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/clients">Clients</Link>
+        </li>
+        <li>
           <a href="https://www.instagram.com/ar.chive_/">Instagram</a>
         </li>
         <li>
