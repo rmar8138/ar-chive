@@ -1,3 +1,5 @@
+src/assets/videos
+
 # Logs
 logs
 *.log
@@ -68,5 +70,3 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Videos
-src/assets/videos/

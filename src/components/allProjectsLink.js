@@ -62,7 +62,6 @@ class ProjectLink extends Component {
         {this.state.isHovered && (
           <Hover>
             <img src={image} alt={this.props.projectName} />
-            <span>2019</span>
           </Hover>
         )}
       </Project>
