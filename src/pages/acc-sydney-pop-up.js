@@ -136,53 +136,53 @@ const ACCSydneyPopUp = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="05/Micra">
+      <MobileProjectPageLayout heading="12/ACC Sydney Pop Up">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "50%", minWidth: "30rem", maxWidth: "50rem" }}
+            style={{
+              width: "80%",
+              minWidth: "30rem",
+              maxWidth: "80rem",
+            }}
           />
         </Fragment>
         <Fragment>
           <p>
-            Micra brings together multi-instrumentalist, Robbie Cain and
-            singer-guitarist, Ivana Kay. The Sydney based duo create a wistful,
-            atmospheric sound with floating melodies and vulnerable lyrical
-            composition.
+            ACC STUDIO is a company based in Hollywood, California. On October
+            5, in collaboration with the creative direction by Vaughan Mills,
+            La-Ropa was introduced to the Australian market for the first time.
+            ar–chive art directed the space with the design and creation of the
+            Koala artworks and digital/print poster collateral.
           </p>
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.img11.childImageSharp.fluid}
+            fluid={data.img2.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "45%", marginTop: "-15rem", marginRight: "1rem" }}
-          />
-          <Img
-            fluid={data.img12.childImageSharp.fluid}
-            alt="Micra"
-            style={{ width: "45%", marginTop: "15rem", marginLeft: "1rem" }}
+            style={{
+              width: "100%",
+            }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img3.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "90%", marginRight: "auto" }}
+            style={{
+              width: "100%",
+            }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img4.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "100%" }}
+            style={{
+              width: "100%",
+            }}
           />
-        </Fragment>
-        <Fragment>
-          <p>
-            We art directed and designed their covers for two debut singles,
-            ‘Child Grows Old’ and ‘Plastic’.
-          </p>
         </Fragment>
         <Fragment>
           <Img
@@ -193,28 +193,88 @@ const ACCSydneyPopUp = ({ data }) => (
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.img1.childImageSharp.fluid}
+            fluid={data.img6.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "100%" }}
+            style={{
+              width: "65%",
+              marginRight: "auto",
+            }}
           />
         </Fragment>
         <Fragment>
           <Img
-            fluid={data.img6.childImageSharp.fluid}
-            alt="Micra"
-            style={{ width: "45%", marginTop: "-15rem", marginRight: "1rem" }}
-          />
-          <Img
             fluid={data.img7.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "45%", marginTop: "15rem", marginLeft: "1rem" }}
+            style={{
+              width: "65%",
+            }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img8.childImageSharp.fluid}
             alt="Micra"
-            style={{ width: "90%", marginRight: "auto" }}
+            style={{
+              width: "65%",
+              marginLeft: "auto",
+            }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img9.childImageSharp.fluid}
+            alt="Micra"
+            style={{ width: "100%" }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img10.childImageSharp.fluid}
+            alt="Micra"
+            style={{ width: "100%" }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img11.childImageSharp.fluid}
+            alt="Micra"
+            style={{ width: "100%" }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img13.childImageSharp.fluid}
+            alt="Micra"
+            style={{
+              width: "80%",
+            }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img14.childImageSharp.fluid}
+            alt="Micra"
+            style={{
+              width: "80%",
+            }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img15.childImageSharp.fluid}
+            alt="Micra"
+            style={{
+              width: "80%",
+            }}
+          />
+        </Fragment>
+        <Fragment>
+          <Img
+            fluid={data.img16.childImageSharp.fluid}
+            alt="Micra"
+            style={{
+              width: "80%",
+            }}
           />
         </Fragment>
       </MobileProjectPageLayout>

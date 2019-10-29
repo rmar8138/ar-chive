@@ -133,6 +133,12 @@ export class MobileHomePage extends Component {
         spotlight: false,
         image: this.props.data.img11.childImageSharp.fluid,
       },
+      {
+        title: "ACC Sydney Pop Up",
+        clicked: false,
+        spotlight: false,
+        image: this.props.data.img12.childImageSharp.fluid,
+      },
     ],
   }
 
@@ -308,6 +314,13 @@ export default props => (
           }
         }
         img11: file(relativePath: { eq: "web/kurumac/1.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        img12: file(relativePath: { eq: "web/acc-sydney-pop-up/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
