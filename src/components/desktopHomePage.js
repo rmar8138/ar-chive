@@ -41,6 +41,10 @@ const AllProjectsLink = styled(Link)`
 
   align-self: flex-start;
   margin-top: 1rem;
+
+  &:hover {
+    border-bottom: 1px solid black;
+  }
 `
 
 const Image = styled(Img)`

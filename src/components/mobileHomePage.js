@@ -192,7 +192,6 @@ export class MobileHomePage extends Component {
         ) : (
           <Container>
             <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
             <ProjectsList>
               {this.state.projects.map((project, index) => {
                 if (index < this.state.projects.length) {

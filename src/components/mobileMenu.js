@@ -64,9 +64,6 @@ export default props => (
         <li>
           <a href="https://www.instagram.com/ar.chive_/">Instagram</a>
         </li>
-        <li>
-          <Link>Shop</Link>
-        </li>
       </ul>
       <MobileNav>
         <Logo

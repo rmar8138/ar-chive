@@ -91,7 +91,7 @@ class Contact extends Component {
       "Cottee Parker JPR Architects",
       "Pigalle Tokyo",
       "Sauti Systems",
-      "a Love Below",
+      "A Love Below",
       "Ragan Martinez",
       "Micra",
       "Cake Wines",

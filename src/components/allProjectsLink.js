@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import slugify from "slugify"
+import { UserAgent } from "@quentin-sommer/react-useragent"
 
 const StyledLink = styled(Link)`
   color: ${props => (props.spotlight ? props.theme.darkGrey : "black")};
@@ -24,11 +25,9 @@ const Hover = styled.div`
     z-index: -1;
   }
 
-  span {
-    font-size: ${props => props.theme.fs_medium};
-    font-family: "Grotesk Regular";
-    margin-top: 1rem;
-    margin-left: 2rem;
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    right: unset;
+    width: 100%;
   }
 `
 
@@ -60,9 +59,11 @@ class ProjectLink extends Component {
           {this.props.children}
         </StyledLink>
         {this.state.isHovered && (
-          <Hover>
-            <img src={image} alt={this.props.projectName} />
-          </Hover>
+          <UserAgent computer>
+            <Hover>
+              <img src={image} alt={this.props.projectName} />
+            </Hover>
+          </UserAgent>
         )}
       </Project>
     )

@@ -44,6 +44,10 @@ const Navlist = styled.ul`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+
+  li a:hover {
+    border-bottom: 1px solid black;
+  }
   
   & > li:not(:last-child) {
     margin-right: 22%;

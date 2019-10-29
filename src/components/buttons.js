@@ -10,6 +10,11 @@ export const BackButton = styled(Link)`
   right: 2.5rem;
   z-index: 10000000;
   outline: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid black;
+  }
 `
 export const AllProjectsLink = styled(Link)`
   font-family: "Grotesk Regular";
