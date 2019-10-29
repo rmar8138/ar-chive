@@ -60,37 +60,17 @@ export class DesktopHomePage extends Component {
   state = {
     projects: [
       {
-        title: "a Love Below: Live! Vol. 1",
+        title: "ACC Sydney Pop Up",
         spotlight: false,
         hovered: false,
       },
       {
-        title: "Montel Blac",
+        title: "Kurumac",
         spotlight: false,
         hovered: false,
       },
       {
-        title: "Rise To Ubiquity",
-        spotlight: false,
-        hovered: false,
-      },
-      {
-        title: "Cool Mac Cafe",
-        spotlight: false,
-        hovered: false,
-      },
-      {
-        title: "Micra",
-        spotlight: false,
-        hovered: false,
-      },
-      {
-        title: "Pigalle Tokyo",
-        spotlight: false,
-        hovered: false,
-      },
-      {
-        title: "Vaughan Mills",
+        title: "Other Worlds",
         spotlight: false,
         hovered: false,
       },
@@ -105,12 +85,27 @@ export class DesktopHomePage extends Component {
         hovered: false,
       },
       {
-        title: "Other Worlds",
+        title: "Cool Mac Cafe",
         spotlight: false,
         hovered: false,
       },
       {
-        title: "Kurumac",
+        title: "Rise To Ubiquity",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Vaughan Mills",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "a Love Below: Live! Vol. 1",
+        spotlight: false,
+        hovered: false,
+      },
+      {
+        title: "Montel Blac",
         spotlight: false,
         hovered: false,
       },
@@ -165,101 +160,92 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img1.childImageSharp.fluid}
-            alt="A Love Below"
+            alt="ACC Sydney Pop Up"
             top="50%"
-            left="50%"
-            width="30%"
+            left="60%"
+            width="70%"
             hovered={this.state.projects[0].hovered}
           />
           <Image
             style={{ position: "absolute" }}
-            fluid={data.img2.childImageSharp.fluid}
-            alt="Montel Blac"
-            top="50%"
-            left="30%"
-            width="45%"
-            hovered={this.state.projects[1].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img3.childImageSharp.fluid}
-            alt="Rise To Ubiquity"
-            top="55%"
-            left="65%"
-            width="60%"
-            hovered={this.state.projects[2].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img4.childImageSharp.fluid}
-            alt="Cool Mac Cafe"
-            top="55%"
-            left="55%"
-            width="40%"
-            hovered={this.state.projects[3].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img5.childImageSharp.fluid}
-            alt="Micra"
+            fluid={data.img9.childImageSharp.fluid}
+            alt="A Love Below"
             top="50%"
             left="50%"
-            width="50%"
-            hovered={this.state.projects[4].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img6.childImageSharp.fluid}
-            alt="Pigalle Tokyo"
-            top="50%"
-            left="80%"
-            width="35%"
-            hovered={this.state.projects[5].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img7.childImageSharp.fluid}
-            alt="Vaughan Mills"
-            top="55%"
-            left="30%"
-            width="35%"
-            hovered={this.state.projects[6].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img8.childImageSharp.fluid}
-            alt="Spectre"
-            top="50%"
-            left="80%"
-            width="35%"
-            hovered={this.state.projects[7].hovered}
-          />
-          <Image
-            style={{ position: "absolute" }}
-            fluid={data.img9.childImageSharp.fluid}
-            alt="Kirribilli Home"
-            top="50%"
-            left="25%"
             width="30%"
             hovered={this.state.projects[8].hovered}
           />
           <Image
             style={{ position: "absolute" }}
             fluid={data.img10.childImageSharp.fluid}
-            alt="Other Worlds"
+            alt="Montel Blac"
             top="50%"
-            left="70%"
-            width="40%"
+            left="30%"
+            width="45%"
             hovered={this.state.projects[9].hovered}
           />
           <Image
             style={{ position: "absolute" }}
-            fluid={data.img11.childImageSharp.fluid}
+            fluid={data.img7.childImageSharp.fluid}
+            alt="Rise To Ubiquity"
+            top="55%"
+            left="65%"
+            width="60%"
+            hovered={this.state.projects[6].hovered}
+          />
+          <Image
+            style={{ position: "absolute" }}
+            fluid={data.img6.childImageSharp.fluid}
+            alt="Cool Mac Cafe"
+            top="55%"
+            left="55%"
+            width="40%"
+            hovered={this.state.projects[5].hovered}
+          />
+          <Image
+            style={{ position: "absolute" }}
+            fluid={data.img8.childImageSharp.fluid}
+            alt="Vaughan Mills"
+            top="55%"
+            left="30%"
+            width="35%"
+            hovered={this.state.projects[7].hovered}
+          />
+          <Image
+            style={{ position: "absolute" }}
+            fluid={data.img4.childImageSharp.fluid}
+            alt="Spectre"
+            top="50%"
+            left="80%"
+            width="35%"
+            hovered={this.state.projects[3].hovered}
+          />
+          <Image
+            style={{ position: "absolute" }}
+            fluid={data.img5.childImageSharp.fluid}
+            alt="Kirribilli Home"
+            top="50%"
+            left="25%"
+            width="30%"
+            hovered={this.state.projects[4].hovered}
+          />
+          <Image
+            style={{ position: "absolute" }}
+            fluid={data.img3.childImageSharp.fluid}
+            alt="Other Worlds"
+            top="50%"
+            left="70%"
+            width="40%"
+            hovered={this.state.projects[2].hovered}
+          />
+          <Image
+            style={{ position: "absolute" }}
+            fluid={data.img2.childImageSharp.fluid}
             alt="Kurumac"
             top="50%"
             left="20%"
             width="30%"
-            hovered={this.state.projects[10].hovered}
+            hovered={this.state.projects[1].hovered}
           />
           <Navbar />
         </Container>
@@ -272,77 +258,70 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        img1: file(relativePath: { eq: "web/a-love-below/1.png" }) {
+        img1: file(relativePath: { eq: "web/acc-sydney-pop-up/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img2: file(relativePath: { eq: "web/montel-blac/1.png" }) {
+        img2: file(relativePath: { eq: "web/kurumac/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img3: file(relativePath: { eq: "web/rise-to-ubiquity/1.png" }) {
+        img3: file(relativePath: { eq: "web/other-worlds/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img4: file(relativePath: { eq: "web/cool-mac-cafe/1.png" }) {
+        img4: file(relativePath: { eq: "web/spectre/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img5: file(relativePath: { eq: "web/micra/1.png" }) {
+        img5: file(relativePath: { eq: "web/kirribilli-home/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img6: file(relativePath: { eq: "web/pigalle-tokyo/1.png" }) {
+        img6: file(relativePath: { eq: "web/cool-mac-cafe/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img7: file(relativePath: { eq: "web/vaughan-mills/1.png" }) {
+        img7: file(relativePath: { eq: "web/rise-to-ubiquity/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img8: file(relativePath: { eq: "web/spectre/1.png" }) {
+        img8: file(relativePath: { eq: "web/vaughan-mills/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img9: file(relativePath: { eq: "web/kirribilli-home/1.png" }) {
+        img9: file(relativePath: { eq: "web/a-love-below/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        img10: file(relativePath: { eq: "web/other-worlds/1.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        img11: file(relativePath: { eq: "web/kurumac/1.png" }) {
+        img10: file(relativePath: { eq: "web/montel-blac/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
