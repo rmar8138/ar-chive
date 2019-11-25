@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import AllProjectsLink from "../components/allProjectsLink"
@@ -52,7 +52,7 @@ const AllProjectsList = styled.ul`
     margin-left: -6rem;
   }
 
-  li:first-child {
+  span {
     font-size: ${props => props.theme.fs_small};
     font-family: "Grotesk Regular";
     text-transform: uppercase;
@@ -68,79 +68,97 @@ class Projects extends Component {
   state = {
     projects: [
       {
-        title: "a Love Below: Live! Vol. 1",
+        title: "ACC Sydney Pop Up",
         spotlight: false,
         hovered: false,
-        image: aLoveBelow,
-      },
-      {
-        title: "Montel Blac",
-        spotlight: false,
-        hovered: false,
-        image: montelBlac,
-      },
-      {
-        title: "Rise to Ubiquity",
-        spotlight: false,
-        hovered: false,
-        image: riseToUbiquity,
-      },
-      {
-        title: "Cool Mac Cafe",
-        spotlight: false,
-        hovered: false,
-        image: coolMacCafe,
-      },
-      {
-        title: "Micra",
-        spotlight: false,
-        hovered: false,
-        image: micra,
-      },
-      {
-        title: "Pigalle Tokyo",
-        spotlight: false,
-        hovered: false,
-        image: pigalleTokyo,
-      },
-      {
-        title: "Vaughan Mills",
-        spotlight: false,
-        hovered: false,
-        image: vaughanMills,
-      },
-      {
-        title: "Spectre",
-        spotlight: false,
-        hovered: false,
-        image: spectre,
-      },
-      {
-        title: "Kirribilli Home",
-        spotlight: false,
-        hovered: false,
-        image: kirribilliHome,
-      },
-      {
-        title: "Other Worlds",
-        spotlight: false,
-        hovered: false,
-        image: otherWorlds,
+        image: null,
+        year: 2019,
       },
       {
         title: "Kurumac",
         spotlight: false,
         hovered: false,
         image: kurumac,
+        year: 2018,
+      },
+      {
+        title: "Other Worlds",
+        spotlight: false,
+        hovered: false,
+        image: otherWorlds,
+        year: 2019,
+      },
+      {
+        title: "Spectre",
+        spotlight: false,
+        hovered: false,
+        image: spectre,
+        year: 2019,
+      },
+      {
+        title: "Kirribilli Home",
+        spotlight: false,
+        hovered: false,
+        image: kirribilliHome,
+        year: 2019,
+      },
+      {
+        title: "Rise to Ubiquity",
+        spotlight: false,
+        hovered: false,
+        image: riseToUbiquity,
+        year: 2019,
+      },
+      {
+        title: "Vaughan Mills",
+        spotlight: false,
+        hovered: false,
+        image: vaughanMills,
+        year: 2019,
+      },
+      {
+        title: "a Love Below: Live! Vol. 1",
+        spotlight: false,
+        hovered: false,
+        image: aLoveBelow,
+        year: 2019,
+      },
+      {
+        title: "Montel Blac",
+        spotlight: false,
+        hovered: false,
+        image: montelBlac,
+        year: 2019,
+      },
+      {
+        title: "Micra",
+        spotlight: false,
+        hovered: false,
+        image: micra,
+        year: 2018,
+      },
+      {
+        title: "Cool Mac Cafe",
+        spotlight: false,
+        hovered: false,
+        image: coolMacCafe,
+        year: 2018,
+      },
+      {
+        title: "Pigalle Tokyo",
+        spotlight: false,
+        hovered: false,
+        image: pigalleTokyo,
+        year: 2017,
       },
     ],
   }
 
-  spotlightHover = hoveredIndex => {
+  spotlightHover = title => {
     // set spotlight to true for every project link besides hovered link
     this.setState(prevState => ({
       projects: prevState.projects.map((project, projectIndex) => {
-        if (hoveredIndex !== projectIndex) {
+        if (title !== project.title) {
           return {
             ...project,
             spotlight: !prevState.projects[projectIndex].spotlight,
@@ -155,6 +173,33 @@ class Projects extends Component {
     }))
   }
 
+  renderProjectsByYear = year => {
+    const projects = this.state.projects.filter(
+      project => project.year === year
+    )
+    return (
+      <Fragment>
+        <span>{year}</span>
+        {projects.map((project, index) => (
+          <li>
+            <AllProjectsLink
+              key={index}
+              index={index}
+              image={project.image}
+              title={project.title}
+              projectName={project}
+              spotlight={project.spotlight}
+              spotlightHover={this.spotlightHover}
+              page="All Projects"
+            >
+              {project.title}
+            </AllProjectsLink>
+          </li>
+        ))}
+      </Fragment>
+    )
+  }
+
   render() {
     return (
       <Layout>
@@ -162,25 +207,9 @@ class Projects extends Component {
           <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
           <h1>All Projects</h1>
           <AllProjectsList>
-            <li>2019</li>
-            {this.state.projects.map((project, index) => {
-              if (index < this.state.projects.length) {
-                return (
-                  <AllProjectsLink
-                    key={index}
-                    index={index}
-                    image={project.image}
-                    projectName={project}
-                    spotlight={project.spotlight}
-                    spotlightHover={this.spotlightHover}
-                    page="All Projects"
-                  >
-                    {index + 1 < 10 ? `0${index + 1}/` : `${index + 1}/`}
-                    {project.title}
-                  </AllProjectsLink>
-                )
-              }
-            })}
+            {this.renderProjectsByYear(2019)}
+            {this.renderProjectsByYear(2018)}
+            {this.renderProjectsByYear(2017)}
           </AllProjectsList>
           <BackButton to="/">Back</BackButton>
         </Container>

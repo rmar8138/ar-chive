@@ -38,7 +38,7 @@ class ProjectLink extends Component {
 
   onHover = e => {
     this.setState(prevState => ({ isHovered: !prevState.isHovered }))
-    this.props.spotlightHover(this.props.index)
+    this.props.spotlightHover(this.props.title)
   }
 
   render() {
@@ -47,7 +47,7 @@ class ProjectLink extends Component {
     return (
       <Project>
         <StyledLink
-          to={slugify(this.props.children[1], {
+          to={slugify(this.props.children, {
             remove: /[*+~.()'"!:@]/g,
             lower: true,
           })}
