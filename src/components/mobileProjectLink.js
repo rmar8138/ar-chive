@@ -42,10 +42,7 @@ class MobileProjectLink extends Component {
           {this.props.children}
         </StyledLink>
         {this.state.isHovered && (
-          <Image
-            src={mobileImage}
-            alt={this.props.projectName}
-          />
+          <Image src={mobileImage} alt={this.props.projectName} />
         )}
       </li>
     )

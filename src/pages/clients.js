@@ -45,19 +45,19 @@ class Clients extends Component {
       "Hype DC",
       "And People",
       "ACC Studio",
-      "ATC",
+      "Above the Clouds",
       "Miss Bish",
       "Acclaim Magazine",
       "Stylerunner",
       "Cottee Parker JPR Architects",
       "Pigalle Tokyo",
       "Sauti Systems",
-      "A Love Below",
+      "a Love Below",
       "Ragan Martinez",
       "Micra",
       "Cake Wines",
       "Kurumac",
-      "Coolmac Cafe",
+      "Cool Mac Cafe",
     ],
   }
 
@@ -82,9 +82,23 @@ class Clients extends Component {
           <Container>
             <p>Together, we’ve worked with:</p>
             <ClientList>
-              {clients.sort().map(client => (
-                <li>{client}</li>
-              ))}
+              {clients
+                .sort((a, b) => {
+                  // ignore casing
+                  let nameA = a.toLowerCase()
+                  let nameB = b.toLowerCase()
+
+                  if (nameA < nameB) {
+                    return -1
+                  } else if (nameA > nameB) {
+                    return 1
+                  } else {
+                    return 0
+                  }
+                })
+                .map(client => (
+                  <li>{client}</li>
+                ))}
             </ClientList>
             <BackButton to="/">Back</BackButton>
           </Container>

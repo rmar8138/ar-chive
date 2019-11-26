@@ -19,6 +19,7 @@ const spectre = require("../assets/images/web/spectre/1.png")
 const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
 const otherWorlds = require("../assets/images/web/other-worlds/1.png")
 const kurumac = require("../assets/images/web/kurumac/1.png")
+const acc = require("../assets/images/web/acc-sydney-pop-up/1.png")
 
 const Container = styled.div`
   position: relative;
@@ -71,7 +72,7 @@ class Projects extends Component {
         title: "ACC Sydney Pop Up",
         spotlight: false,
         hovered: false,
-        image: null,
+        image: acc,
         year: 2019,
       },
       {
