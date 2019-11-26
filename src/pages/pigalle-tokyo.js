@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const PigalleTokyo = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="06/Pigalle Tokyo">
+      <ProjectPageLayout heading="Pigalle Tokyo">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -63,7 +63,7 @@ const PigalleTokyo = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="06/Pigalle Tokyo">
+      <MobileProjectPageLayout heading="Pigalle Tokyo">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

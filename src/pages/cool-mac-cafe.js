@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
-import { UserAgent } from '@quentin-sommer/react-useragent'
+import { UserAgent } from "@quentin-sommer/react-useragent"
 import Img from "gatsby-image"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const CoolMacCafe = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="04/Cool Mac Cafe">
+      <ProjectPageLayout heading="Cool Mac Cafe">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -18,17 +18,17 @@ const CoolMacCafe = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
-            inspired dishes for locals and tourists alike. We were commissioned to
-            created a permanent mural for their six metre feature wall that would
-            brighten up the space.
+            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and
+            Japanese inspired dishes for locals and tourists alike. We were
+            commissioned to created a permanent mural for their six metre
+            feature wall that would brighten up the space.
           </p>
         </Fragment>
         <Fragment>
           <p>
             We wanted to produce a collaged piece that would resonate with the
-            locals and therefore drew from the structural features of Kirribilli,
-            highlighting the often overlooked details.
+            locals and therefore drew from the structural features of
+            Kirribilli, highlighting the often overlooked details.
           </p>
         </Fragment>
         <Fragment>
@@ -42,12 +42,22 @@ const CoolMacCafe = ({ data }) => (
           <Img
             fluid={data.img3.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem", marginRight: "1rem" }}
+            style={{
+              width: "30%",
+              minWidth: "20rem",
+              maxWidth: "40rem",
+              marginRight: "1rem",
+            }}
           />
           <Img
             fluid={data.img4.childImageSharp.fluid}
             alt="Cool Mac Cafe"
-            style={{ width: "30%", minWidth: "20rem", maxWidth: "40rem", marginLeft: "1rem" }}
+            style={{
+              width: "30%",
+              minWidth: "20rem",
+              maxWidth: "40rem",
+              marginLeft: "1rem",
+            }}
           />
         </Fragment>
         <Fragment>
@@ -60,7 +70,7 @@ const CoolMacCafe = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="04/Cool Mac Cafe">
+      <MobileProjectPageLayout heading="Cool Mac Cafe">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -70,17 +80,17 @@ const CoolMacCafe = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and Japanese
-            inspired dishes for locals and tourists alike. We were commissioned to
-            created a permanent mural for their six metre feature wall that would
-            brighten up the space.
+            Cool Mac is a cafe in Kirribilli, Sydney, offering coffee and
+            Japanese inspired dishes for locals and tourists alike. We were
+            commissioned to created a permanent mural for their six metre
+            feature wall that would brighten up the space.
           </p>
         </Fragment>
         <Fragment>
           <p>
             We wanted to produce a collaged piece that would resonate with the
-            locals and therefore drew from the structural features of Kirribilli,
-            highlighting the often overlooked details.
+            locals and therefore drew from the structural features of
+            Kirribilli, highlighting the often overlooked details.
           </p>
         </Fragment>
         <Fragment>
@@ -152,7 +162,11 @@ const CoolMacCafe = ({ data }) => (
               className="img4"
               fluid={data.img8.childImageSharp.fluid}
               alt="Cool Mac Cafe"
-              style={{ width: "40%", marginLeft: "2rem", alignSelf: "flex-end" }}
+              style={{
+                width: "40%",
+                marginLeft: "2rem",
+                alignSelf: "flex-end",
+              }}
             />
           </figure>
         </Fragment>
@@ -160,7 +174,6 @@ const CoolMacCafe = ({ data }) => (
     </UserAgent>
   </Fragment>
 )
-  
 
 export default CoolMacCafe
 

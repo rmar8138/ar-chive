@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const ACCSydneyPopUp = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="12/ACC Sydney Pop Up">
+      <ProjectPageLayout heading="ACC Sydney Pop Up">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -136,7 +136,7 @@ const ACCSydneyPopUp = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="12/ACC Sydney Pop Up">
+      <MobileProjectPageLayout heading="ACC Sydney Pop Up">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

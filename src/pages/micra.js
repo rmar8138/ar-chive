@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const Micra = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="05/Micra">
+      <ProjectPageLayout heading="Micra">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -75,7 +75,7 @@ const Micra = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="05/Micra">
+      <MobileProjectPageLayout heading="Micra">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

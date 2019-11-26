@@ -43,7 +43,6 @@ class ProjectLink extends Component {
 
   render() {
     const image = this.props.image
-    console.log(image)
     return (
       <Project>
         <StyledLink

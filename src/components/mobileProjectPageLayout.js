@@ -178,8 +178,7 @@ class MobileProjectPageLayout extends Component {
               keywords={[`gatsby`, `application`, `react`]}
             />
             <MobileHeading>
-              <span>{this.props.heading.split("/")[0]}</span>
-              <h1>{this.props.heading.split("/")[1]}</h1>
+              <h1>{this.props.heading}</h1>
             </MobileHeading>
             <Content>
               <Fade bottom opposite fraction={0.5} distance="30px" cascade>

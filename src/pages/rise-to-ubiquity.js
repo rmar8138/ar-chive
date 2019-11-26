@@ -11,7 +11,7 @@ const vid2 = require("../assets/videos/rise-to-ubiquity/2.mp4")
 const RiseToUbiquity = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="03/Rise To Ubiquity">
+      <ProjectPageLayout heading="Rise To Ubiquity">
         <Fragment>
           <figure>
             <Img
@@ -170,7 +170,7 @@ const RiseToUbiquity = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="03/Rise To Ubiquity">
+      <MobileProjectPageLayout heading="Rise To Ubiquity">
         <Fragment>
           <figure>
             <Img

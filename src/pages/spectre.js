@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const Spectre = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="08/Spectre">
+      <ProjectPageLayout heading="Spectre">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -49,7 +49,7 @@ const Spectre = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="08/Spectre">
+      <MobileProjectPageLayout heading="Spectre">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

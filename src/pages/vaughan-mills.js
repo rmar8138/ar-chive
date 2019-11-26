@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const VaughanMills = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="07/Vaughan Mills">
+      <ProjectPageLayout heading="Vaughan Mills">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -152,7 +152,7 @@ const VaughanMills = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="07/Vaughan Mills">
+      <MobileProjectPageLayout heading="Vaughan Mills">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

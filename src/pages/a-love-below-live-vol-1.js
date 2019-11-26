@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const ALoveBelow = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
+      <ProjectPageLayout heading="a Love Below: Live! Vol. 1">
         <Fragment>
           <figure>
             <Img
@@ -95,7 +95,7 @@ const ALoveBelow = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="01/a Love Below: Live! Vol. 1">
+      <MobileProjectPageLayout heading="a Love Below: Live! Vol. 1">
         <Fragment>
           <figure>
             <Img

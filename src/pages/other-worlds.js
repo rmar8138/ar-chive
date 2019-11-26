@@ -23,7 +23,7 @@ const MobileImageLink = styled.a`
 const OtherWorlds = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="10/Other Worlds">
+      <ProjectPageLayout heading="Other Worlds">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -207,7 +207,7 @@ const OtherWorlds = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="10/Other Worlds">
+      <MobileProjectPageLayout heading="Other Worlds">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

@@ -11,7 +11,7 @@ const vid2 = require(`../assets/videos/montel-blac/2.mp4`)
 const MontelBlac = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="02/Montel Blac">
+      <ProjectPageLayout heading="Montel Blac">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -53,7 +53,7 @@ const MontelBlac = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="02/Montel Blac">
+      <MobileProjectPageLayout heading="Montel Blac">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

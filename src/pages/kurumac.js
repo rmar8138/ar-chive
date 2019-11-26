@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const Kurumac = ({ data }) => (
   <Fragment>
     <UserAgent computer tablet>
-      <ProjectPageLayout heading="11/Kurumac">
+      <ProjectPageLayout heading="Kurumac">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -92,7 +92,7 @@ const Kurumac = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="11/Kurumac">
+      <MobileProjectPageLayout heading="Kurumac">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}

@@ -8,7 +8,7 @@ import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 const KirribilliHome = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="09/Kirribilli Home">
+      <ProjectPageLayout heading="Kirribilli Home">
         <Fragment>
           <div style={{ display: "flex", width: "100%", marginRight: "auto" }}>
             <Img
@@ -137,7 +137,7 @@ const KirribilliHome = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="09/Kirribilli House">
+      <MobileProjectPageLayout heading="Kirribilli House">
         <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
