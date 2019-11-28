@@ -37,13 +37,13 @@ const Slide = styled.div`
   align-items: center;
   justify-content: center;
 
-  div {
+  /* div {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     p:not(:last-child) {
       margin-bottom: 2rem;

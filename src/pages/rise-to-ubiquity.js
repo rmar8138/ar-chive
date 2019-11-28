@@ -82,7 +82,6 @@ const RiseToUbiquity = ({ data }) => (
               width: "100%",
               display: "flex",
               justifyContent: "flex-start",
-              flexDirection: "row",
             }}
           >
             <Img

@@ -19,8 +19,8 @@ const ALoveBelow = ({ data }) => (
           </figure>
         </Fragment>
         <Fragment>
-          <div>
-            <p>
+          <p>
+            <span>
               <a
                 href="https://www.youtube.com/watch?v=cRD46ww3Uv8&t=2329s"
                 target="_blank"
@@ -35,27 +35,27 @@ const ALoveBelow = ({ data }) => (
               From Coolmac Cafe is the first installment of live beats and
               painting by a Love Below - a platform dedicated to building and
               showcasing artists to local Australian and global communities.
-            </p>{" "}
-            <p>
+            </span>{" "}
+            <span>
               With a diverse range of beat makers and artists involved, the
               challenge was to create a uniform branding that would translate
               the sound scapes and art processes for this event.
-            </p>
-          </div>
+            </span>
+          </p>
         </Fragment>
         <Fragment>
-          <div>
-            <p>
+          <p>
+            <span>
               To represent this, ar–chive designed collage inspired shapes with
               free form hand-written typography in addition with the video live
               recap of the event.
-            </p>{" "}
-            <p>
+            </span>{" "}
+            <span>
               This event brought awareness to the Kirribilli community with
               customers of Coolmac Cafe and surrounding pedestrians engaged and
               involved in the process of the artists.
-            </p>
-          </div>
+            </span>
+          </p>
         </Fragment>
         <Fragment>
           <figure>
