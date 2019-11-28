@@ -36,12 +36,29 @@ const OtherWorlds = ({ data }) => (
           />
         </Fragment>
         <Fragment>
+          <Img
+            fluid={data.img12.childImageSharp.fluid}
+            alt="Other Worlds Front and Back Cover"
+            style={{
+              width: "100%",
+              minWidth: "40rem",
+              maxWidth: "80rem",
+            }}
+          />
+        </Fragment>
+        <Fragment>
           <p>
-            ‘Other Worlds’ is the debut album by Ragan Martinez. He uses ambient
-            and distorted sounds on loop, creating an ominous yet carthatic
-            meditative release. It is the soundtrack to a video game that
-            doesn’t exist. We art directed and designed the cover as well as
-            individual paintings for each track of the album.
+            ‘Other Worlds’ is the debut album by Ragan Martinez. It is the
+            soundtrack to a video game that doesn’t exist. He uses ambient and
+            distorted sounds on loop, creating an ominous yet cathartic
+            meditative release. The front cover artwork is taken from WA SEI’s
+            ‘Mind Travellin’ painting.
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            Alongside the front cover design, we art directed and created
+            individual paintings for each track from the album.
           </p>
         </Fragment>
         <Fragment>
@@ -51,7 +68,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt=""
+              alt="Main Menu"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -67,7 +84,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt=""
+              alt="By the Jetty"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -83,7 +100,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt=""
+              alt="Planetarium"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -99,7 +116,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img5.childImageSharp.fluid}
-              alt=""
+              alt="Secret Corridor"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -115,7 +132,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img6.childImageSharp.fluid}
-              alt=""
+              alt="Holographic Tunnels"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -131,7 +148,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img7.childImageSharp.fluid}
-              alt=""
+              alt="Gravity Garden"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -147,7 +164,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img8.childImageSharp.fluid}
-              alt=""
+              alt="Neon Room"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -163,7 +180,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img9.childImageSharp.fluid}
-              alt=""
+              alt="Abandoned Save Fountain"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -179,7 +196,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img10.childImageSharp.fluid}
-              alt=""
+              alt="Church by Fireflies"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -195,7 +212,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img11.childImageSharp.fluid}
-              alt=""
+              alt="Hidden Credits"
               style={{
                 width: "100%",
                 minWidth: "40rem",
@@ -218,13 +235,28 @@ const OtherWorlds = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>
-            ‘Other Worlds’ is the debut album by Ragan Martinez. He uses ambient
-            and distorted sounds on loop, creating an ominous yet carthatic
-            meditative release. It is the soundtrack to a video game that
-            doesn’t exist. We art directed and designed the cover as well as
-            individual paintings for each track of the album.
-          </p>
+          <Img
+            fluid={data.img12.childImageSharp.fluid}
+            alt="Other Worlds Front and Back Cover"
+            style={{
+              width: "100%",
+            }}
+          />
+        </Fragment>
+        <Fragment>
+          <div>
+            <p>
+              ‘Other Worlds’ is the debut album by Ragan Martinez. It is the
+              soundtrack to a video game that doesn’t exist. He uses ambient and
+              distorted sounds on loop, creating an ominous yet cathartic
+              meditative release. The front cover artwork is taken from WA SEI’s
+              ‘Mind Travellin’ painting.
+            </p>
+            <p>
+              Alongside the front cover design, we art directed and created
+              individual paintings for each track from the album.{" "}
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <MobileImageLink
@@ -233,7 +265,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt=""
+              alt="Main Menu"
               style={{
                 width: "100%",
               }}
@@ -247,7 +279,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt=""
+              alt="By the Jetty"
               style={{
                 width: "100%",
               }}
@@ -261,7 +293,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt=""
+              alt="Planetarium"
               style={{
                 width: "100%",
               }}
@@ -275,7 +307,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img5.childImageSharp.fluid}
-              alt=""
+              alt="Secret Corridor"
               style={{
                 width: "100%",
               }}
@@ -289,7 +321,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img6.childImageSharp.fluid}
-              alt=""
+              alt="Holographic Tunnels"
               style={{
                 width: "100%",
               }}
@@ -303,7 +335,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img7.childImageSharp.fluid}
-              alt=""
+              alt="Gravity Garden"
               style={{
                 width: "100%",
               }}
@@ -317,7 +349,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img8.childImageSharp.fluid}
-              alt=""
+              alt="Neon Room"
               style={{
                 width: "100%",
               }}
@@ -331,7 +363,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img9.childImageSharp.fluid}
-              alt=""
+              alt="Abandoned Save Fountain"
               style={{
                 width: "100%",
               }}
@@ -345,7 +377,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img10.childImageSharp.fluid}
-              alt=""
+              alt="Church by Fireflies"
               style={{
                 width: "100%",
               }}
@@ -359,7 +391,7 @@ const OtherWorlds = ({ data }) => (
           >
             <Img
               fluid={data.img11.childImageSharp.fluid}
-              alt=""
+              alt="Hidden Credits"
               style={{
                 width: "100%",
               }}
@@ -446,6 +478,13 @@ export const query = graphql`
       }
     }
     img11: file(relativePath: { eq: "web/other-worlds/11.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img12: file(relativePath: { eq: "web/other-worlds/12.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
