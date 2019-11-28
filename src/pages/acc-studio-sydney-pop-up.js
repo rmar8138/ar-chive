@@ -5,10 +5,10 @@ import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
-const ACCSydneyPopUp = ({ data }) => (
+const ACCStudioSydneyPopUp = ({ data }) => (
   <Fragment>
     <UserAgent computer>
-      <ProjectPageLayout heading="ACC Sydney Pop Up">
+      <ProjectPageLayout heading="ACC Studio Sydney Pop Up">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -136,7 +136,7 @@ const ACCSydneyPopUp = ({ data }) => (
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
-      <MobileProjectPageLayout heading="ACC Sydney Pop Up">
+      <MobileProjectPageLayout heading="ACC Studio Sydney Pop Up">
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
@@ -282,123 +282,123 @@ const ACCSydneyPopUp = ({ data }) => (
   </Fragment>
 )
 
-export default ACCSydneyPopUp
+export default ACCStudioSydneyPopUp
 
 export const query = graphql`
   query {
-    img1: file(relativePath: { eq: "web/acc-sydney-pop-up/1.png" }) {
+    img1: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img2: file(relativePath: { eq: "web/acc-sydney-pop-up/2.png" }) {
+    img2: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img3: file(relativePath: { eq: "web/acc-sydney-pop-up/3.png" }) {
+    img3: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/3.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img4: file(relativePath: { eq: "web/acc-sydney-pop-up/4.png" }) {
+    img4: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/4.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img5: file(relativePath: { eq: "web/acc-sydney-pop-up/5.png" }) {
+    img5: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/5.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img6: file(relativePath: { eq: "web/acc-sydney-pop-up/6.png" }) {
+    img6: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/6.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img7: file(relativePath: { eq: "web/acc-sydney-pop-up/7.png" }) {
+    img7: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/7.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img8: file(relativePath: { eq: "web/acc-sydney-pop-up/8.png" }) {
+    img8: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/8.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img9: file(relativePath: { eq: "web/acc-sydney-pop-up/9.png" }) {
+    img9: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/9.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img10: file(relativePath: { eq: "web/acc-sydney-pop-up/10.png" }) {
+    img10: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/10.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img11: file(relativePath: { eq: "web/acc-sydney-pop-up/11.png" }) {
+    img11: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/11.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img12: file(relativePath: { eq: "web/acc-sydney-pop-up/12.png" }) {
+    img12: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/12.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img13: file(relativePath: { eq: "web/acc-sydney-pop-up/13.png" }) {
+    img13: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/13.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img14: file(relativePath: { eq: "web/acc-sydney-pop-up/14.png" }) {
+    img14: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/14.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img15: file(relativePath: { eq: "web/acc-sydney-pop-up/15.png" }) {
+    img15: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/15.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img16: file(relativePath: { eq: "web/acc-sydney-pop-up/16.png" }) {
+    img16: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/16.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img17: file(relativePath: { eq: "web/acc-sydney-pop-up/17.png" }) {
+    img17: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/17.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

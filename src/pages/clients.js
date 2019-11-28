@@ -96,8 +96,8 @@ class Clients extends Component {
                     return 0
                   }
                 })
-                .map(client => (
-                  <li>{client}</li>
+                .map((client, index) => (
+                  <li key={index}>{client}</li>
                 ))}
             </ClientList>
             <BackButton to="/">Back</BackButton>

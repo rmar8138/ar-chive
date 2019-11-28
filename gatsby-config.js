@@ -38,6 +38,7 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
+    `gatsby-plugin-client-side-redirect`,
     // {
     //   resolve: `gatsby-plugin-layout`,
     //   options: {

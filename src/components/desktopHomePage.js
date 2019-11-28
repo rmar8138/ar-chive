@@ -33,6 +33,11 @@ const ProjectsList = styled.ul`
   li:not(:last-child) {
     margin-right: 2rem;
   }
+
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    /* padding: 2rem; */
+    font-size: 3.6rem;
+  }
 `
 
 const AllProjectsLink = styled(Link)`
@@ -60,7 +65,7 @@ export class DesktopHomePage extends Component {
   state = {
     projects: [
       {
-        title: "ACC Sydney Pop Up",
+        title: "ACC Studio Sydney Pop Up",
         spotlight: false,
         hovered: false,
       },
@@ -160,7 +165,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img1.childImageSharp.fluid}
-            alt="ACC Sydney Pop Up"
+            alt="ACC Studio Sydney Pop Up"
             top="50%"
             left="60%"
             width="70%"
@@ -258,7 +263,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        img1: file(relativePath: { eq: "web/acc-sydney-pop-up/1.png" }) {
+        img1: file(relativePath: { eq: "web/acc-studio-sydney-pop-up/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

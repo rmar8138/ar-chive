@@ -35,7 +35,7 @@ const Menu = styled.div`
 `
 
 const MobileNav = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   display: flex;
   justify-content: space-between;

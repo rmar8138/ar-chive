@@ -19,7 +19,7 @@ const spectre = require("../assets/images/web/spectre/1.png")
 const kirribilliHome = require("../assets/images/web/kirribilli-home/1.png")
 const otherWorlds = require("../assets/images/web/other-worlds/1.png")
 const kurumac = require("../assets/images/web/kurumac/1.png")
-const acc = require("../assets/images/web/acc-sydney-pop-up/1.png")
+const acc = require("../assets/images/web/acc-studio-sydney-pop-up/1.png")
 
 const Container = styled.div`
   position: relative;
@@ -54,14 +54,23 @@ const AllProjectsList = styled.ul`
   }
 
   span {
+    display: inline-block;
     font-size: ${props => props.theme.fs_small};
     font-family: "Grotesk Regular";
     text-transform: uppercase;
     margin: 4rem 0;
+
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+      margin-bottom: 2rem;
+    }
   }
 
   li:not(:last-child) {
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+      margin-bottom: 1rem;
+    }
   }
 `
 

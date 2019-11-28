@@ -11,6 +11,7 @@
     "gatsby": "^2.3.3",
     "gatsby-cli": "^2.7.49",
     "gatsby-image": "^2.2.18",
+    "gatsby-plugin-client-side-redirect": "0.0.2",
     "gatsby-plugin-layout": "^1.1.0",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-offline": "^2.0.25",
@@ -52,7 +53,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "mobileHome": "gatsby develop -o -H 192.168.0.2 -p 3000"
+    "mobileHome": "gatsby develop -o -H 192.168.0.6 -p 3000"
   },
   "repository": {
     "type": "git",

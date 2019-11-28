@@ -68,62 +68,72 @@ export class MobileHomePage extends Component {
     menuOpen: false,
     projects: [
       {
-        title: "ACC Sydney Pop Up",
+        title: "ACC Studio Sydney Pop Up",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img12.childImageSharp.fluid,
       },
       {
         title: "Kurumac",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img11.childImageSharp.fluid,
       },
       {
         title: "Other Worlds",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img10.childImageSharp.fluid,
       },
       {
         title: "Spectre",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img8.childImageSharp.fluid,
       },
       {
         title: "Kirribilli Home",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img9.childImageSharp.fluid,
       },
       {
         title: "Cool Mac Cafe",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img4.childImageSharp.fluid,
       },
       {
         title: "Rise to Ubiquity",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img3.childImageSharp.fluid,
       },
       {
         title: "Vaughan Mills",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img7.childImageSharp.fluid,
       },
       {
         title: "a Love Below: Live! Vol. 1",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img1.childImageSharp.fluid,
       },
       {
         title: "Montel Blac",
         clicked: false,
+        linkActive: false,
         spotlight: false,
         image: this.props.data.img2.childImageSharp.fluid,
       },
@@ -158,24 +168,43 @@ export class MobileHomePage extends Component {
     this.setState(prevState => ({ menuOpen: !prevState.menuOpen }))
   }
 
-  handleClick = index => {
-    this.setState(prevState => ({
-      projects: prevState.projects.map((project, projectIndex) => {
-        if (index !== projectIndex) {
-          return {
-            ...project,
-            spotlight: true,
-            clicked: false,
-          }
-        } else {
-          return {
-            ...project,
-            spotlight: false,
-            clicked: true,
-          }
+  handleClick = (index, e) => {
+    console.log("clicked")
+    this.setState(
+      prevState => {
+        return {
+          projects: prevState.projects.map((project, projectIndex) => {
+            if (index !== projectIndex) {
+              return {
+                ...project,
+                spotlight: true,
+                clicked: false,
+              }
+            } else {
+              return {
+                ...project,
+                spotlight: false,
+                clicked: true,
+              }
+            }
+          }),
         }
-      }),
-    }))
+      },
+      () => {
+        if (this.state.projects[index].linkActive) {
+          console.log("redirect")
+          window.location.assign(
+            `/${slugify(this.state.projects[index].title, {
+              remove: /[*+~.()'"!:@]/g,
+              lower: true,
+            })}`
+          )
+        } else {
+          this.state.projects[index].linkActive = true
+          console.log("this ran")
+        }
+      }
+    )
   }
 
   render() {
@@ -195,6 +224,7 @@ export class MobileHomePage extends Component {
                         onClick={this.handleClick.bind(this, index)}
                         spotlight={this.state.projects[index].spotlight}
                         name="link"
+                        key={index}
                       >
                         {index + 1 < 10 ? `0${index + 1}` : `${index + 1}`}
                       </ProjectListLink>
@@ -205,6 +235,7 @@ export class MobileHomePage extends Component {
             </ProjectsList>
             {this.state.projects.map((project, index) => (
               <StyledLink
+                key={index}
                 clicked={this.state.projects[index].clicked}
                 to={`/${slugify(this.state.projects[index].title, {
                   remove: /[*+~.()'"!:@]/g,
@@ -308,7 +339,9 @@ export default props => (
             }
           }
         }
-        img12: file(relativePath: { eq: "web/acc-sydney-pop-up/1.png" }) {
+        img12: file(
+          relativePath: { eq: "web/acc-studio-sydney-pop-up/1.png" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
