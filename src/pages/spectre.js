@@ -34,7 +34,24 @@ const Spectre = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>Description</p>
+          <p>
+            Through all of life’s trials and tribulations, triumphs and
+            betrayals we find ourselves moving continent to continent, catching
+            glimpses of the humble story led by APOLLO4OOO.
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            <span>
+              ‘Spectre’ is the debut release by APOLLO4OOO, an 8-track EP with a
+              groove and energy that keeps you moving and flowing to a diverse
+              range of lyrical and vocal compositions.
+            </span>
+            <span>
+              ar–chive pieced together the elements that would give this project
+              a lens and platform to be visually realised.
+            </span>
+          </p>
         </Fragment>
         <Fragment>
           <iframe
@@ -65,7 +82,22 @@ const Spectre = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>Description</p>
+          <div>
+            <p>
+              Through all of life’s trials and tribulations, triumphs and
+              betrayals we find ourselves moving continent to continent,
+              catching glimpses of the humble story led by APOLLO4OOO.
+            </p>
+            <p>
+              ‘Spectre’ is the debut release by APOLLO4OOO, an 8-track EP with a
+              groove and energy that keeps you moving and flowing to a diverse
+              range of lyrical and vocal compositions.
+            </p>
+            <p>
+              ar–chive pieced together the elements that would give this project
+              a lens and platform to be visually realised.
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <iframe

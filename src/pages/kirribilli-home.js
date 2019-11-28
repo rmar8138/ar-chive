@@ -13,7 +13,7 @@ const KirribilliHome = ({ data }) => (
           <div style={{ display: "flex", width: "100%", marginRight: "auto" }}>
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt=""
+              alt="Living room piece and detail"
               style={{
                 width: "50%",
                 marginRight: "2rem",
@@ -21,7 +21,7 @@ const KirribilliHome = ({ data }) => (
             />
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt=""
+              alt="Living room piece and detail"
               style={{
                 width: "25%",
               }}
@@ -38,7 +38,7 @@ const KirribilliHome = ({ data }) => (
           >
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt=""
+              alt="Details of living room piece"
               style={{
                 width: "30%",
                 minWidth: "20rem",
@@ -48,7 +48,7 @@ const KirribilliHome = ({ data }) => (
             />
             <Img
               fluid={data.img5.childImageSharp.fluid}
-              alt=""
+              alt="Details of living room piece"
               style={{ width: "30%", minWidth: "20rem", maxWidth: "45rem" }}
             />
           </div>
@@ -72,7 +72,7 @@ const KirribilliHome = ({ data }) => (
           >
             <Img
               fluid={data.img6.childImageSharp.fluid}
-              alt=""
+              alt="Photographs of surrounding Kirribilli architecture used in the artwork"
               style={{
                 width: "25%",
                 minWidth: "13rem",
@@ -82,7 +82,7 @@ const KirribilliHome = ({ data }) => (
             />
             <Img
               fluid={data.img7.childImageSharp.fluid}
-              alt=""
+              alt="Photographs of surrounding Kirribilli architecture used in the artwork"
               style={{
                 width: "25%",
                 minWidth: "13rem",
@@ -93,7 +93,7 @@ const KirribilliHome = ({ data }) => (
             />
             <Img
               fluid={data.img8.childImageSharp.fluid}
-              alt=""
+              alt="Photographs of surrounding Kirribilli architecture used in the artwork"
               style={{
                 width: "25%",
                 minWidth: "13rem",
@@ -106,12 +106,12 @@ const KirribilliHome = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img9.childImageSharp.fluid}
-            alt=""
+            alt="Stairwell piece and detail"
             style={{ width: "30%", marginRight: "1rem" }}
           />
           <Img
             fluid={data.img10.childImageSharp.fluid}
-            alt=""
+            alt="Stairwell piece and detail"
             style={{ width: "35%", marginLeft: "1rem" }}
           />
         </Fragment>
@@ -119,7 +119,7 @@ const KirribilliHome = ({ data }) => (
           <div style={{ display: "flex", marginRight: "auto", width: "100%" }}>
             <Img
               fluid={data.img11.childImageSharp.fluid}
-              alt=""
+              alt="Details of stairwell piece"
               style={{
                 width: "35%",
                 maxWidth: "40rem",
@@ -129,7 +129,7 @@ const KirribilliHome = ({ data }) => (
             />
             <Img
               fluid={data.img12.childImageSharp.fluid}
-              alt=""
+              alt="Details of stairwell piece"
               style={{ width: "35%", maxWidth: "40rem", marginLeft: "1rem" }}
             />
           </div>
@@ -141,7 +141,7 @@ const KirribilliHome = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
-            alt=""
+            alt="Living room piece and detail"
             style={{
               width: "100%",
             }}
@@ -150,7 +150,7 @@ const KirribilliHome = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img3.childImageSharp.fluid}
-            alt=""
+            alt="Living room piece and detail"
             style={{
               width: "100%",
             }}
@@ -159,7 +159,7 @@ const KirribilliHome = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img4.childImageSharp.fluid}
-            alt=""
+            alt="Details of living room piece"
             style={{
               width: "100%",
             }}
@@ -168,7 +168,7 @@ const KirribilliHome = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img5.childImageSharp.fluid}
-            alt=""
+            alt="Details of living room piece"
             style={{ width: "100%" }}
           />
         </Fragment>
@@ -184,49 +184,49 @@ const KirribilliHome = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img6.childImageSharp.fluid}
-            alt=""
+            alt="Photographs of surrounding Kirribilli architecture used in the artwork"
             style={{ width: "60%", marginRight: "auto" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img7.childImageSharp.fluid}
-            alt=""
-            style={{ width: "60%", marginLeft: "auto" }}
+            alt="Photographs of surrounding Kirribilli architecture used in the artwork"
+            style={{ width: "60%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img8.childImageSharp.fluid}
-            alt=""
+            alt="Photographs of surrounding Kirribilli architecture used in the artwork"
             style={{ width: "60%", marginLeft: "auto" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img9.childImageSharp.fluid}
-            alt=""
+            alt="Stairwell piece and detail"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img10.childImageSharp.fluid}
-            alt=""
+            alt="Stairwell piece and detail"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img11.childImageSharp.fluid}
-            alt=""
+            alt="Details of stairwell piece"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img12.childImageSharp.fluid}
-            alt=""
+            alt="Details of stairwell piece"
             style={{ width: "100%" }}
           />
         </Fragment>
