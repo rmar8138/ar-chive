@@ -12,7 +12,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt=""
+            alt="Detail of mural"
             style={{
               width: "30%",
             }}
@@ -20,18 +20,27 @@ const Kurumac = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Kurumac is a newly opened cafe on Addison Rd in Marrickville serving
-            an assortment of Japanese comfort foods. We were approached with the
-            brief to highlight ’old and new Japan’. We were in Tokyo at the time
-            of the conceptualising stage and what we found was that even after
-            visiting this city numerous times, the daily flow and energy still
-            spoke to us.
+            <span>
+              Kurumac is a cafe on Addison Rd in Marrickville serving Campos
+              coffee, an assortment of Japanese comfort food by Jun Okamatsu.
+            </span>
+            <span>
+              We were approached by owners Eugene Leung and Dika Prianata with a
+              brief to highlight ‘old and new Japan’.
+            </span>
+          </p>
+        </Fragment>
+        <Fragment>
+          <p>
+            We were in Tokyo at the time of the conceptualising stage and what
+            we found was that even after visiting this city numerous times, the
+            daily flow and energy still spoke to us.
           </p>
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
-            alt=""
+            alt="Mural in situ"
             style={{
               width: "60%",
               minWidth: "40rem",
@@ -51,7 +60,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img3.childImageSharp.fluid}
-            alt=""
+            alt="Process sketch"
             style={{
               width: "50%",
               minWidth: "40rem",
@@ -61,7 +70,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img9.childImageSharp.fluid}
-            alt=""
+            alt="Painting process"
             style={{
               width: "80%",
               minWidth: "40rem",
@@ -80,7 +89,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img8.childImageSharp.fluid}
-            alt=""
+            alt="Finished artwork at Kurumac"
             style={{
               width: "80%",
               minWidth: "20rem",
@@ -96,26 +105,33 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt=""
+            alt="Detail of mural"
             style={{
               width: "80%",
             }}
           />
         </Fragment>
         <Fragment>
-          <p>
-            Kurumac is a newly opened cafe on Addison Rd in Marrickville serving
-            an assortment of Japanese comfort foods. We were approached with the
-            brief to highlight ’old and new Japan’. We were in Tokyo at the time
-            of the conceptualising stage and what we found was that even after
-            visiting this city numerous times, the daily flow and energy still
-            spoke to us.
-          </p>
+          <div>
+            <p>
+              Kurumac is a cafe on Addison Rd in Marrickville serving Campos
+              coffee, an assortment of Japanese comfort food by Jun Okamatsu.
+            </p>
+            <p>
+              We were approached by owners Eugene Leung and Dika Prianata with a
+              brief to highlight ‘old and new Japan’.
+            </p>
+            <p>
+              We were in Tokyo at the time of the conceptualising stage and what
+              we found was that even after visiting this city numerous times,
+              the daily flow and energy still spoke to us.
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
-            alt=""
+            alt="Mural in situ"
             style={{
               width: "100%",
             }}
@@ -134,7 +150,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img3.childImageSharp.fluid}
-            alt=""
+            alt="Process sketch"
             style={{
               width: "60%",
             }}
@@ -143,7 +159,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img4.childImageSharp.fluid}
-            alt=""
+            alt="Painting process"
             style={{
               width: "60%",
             }}
@@ -152,7 +168,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img5.childImageSharp.fluid}
-            alt=""
+            alt="Painting process"
             style={{
               width: "60%",
             }}
@@ -161,7 +177,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img6.childImageSharp.fluid}
-            alt=""
+            alt="Painting process"
             style={{
               width: "60%",
             }}
@@ -170,7 +186,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img7.childImageSharp.fluid}
-            alt=""
+            alt="Painting process"
             style={{
               width: "60%",
             }}
@@ -187,7 +203,7 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img8.childImageSharp.fluid}
-            alt=""
+            alt="Finished artwork at Kurumac"
             style={{
               width: "90%",
               minWidth: "20rem",
