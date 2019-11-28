@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { BackButton } from "./buttons"
 import archiveLogo from "../assets/logos/ar.svg"
 
 const Container = styled.div`
@@ -15,11 +16,6 @@ const Container = styled.div`
 const Menu = styled.div`
   background-color: ${props => props.theme.lightGrey};
   height: 100vh;
-
-  /* z-index: 1000;
-  position: absolute;
-  top: 0;
-  left: 0; */
   display: flex;
   flex-direction: column;
 
@@ -71,6 +67,7 @@ export default props => (
           alt="ar-chive logo"
           onClick={props.toggleMenu}
         />
+        <BackButton onClick={props.toggleMenu}>Close</BackButton>
       </MobileNav>
     </Menu>
   </Container>

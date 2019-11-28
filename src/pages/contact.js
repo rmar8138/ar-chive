@@ -5,7 +5,7 @@ import MediaQuery from "react-responsive"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import MobileMenu from "../components/mobileMenu"
-import { BackButton } from "../components/buttons"
+import { HomeButton } from "../components/buttons"
 
 import SEO from "../components/seo"
 
@@ -160,7 +160,7 @@ class Contact extends Component {
                 <a href="mailto:a@ar-chive.studio">a@ar-chive.studio</a>
                 <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
               </Email>
-              <BackButton to="/">Back</BackButton>
+              <HomeButton to="/">Back</HomeButton>
             </Fragment>
           </Container>
         </Layout>

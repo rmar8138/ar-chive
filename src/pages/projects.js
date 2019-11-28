@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import AllProjectsLink from "../components/allProjectsLink"
-import { BackButton } from "../components/buttons"
+import { HomeButton } from "../components/buttons"
 
 import SEO from "../components/seo"
 
@@ -221,7 +221,7 @@ class Projects extends Component {
             {this.renderProjectsByYear(2018)}
             {this.renderProjectsByYear(2017)}
           </AllProjectsList>
-          <BackButton to="/">Back</BackButton>
+          <HomeButton to="/">Back</HomeButton>
         </Container>
       </Layout>
     )

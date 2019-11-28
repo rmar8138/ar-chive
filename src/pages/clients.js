@@ -5,7 +5,7 @@ import MediaQuery from "react-responsive"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import MobileMenu from "../components/mobileMenu"
-import { BackButton } from "../components/buttons"
+import { HomeButton } from "../components/buttons"
 
 import SEO from "../components/seo"
 
@@ -100,7 +100,7 @@ class Clients extends Component {
                   <li key={index}>{client}</li>
                 ))}
             </ClientList>
-            <BackButton to="/">Back</BackButton>
+            <HomeButton to="/">Back</HomeButton>
           </Container>
         </Layout>
       </PageTransition>
