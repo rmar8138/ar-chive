@@ -190,6 +190,8 @@ class ProjectPageLayout extends Component {
     }
   }
 
+  goBack = () => window.history.back()
+
   render() {
     return (
       <Layout>
@@ -221,7 +223,7 @@ class ProjectPageLayout extends Component {
           <Logo>
             <img src={archiveLogo} alt="ar-chive logo" />
           </Logo>
-          <BackButton to="/">Back</BackButton>
+          <BackButton onClick={this.goBack}>Back</BackButton>
         </Container>
       </Layout>
     )

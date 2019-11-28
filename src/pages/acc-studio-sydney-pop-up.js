@@ -12,7 +12,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt="Micra"
+            alt="ACC STUDIO La-Ropa at M2 Gallery"
             style={{
               width: "80%",
               minWidth: "30rem",
@@ -33,7 +33,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
-            alt="Micra"
+            alt="Digital poster design 1"
             style={{
               width: "30%",
               minWidth: "15rem",
@@ -43,7 +43,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
           />
           <Img
             fluid={data.img3.childImageSharp.fluid}
-            alt="Micra"
+            alt="Digital poster design 2"
             style={{
               width: "30%",
               minWidth: "15rem",
@@ -54,7 +54,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
           />
           <Img
             fluid={data.img4.childImageSharp.fluid}
-            alt="Micra"
+            alt="Digital poster design 3"
             style={{
               width: "30%",
               minWidth: "15rem",
@@ -66,14 +66,14 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img5.childImageSharp.fluid}
-            alt="Micra"
+            alt="Koala artwork"
             style={{ width: "60%", minWidth: "30rem", maxWidth: "80rem" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img6.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 1"
             style={{
               width: "30%",
               minWidth: "15rem",
@@ -83,7 +83,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
           />
           <Img
             fluid={data.img7.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 2"
             style={{
               width: "30%",
               minWidth: "15rem",
@@ -94,7 +94,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
           />
           <Img
             fluid={data.img8.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 3"
             style={{
               width: "30%",
               minWidth: "15rem",
@@ -106,14 +106,14 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img9.childImageSharp.fluid}
-            alt="Micra"
+            alt="Koala artwork with posters"
             style={{ width: "60%", minWidth: "30rem", maxWidth: "80rem" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img17.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 4"
             style={{
               width: "80%",
               minWidth: "40rem",
@@ -124,7 +124,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img12.childImageSharp.fluid}
-            alt="Micra"
+            alt="Posters bundled together"
             style={{
               width: "60%",
               minWidth: "40rem",
@@ -140,7 +140,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt="Micra"
+            alt="ACC STUDIO La-Ropa at M2 Gallery"
             style={{
               width: "80%",
               minWidth: "30rem",
@@ -160,7 +160,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
-            alt="Micra"
+            alt="Digital poster design 1"
             style={{
               width: "100%",
             }}
@@ -169,7 +169,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img3.childImageSharp.fluid}
-            alt="Micra"
+            alt="Digital poster design 2"
             style={{
               width: "100%",
             }}
@@ -178,7 +178,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img4.childImageSharp.fluid}
-            alt="Micra"
+            alt="Digital poster design 3"
             style={{
               width: "100%",
             }}
@@ -187,14 +187,14 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img5.childImageSharp.fluid}
-            alt="Micra"
+            alt="Koala artwork"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img6.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 1"
             style={{
               width: "65%",
               marginRight: "auto",
@@ -204,7 +204,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img7.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 2"
             style={{
               width: "65%",
             }}
@@ -213,7 +213,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img8.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 3"
             style={{
               width: "65%",
               marginLeft: "auto",
@@ -223,28 +223,28 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img9.childImageSharp.fluid}
-            alt="Micra"
+            alt="Koala artwork with posters"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img10.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 4"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img11.childImageSharp.fluid}
-            alt="Micra"
+            alt="Details of Koala artwork 5"
             style={{ width: "100%" }}
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img13.childImageSharp.fluid}
-            alt="Micra"
+            alt="Poster 1"
             style={{
               width: "80%",
             }}
@@ -253,7 +253,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img14.childImageSharp.fluid}
-            alt="Micra"
+            alt="Poster 2"
             style={{
               width: "80%",
             }}
@@ -262,7 +262,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img15.childImageSharp.fluid}
-            alt="Micra"
+            alt="Poster 3"
             style={{
               width: "80%",
             }}
@@ -271,7 +271,7 @@ const ACCStudioSydneyPopUp = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img16.childImageSharp.fluid}
-            alt="Micra"
+            alt="Poster 4"
             style={{
               width: "80%",
             }}

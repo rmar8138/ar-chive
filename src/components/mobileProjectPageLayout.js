@@ -166,6 +166,8 @@ class MobileProjectPageLayout extends Component {
     }
   }
 
+  goBack = () => window.history.back()
+
   onChange = value => this.setState({ value })
 
   render() {
@@ -191,7 +193,7 @@ class MobileProjectPageLayout extends Component {
                 )}
               </Fade>
             </Content>
-            <BackButton to="/">Back</BackButton>
+            <BackButton onClick={this.goBack}>Back</BackButton>
           </Container>
         </Layout>
       </Fragment>

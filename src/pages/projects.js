@@ -78,7 +78,7 @@ class Projects extends Component {
   state = {
     projects: [
       {
-        title: "ACC Sydney Pop Up",
+        title: "ACC Studio Sydney Pop Up",
         spotlight: false,
         hovered: false,
         image: acc,
