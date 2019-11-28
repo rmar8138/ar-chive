@@ -18,9 +18,8 @@ const VaughanMills = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Vaughan Mills is a stylist who we have worked closely with across a
-            variety of creative projects. The following series of images are
-            from recent photoshoots featuring his vintage collection.
+            Visual stories, concepts and ongoing collaborations with illusive
+            creative director Vaughan Mills.
           </p>
         </Fragment>
         <Fragment>
@@ -162,9 +161,8 @@ const VaughanMills = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Vaughan Mills is a stylist who we have worked closely with across a
-            variety of creative projects. The following series of images are
-            from recent photoshoots featuring his vintage collection.
+            Visual stories, concepts and ongoing collaborations with illusive
+            creative director Vaughan Mills.
           </p>
         </Fragment>
         <Fragment>

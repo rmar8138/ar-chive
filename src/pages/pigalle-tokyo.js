@@ -17,6 +17,13 @@ const PigalleTokyo = ({ data }) => (
           />
         </Fragment>
         <Fragment>
+          <p>
+            In collaboration with Gogo and Pigalle Tokyo, we photographed the
+            Fall ‘17 collection, contextualising the pieces with the colour
+            palettes of the surrounding Shibuya streets.
+          </p>
+        </Fragment>
+        <Fragment>
           <Img
             fluid={data.img2.childImageSharp.fluid}
             alt="Pigalle Tokyo"
@@ -70,6 +77,13 @@ const PigalleTokyo = ({ data }) => (
             alt="Pigalle Tokyo"
             style={{ width: "85%", marginRight: "auto" }}
           />
+        </Fragment>
+        <Fragment>
+          <p>
+            In collaboration with Gogo and Pigalle Tokyo, we photographed the
+            Fall ‘17 collection, contextualising the pieces with the colour
+            palettes of the surrounding Shibuya streets.
+          </p>
         </Fragment>
         <Fragment>
           <Img

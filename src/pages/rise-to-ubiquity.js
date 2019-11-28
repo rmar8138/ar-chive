@@ -31,6 +31,13 @@ const RiseToUbiquity = ({ data }) => (
           </p>
         </Fragment>
         <Fragment>
+          <p>
+            To accompany the exhibition, we created the RRM Retrospective
+            Publication, Rise To Ubiquity exhibition catalogue and flyer as well
+            as a temporary website experience.
+          </p>
+        </Fragment>
+        <Fragment>
           <figure>
             <Img
               fluid={data.img2.childImageSharp.fluid}
@@ -172,13 +179,21 @@ const RiseToUbiquity = ({ data }) => (
           </figure>
         </Fragment>
         <Fragment>
-          <p>
-            A solo exhibition by Rowland Reyes Martinez, Rise To Ubiquity was an
-            exploration of the photographic experience. ar-chive curated and
-            produced the exhibition held on 15 February 2019 at 9 Ryder Street,
-            Darlinghurst in Sydney. We also designed a publication, catalogue,
-            show description flyer and website to accompany the exhibition.
-          </p>
+          <div>
+            <p>
+              A solo exhibition by Rowland Reyes Martinez, Rise To Ubiquity was
+              an exploration of the photographic experience. ar-chive curated
+              and produced the exhibition held on 15 February 2019 at 9 Ryder
+              Street, Darlinghurst in Sydney. We also designed a publication,
+              catalogue, show description flyer and website to accompany the
+              exhibition.
+            </p>
+            <p>
+              To accompany the exhibition, we created the RRM Retrospective
+              Publication, Rise To Ubiquity exhibition catalogue and flyer as
+              well as a temporary website experience.
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <figure>
