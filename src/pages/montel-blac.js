@@ -15,26 +15,32 @@ const MontelBlac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt="Montel Blac EP Cover"
+            alt="Montel front cover design"
             style={{ maxWidth: "50%", minWidth: "50rem" }}
           />
         </Fragment>
         <Fragment>
-          <p>
-            Montel’s self-titled debut EP sonically melds his style of
-            off-kilter production, rhythmic vocal chops and samples to create a
-            body of work that delivers a short insight into his world. ar–chive
-            was briefed to give this project its visual anchor.
-          </p>
+          <div>
+            <p>
+              Montel’s self-titled debut EP sonically melds his style of
+              off-kilter production, rhythmic vocal chops and samples to create
+              a body of work that delivers a short insight into his world.{" "}
+            </p>
+            <p>ar–chive was briefed to give this project its visual anchor.</p>
+          </div>
         </Fragment>
         <Fragment>
-          <p>
-            We approached this project with the intention to create an artwork
-            that fuses the nature of Montel’s dark hitting sound scapes to
-            dictate our intuitive mark making approach putting ink onto paper.
-            We experimented with a camera and a light source to sample and
-            manipulate the drawing into its finished form.
-          </p>
+          <div>
+            <p>
+              We approached this project with the intention to create an artwork
+              that fuses the nature of Montel’s dark hitting sound scapes to
+              dictate our intuitive mark making approach putting ink onto paper.
+            </p>
+            <p>
+              We experimented with a camera and a light source to sample and
+              manipulate the drawing into its finished form.
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <figure>
@@ -57,26 +63,32 @@ const MontelBlac = ({ data }) => (
         <Fragment>
           <Img
             fluid={data.img1.childImageSharp.fluid}
-            alt="Montel Blac"
+            alt="Montel front cover design"
             style={{ maxWidth: "50%", minWidth: "30rem" }}
           />
         </Fragment>
         <Fragment>
-          <p>
-            Montel’s self-titled debut EP sonically melds his style of
-            off-kilter production, rhythmic vocal chops and samples to create a
-            body of work that delivers a short insight into his world. ar–chive
-            was briefed to give this project its visual anchor.
-          </p>
+          <div>
+            <p>
+              Montel’s self-titled debut EP sonically melds his style of
+              off-kilter production, rhythmic vocal chops and samples to create
+              a body of work that delivers a short insight into his world.{" "}
+            </p>
+            <p>ar–chive was briefed to give this project its visual anchor.</p>
+          </div>
         </Fragment>
         <Fragment>
-          <p>
-            We approached this project with the intention to create an artwork
-            that fuses the nature of Montel’s dark hitting sound scapes to
-            dictate our intuitive mark making approach putting ink onto paper.
-            We experimented with a camera and a light source to sample and
-            manipulate the drawing into its finished form.
-          </p>
+          <div>
+            <p>
+              We approached this project with the intention to create an artwork
+              that fuses the nature of Montel’s dark hitting sound scapes to
+              dictate our intuitive mark making approach putting ink onto paper.
+            </p>
+            <p>
+              We experimented with a camera and a light source to sample and
+              manipulate the drawing into its finished form.
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <figure>

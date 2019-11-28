@@ -19,8 +19,8 @@ const ALoveBelow = ({ data }) => (
           </figure>
         </Fragment>
         <Fragment>
-          <p>
-            <span>
+          <div>
+            <p>
               <a
                 href="https://www.youtube.com/watch?v=cRD46ww3Uv8&t=2329s"
                 target="_blank"
@@ -35,27 +35,27 @@ const ALoveBelow = ({ data }) => (
               From Coolmac Cafe is the first installment of live beats and
               painting by a Love Below - a platform dedicated to building and
               showcasing artists to local Australian and global communities.
-            </span>{" "}
-            <span>
+            </p>{" "}
+            <p>
               With a diverse range of beat makers and artists involved, the
               challenge was to create a uniform branding that would translate
               the sound scapes and art processes for this event.
-            </span>
-          </p>
+            </p>
+          </div>
         </Fragment>
         <Fragment>
-          <p>
-            <span>
+          <div>
+            <p>
               To represent this, ar–chive designed collage inspired shapes with
               free form hand-written typography in addition with the video live
               recap of the event.
-            </span>{" "}
-            <span>
+            </p>{" "}
+            <p>
               This event brought awareness to the Kirribilli community with
               customers of Coolmac Cafe and surrounding pedestrians engaged and
               involved in the process of the artists.
-            </span>
-          </p>
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <figure>
@@ -72,7 +72,7 @@ const ALoveBelow = ({ data }) => (
           >
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt="Inside Coolmac Cafe"
+              alt="Live beat set and painting in process"
               style={{
                 width: "30%",
                 minWidth: "15rem",
@@ -82,7 +82,7 @@ const ALoveBelow = ({ data }) => (
             />
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt="Inside Coolmac Cafe"
+              alt="Live beat set and painting in process"
               style={{
                 width: "30%",
                 minWidth: "15rem",
@@ -106,12 +106,42 @@ const ALoveBelow = ({ data }) => (
           </figure>
         </Fragment>
         <Fragment>
-          <p>
-            Poster for a Love Below: Live! Volume 1, an afternoon of original
-            beats and painting created live from Coolmac Cafe in Kirribilli.
-            Featuring wa*sei, Angela Tam, Kase Avila, Montel Blac and Apollo
-            4000.
-          </p>
+          <div>
+            <p>
+              <a
+                href="https://www.youtube.com/watch?v=cRD46ww3Uv8&t=2329s"
+                target="_blank"
+                style={{
+                  zIndex: "100000",
+                  position: "relative",
+                  color: "rgba(39, 41, 99)",
+                }}
+              >
+                a Love Below: Live!
+              </a>{" "}
+              From Coolmac Cafe is the first installment of live beats and
+              painting by a Love Below - a platform dedicated to building and
+              showcasing artists to local Australian and global communities.
+              With a diverse range of beat makers and artists involved, the
+              challenge was to create a uniform branding that would translate
+              the sound scapes and art processes for this event.
+            </p>
+            <p>
+              With a diverse range of beat makers and artists involved, the
+              challenge was to create a uniform branding that would translate
+              the sound scapes and art processes for this event.
+            </p>
+            <p>
+              To represent this, ar–chive designed collage inspired shapes with
+              free form hand-written typography in addition with the video live
+              recap of the event.
+            </p>
+            <p>
+              This event brought awareness to the Kirribilli community with
+              customers of Coolmac Cafe and surrounding pedestrians engaged and
+              involved in the process of the artists.
+            </p>
+          </div>
         </Fragment>
         <Fragment>
           <figure>
@@ -127,7 +157,7 @@ const ALoveBelow = ({ data }) => (
           <figure>
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt="Inside Coolmac Cafe"
+              alt="Live beat set and painting in process"
               style={{ width: "80%" }}
             />
           </figure>
@@ -136,7 +166,7 @@ const ALoveBelow = ({ data }) => (
           <figure>
             <Img
               fluid={data.img4.childImageSharp.fluid}
-              alt="Inside Coolmac Cafe"
+              alt="Live beat set and painting in process"
               style={{ width: "80%", marginLeft: "auto" }}
             />
           </figure>
