@@ -16,7 +16,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img1.childImageSharp.fluid}
-              alt=" Photo prints hanging display"
+              alt="Photo prints hanging display"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -34,7 +34,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Viewers at opening night"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -43,7 +43,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Attendees enjoying drinks and socialising at the space"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -53,12 +53,12 @@ const RiseToUbiquity = ({ data }) => (
             <Img
               fluid={data.img4.childImageSharp.fluid}
               style={{ width: "40%", height: "auto", marginRight: "1rem" }}
-              alt="Rise to Ubiquity"
+              alt="Inside of Babekuhl space"
             />
             <Img
               fluid={data.img5.childImageSharp.fluid}
               style={{ width: "40%", height: "auto", marginLeft: "1rem" }}
-              alt="Rise to Ubiquity"
+              alt="Inside of Babekuhl space"
             />
           </figure>
         </Fragment>
@@ -67,12 +67,12 @@ const RiseToUbiquity = ({ data }) => (
             <Img
               fluid={data.img6.childImageSharp.fluid}
               style={{ width: "40%", height: "auto", marginRight: "1rem" }}
-              alt="Rise to Ubiquity"
+              alt="During Rise To Ubiquity video"
             />
             <Img
               fluid={data.img7.childImageSharp.fluid}
               style={{ width: "40%", height: "auto", marginLeft: "1rem" }}
-              alt="Rise to Ubiquity"
+              alt="After Rise To Ubiquity video"
             />
           </figure>
         </Fragment>
@@ -82,22 +82,23 @@ const RiseToUbiquity = ({ data }) => (
               width: "100%",
               display: "flex",
               justifyContent: "flex-start",
+              flexDirection: "row",
             }}
           >
             <Img
               fluid={data.img8.childImageSharp.fluid}
               style={{ width: "25%", height: "auto", marginRight: "2rem" }}
-              alt="Rise to Ubiquity"
+              alt="Poster one designed for exhibition"
             />
             <Img
               fluid={data.img9.childImageSharp.fluid}
               style={{ width: "25%", height: "auto", marginRight: "2rem" }}
-              alt="Rise to Ubiquity"
+              alt="Poster two designed for exhibition"
             />
             <Img
               fluid={data.img10.childImageSharp.fluid}
               style={{ width: "25%", height: "auto" }}
-              alt="Rise to Ubiquity"
+              alt="Poster three designed for exhibition"
             />
           </div>
         </Fragment>
@@ -105,17 +106,8 @@ const RiseToUbiquity = ({ data }) => (
           <Img
             fluid={data.img11.childImageSharp.fluid}
             style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
-            alt="Rise to Ubiquity"
+            alt="Putting up the posters before show"
           />
-        </Fragment>
-        <Fragment>
-          <video autoPlay loop muted controls="controls">
-            <source
-              src={vid1}
-              type="video/mp4"
-              style={{ maxWidth: "50%", minWidth: "20rem" }}
-            />
-          </video>
         </Fragment>
         <Fragment>
           <video loop muted controls="controls">
@@ -130,12 +122,12 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img12.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Print collateral designed for the show including an artist bio, catalogue and photo zine"
               style={{ width: "45%", marginRight: "1rem" }}
             />
             <Img
               fluid={data.img13.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Print collateral designed for the show including an artist bio, catalogue and photo zine"
               style={{ width: "30%", marginLeft: "1rem" }}
             />
           </figure>
@@ -144,7 +136,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img14.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Page from the zine"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -153,7 +145,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img15.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Page from the zine"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -162,7 +154,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img16.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Screenshots from the temporary site for showcase"
               style={{ width: "60%", minWidth: "40rem", maxWidth: "80rem" }}
             />
           </figure>
@@ -175,7 +167,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img1.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Photo prints hanging display"
               style={{ width: "100%" }}
             />
           </figure>
@@ -193,7 +185,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img2.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt=" Viewers at opening night"
               style={{ width: "100%", marginRight: "0rem" }}
             />
           </figure>
@@ -202,7 +194,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img3.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Attendees enjoying drinks and socialising at the space"
               style={{ width: "100%", marginRight: "0rem" }}
             />
           </figure>
@@ -212,7 +204,7 @@ const RiseToUbiquity = ({ data }) => (
             <Img
               fluid={data.img4.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
-              alt="Rise to Ubiquity"
+              alt="Inside of Babekuhl space"
             />
           </figure>
         </Fragment>
@@ -221,7 +213,7 @@ const RiseToUbiquity = ({ data }) => (
             <Img
               fluid={data.img5.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
-              alt="Rise to Ubiquity"
+              alt="Inside of Babekuhl space"
             />
           </figure>
         </Fragment>
@@ -230,7 +222,7 @@ const RiseToUbiquity = ({ data }) => (
             <Img
               fluid={data.img6.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
-              alt="Rise to Ubiquity"
+              alt="During Rise To Ubiquity video"
             />
           </figure>
         </Fragment>
@@ -239,7 +231,7 @@ const RiseToUbiquity = ({ data }) => (
             <Img
               fluid={data.img7.childImageSharp.fluid}
               style={{ width: "100%", marginRight: "0rem" }}
-              alt="Rise to Ubiquity"
+              alt="After Rise To Ubiquity video"
             />
           </figure>
         </Fragment>
@@ -247,38 +239,29 @@ const RiseToUbiquity = ({ data }) => (
           <Img
             fluid={data.img8.childImageSharp.fluid}
             style={{ width: "80%", marginRight: "auto" }}
-            alt="Rise to Ubiquity"
+            alt="Poster one designed for exhibition"
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img9.childImageSharp.fluid}
-            style={{ width: "80%", marginRight: "auto" }}
-            alt="Rise to Ubiquity"
+            style={{ width: "80%" }}
+            alt="Poster two designed for exhibition"
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img10.childImageSharp.fluid}
-            style={{ width: "80%", marginRight: "auto" }}
-            alt="Rise to Ubiquity"
+            style={{ width: "80%", marginLeft: "auto" }}
+            alt="Poster three designed for exhibition"
           />
         </Fragment>
         <Fragment>
           <Img
             fluid={data.img11.childImageSharp.fluid}
             style={{ width: "80%", marginLeft: "auto" }}
-            alt="Rise to Ubiquity"
+            alt="Putting up the posters before show"
           />
-        </Fragment>
-        <Fragment>
-          <video autoPlay loop muted controls="controls">
-            <source
-              src={vid1}
-              type="video/mp4"
-              style={{ maxWidth: "50%", minWidth: "20rem" }}
-            />
-          </video>
         </Fragment>
         <Fragment>
           <video loop muted controls="controls">
@@ -293,7 +276,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img12.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Print collateral designed for the show including an artist bio, catalogue and photo zine"
               style={{ width: "80%" }}
             />
           </figure>
@@ -302,7 +285,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img13.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Print collateral designed for the show including an artist bio, catalogue and photo zine"
               style={{ width: "80%" }}
             />
           </figure>
@@ -311,7 +294,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img14.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Page from the zine"
               style={{ width: "100%" }}
             />
           </figure>
@@ -320,7 +303,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img15.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Page from the zine"
               style={{ width: "100%" }}
             />
           </figure>
@@ -329,7 +312,7 @@ const RiseToUbiquity = ({ data }) => (
           <figure>
             <Img
               fluid={data.img16.childImageSharp.fluid}
-              alt="Rise to Ubiquity"
+              alt="Screenshots from the temporary site for showcase"
               style={{ width: "100%" }}
             />
           </figure>

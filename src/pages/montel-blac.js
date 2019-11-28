@@ -56,6 +56,13 @@ const MontelBlac = ({ data }) => (
             </video>
           </figure>
         </Fragment>
+        <Fragment>
+          <p>
+            We developed a 9-grid social strategy to accompany each track with
+            black and white videos of an environment that gives the sound its
+            visual context.
+          </p>
+        </Fragment>
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
@@ -75,10 +82,6 @@ const MontelBlac = ({ data }) => (
               a body of work that delivers a short insight into his world.{" "}
             </p>
             <p>ar–chive was briefed to give this project its visual anchor.</p>
-          </div>
-        </Fragment>
-        <Fragment>
-          <div>
             <p>
               We approached this project with the intention to create an artwork
               that fuses the nature of Montel’s dark hitting sound scapes to
@@ -111,6 +114,13 @@ const MontelBlac = ({ data }) => (
               />
             </video>
           </figure>
+        </Fragment>
+        <Fragment>
+          <p>
+            We developed a 9-grid social strategy to accompany each track with
+            black and white videos of an environment that gives the sound its
+            visual context.
+          </p>
         </Fragment>
       </MobileProjectPageLayout>
     </UserAgent>
