@@ -113,7 +113,24 @@ const RiseToUbiquity = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>Add video here</p>
+          <iframe
+            src="https://player.vimeo.com/video/353718740"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
+        </Fragment>
+        <Fragment>
+          <iframe
+            src="https://player.vimeo.com/video/367210517"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
         </Fragment>
         <Fragment>
           <figure>
@@ -269,7 +286,24 @@ const RiseToUbiquity = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <p>Add video here</p>
+          <iframe
+            src="https://player.vimeo.com/video/353718740"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
+        </Fragment>
+        <Fragment>
+          <iframe
+            src="https://player.vimeo.com/video/367210517"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
         </Fragment>
         <Fragment>
           <figure>

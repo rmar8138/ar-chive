@@ -143,29 +143,6 @@ const Slide = styled.div`
 `
 
 class MobileProjectPageLayout extends Component {
-  componentDidMount() {
-    // add event listener to listen for left/right arrow key
-    window.addEventListener("keydown", e => this.detectArrowKey(e))
-  }
-
-  componentWillUnmount() {
-    // remove event listener on unmount
-    window.removeEventListener("keydown", this.detectArrowKey)
-  }
-
-  detectArrowKey = e => {
-    // change slides if left/right arrow key pressed
-    if (e.keyCode === 37) {
-      if (this.state.value > 0) {
-        this.setState(prevState => ({ value: prevState.value - 1 }))
-      }
-    } else if (e.keyCode === 39) {
-      if (this.state.value + 1 < this.props.children.length) {
-        this.setState(prevState => ({ value: prevState.value + 1 }))
-      }
-    }
-  }
-
   goBack = () => window.history.back()
 
   onChange = value => this.setState({ value })

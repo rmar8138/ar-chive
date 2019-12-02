@@ -5,9 +5,6 @@ import { UserAgent } from "@quentin-sommer/react-useragent"
 import ProjectPageLayout from "../components/projectPageLayout"
 import MobileProjectPageLayout from "../components/mobileProjectPageLayout"
 
-const vid1 = require(`../assets/videos/montel-blac/1.mp4`)
-const vid2 = require(`../assets/videos/montel-blac/2.mp4`)
-
 const MontelBlac = ({ data }) => (
   <Fragment>
     <UserAgent computer>
@@ -45,18 +42,24 @@ const MontelBlac = ({ data }) => (
           </p>
         </Fragment>
         <Fragment>
-          <figure>
-            <video loop muted controls="controls">
-              <source src={vid1} type="video/mp4" />
-            </video>
-          </figure>
+          <iframe
+            src="https://player.vimeo.com/video/376778771"
+            width="640"
+            height="640"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
         </Fragment>
         <Fragment>
-          <figure>
-            <video loop muted controls="controls">
-              <source src={vid2} type="video/mp4" />
-            </video>
-          </figure>
+          <iframe
+            src="https://player.vimeo.com/video/376778663"
+            width="640"
+            height="640"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
         </Fragment>
         <Fragment>
           <p>
@@ -96,26 +99,24 @@ const MontelBlac = ({ data }) => (
           </div>
         </Fragment>
         <Fragment>
-          <figure>
-            <video loop muted controls="controls">
-              <source
-                src={vid1}
-                type="video/mp4"
-                style={{ maxWidth: "50%", minWidth: "20rem" }}
-              />
-            </video>
-          </figure>
+          <iframe
+            src="https://player.vimeo.com/video/376778771"
+            width="640"
+            height="640"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
         </Fragment>
         <Fragment>
-          <figure>
-            <video loop muted controls="controls">
-              <source
-                src={vid2}
-                type="video/mp4"
-                style={{ maxWidth: "50%", minWidth: "20rem" }}
-              />
-            </video>
-          </figure>
+          <iframe
+            src="https://player.vimeo.com/video/376778663"
+            width="640"
+            height="640"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
         </Fragment>
         <Fragment>
           <p>
