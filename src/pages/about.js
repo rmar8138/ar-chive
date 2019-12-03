@@ -39,7 +39,7 @@ const CopyText = styled.div`
 const Copyright = styled.div`
   font-family: "Grotesk Regular";
   font-size: ${props => props.theme.fs_small};
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   left: 2.5rem;
 
