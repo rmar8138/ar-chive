@@ -64,13 +64,13 @@ const CoolMacCafe = ({ data }) => (
           />
         </Fragment>
         <Fragment>
-          <div style={{ width: "100%" }}>
+          <figure>
             <Img
               fluid={data.img9.childImageSharp.fluid}
               alt="Process images"
-              style={{ width: "70%", zIndex: "1000" }}
+              style={{ width: "70%", minWidth: "40rem", zIndex: "1000" }}
             />
-          </div>
+          </figure>
         </Fragment>
         <Fragment>
           <Img

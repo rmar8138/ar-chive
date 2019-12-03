@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import Layout from "../components/layout"
-import { BackButton } from "./buttons"
+import { HomeButton } from "./buttons"
 import SEO from "../components/seo"
 
 const Container = styled.div`
@@ -143,8 +143,6 @@ const Slide = styled.div`
 `
 
 class MobileProjectPageLayout extends Component {
-  goBack = () => window.history.back()
-
   onChange = value => this.setState({ value })
 
   render() {
@@ -170,7 +168,7 @@ class MobileProjectPageLayout extends Component {
                 )}
               </Fade>
             </Content>
-            <BackButton onClick={this.goBack}>Back</BackButton>
+            <HomeButton to="/">Back</HomeButton>
           </Container>
         </Layout>
       </Fragment>

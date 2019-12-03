@@ -242,7 +242,7 @@ export class MobileHomePage extends Component {
                   lower: true,
                 })}`}
               >
-                <Img fluid={this.state.projects[index].image} />
+                <Img fluid={this.state.projects[index].image} loading="eager" />
               </StyledLink>
             ))}
             <Logo

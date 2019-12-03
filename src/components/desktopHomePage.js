@@ -165,6 +165,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img1.childImageSharp.fluid}
+            loading="eager"
             alt="ACC Studio Sydney Pop Up"
             top="50%"
             left="60%"
@@ -174,6 +175,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img9.childImageSharp.fluid}
+            loading="eager"
             alt="A Love Below"
             top="50%"
             left="50%"
@@ -183,6 +185,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img10.childImageSharp.fluid}
+            loading="eager"
             alt="Montel Blac"
             top="50%"
             left="30%"
@@ -192,6 +195,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img7.childImageSharp.fluid}
+            loading="eager"
             alt="Rise To Ubiquity"
             top="55%"
             left="65%"
@@ -201,6 +205,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img6.childImageSharp.fluid}
+            loading="eager"
             alt="Cool Mac Cafe"
             top="55%"
             left="55%"
@@ -210,6 +215,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img8.childImageSharp.fluid}
+            loading="eager"
             alt="Vaughan Mills"
             top="55%"
             left="30%"
@@ -219,6 +225,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img4.childImageSharp.fluid}
+            loading="eager"
             alt="Spectre"
             top="50%"
             left="80%"
@@ -228,6 +235,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img5.childImageSharp.fluid}
+            loading="eager"
             alt="Kirribilli Home"
             top="50%"
             left="25%"
@@ -237,6 +245,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img3.childImageSharp.fluid}
+            loading="eager"
             alt="Other Worlds"
             top="50%"
             left="70%"
@@ -246,6 +255,7 @@ export class DesktopHomePage extends Component {
           <Image
             style={{ position: "absolute" }}
             fluid={data.img2.childImageSharp.fluid}
+            loading="eager"
             alt="Kurumac"
             top="50%"
             left="20%"

@@ -18,8 +18,8 @@ const VaughanMills = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Visual stories, concepts and ongoing collaborations with illusive
-            creative director Vaughan Mills.
+            Visual stories, concepts and ongoing collaborations with the
+            illusive creative director Vaughan Mills.
           </p>
         </Fragment>
         <Fragment>
@@ -161,8 +161,8 @@ const VaughanMills = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Visual stories, concepts and ongoing collaborations with illusive
-            creative director Vaughan Mills.
+            Visual stories, concepts and ongoing collaborations with the
+            illusive creative director Vaughan Mills.
           </p>
         </Fragment>
         <Fragment>

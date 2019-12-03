@@ -51,7 +51,7 @@ const OtherWorlds = ({ data }) => (
             ‘Other Worlds’ is the debut album by Ragan Martinez. It is the
             soundtrack to a video game that doesn’t exist. He uses ambient and
             distorted sounds on loop, creating an ominous yet cathartic
-            meditative release. The front cover artwork is taken from WA SEI’s
+            meditative release. The front cover artwork is taken from Wa Sei's
             ‘Mind Travellin’ painting.
           </p>
         </Fragment>
@@ -249,7 +249,7 @@ const OtherWorlds = ({ data }) => (
               ‘Other Worlds’ is the debut album by Ragan Martinez. It is the
               soundtrack to a video game that doesn’t exist. He uses ambient and
               distorted sounds on loop, creating an ominous yet cathartic
-              meditative release. The front cover artwork is taken from WA SEI’s
+              meditative release. The front cover artwork is taken from Wa Sei's
               ‘Mind Travellin’ painting.
             </p>
             <p>

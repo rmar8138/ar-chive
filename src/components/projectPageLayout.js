@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { BackButton } from "../components/buttons"
+import { HomeButton } from "../components/buttons"
 import archiveLogo from "../assets/logos/ar.svg"
 
 /* IMPORTS */
@@ -190,8 +190,6 @@ class ProjectPageLayout extends Component {
     }
   }
 
-  goBack = () => window.history.back()
-
   render() {
     return (
       <Layout>
@@ -223,7 +221,7 @@ class ProjectPageLayout extends Component {
           <Logo>
             <img src={archiveLogo} alt="ar-chive logo" />
           </Logo>
-          <BackButton onClick={this.goBack}>Back</BackButton>
+          <HomeButton to="/">Back</HomeButton>
         </Container>
       </Layout>
     )

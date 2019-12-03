@@ -27,7 +27,7 @@ const Container = styled.div`
 `
 
 const ClientList = styled.ul`
-  padding: 10rem 2.5rem 4rem 2.5rem;
+  padding: 10rem 2.5rem 40rem 2.5rem;
   list-style: none;
   font-family: "Grotesk Light";
   overflow: scroll;
@@ -46,7 +46,8 @@ class Clients extends Component {
       "And People",
       "ACC Studio",
       "Above the Clouds",
-      "Miss Bish",
+      "Mandy Bettis",
+      "JD Sports",
       "Acclaim Magazine",
       "Stylerunner",
       "Cottee Parker JPR Architects",
