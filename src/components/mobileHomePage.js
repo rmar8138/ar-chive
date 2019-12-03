@@ -169,7 +169,7 @@ export class MobileHomePage extends Component {
   }
 
   handleClick = (index, e) => {
-    console.log("clicked")
+    // handle spotlight effect
     this.setState(
       prevState => {
         return {
@@ -179,6 +179,7 @@ export class MobileHomePage extends Component {
                 ...project,
                 spotlight: true,
                 clicked: false,
+                linkActive: false,
               }
             } else {
               return {
@@ -191,8 +192,8 @@ export class MobileHomePage extends Component {
         }
       },
       () => {
+        // allow double click on number to open project page
         if (this.state.projects[index].linkActive) {
-          console.log("redirect")
           window.location.assign(
             `/${slugify(this.state.projects[index].title, {
               remove: /[*+~.()'"!:@]/g,
@@ -201,7 +202,6 @@ export class MobileHomePage extends Component {
           )
         } else {
           this.state.projects[index].linkActive = true
-          console.log("this ran")
         }
       }
     )
