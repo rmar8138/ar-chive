@@ -110,7 +110,7 @@ export class DesktopHomePage extends Component {
         hovered: false,
       },
       {
-        title: "Montel Blac",
+        title: "Montel",
         spotlight: false,
         hovered: false,
       },
@@ -141,7 +141,7 @@ export class DesktopHomePage extends Component {
     return (
       <Layout>
         <Container>
-          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+          <SEO title="Home" keywords={[`ar-chive`, `design`, `sydney`]} />
           <ProjectsList id="list">
             {this.state.projects.map((project, index) => {
               if (index < this.state.projects.length) {
@@ -326,7 +326,7 @@ export default props => (
             }
           }
         }
-        img10: file(relativePath: { eq: "web/montel-blac/1.png" }) {
+        img10: file(relativePath: { eq: "web/montel/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

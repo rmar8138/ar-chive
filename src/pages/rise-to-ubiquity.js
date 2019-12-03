@@ -30,8 +30,8 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <p>
             To accompany the exhibition, we created the RRM Retrospective
-            Publication, Rise To Ubiquity exhibition catalogue and flyer as well
-            as a temporary website experience.
+            Publication, Rise To Ubiquity exhibition catalogue, flyer and
+            temporary website experience.
           </p>
         </Fragment>
         <Fragment>
@@ -135,14 +135,9 @@ const RiseToUbiquity = ({ data }) => (
         <Fragment>
           <figure>
             <Img
-              fluid={data.img12.childImageSharp.fluid}
+              fluid={data.img17.childImageSharp.fluid}
               alt="Print collateral designed for the show including an artist bio, catalogue and photo zine"
-              style={{ width: "45%", marginRight: "1rem" }}
-            />
-            <Img
-              fluid={data.img13.childImageSharp.fluid}
-              alt="Print collateral designed for the show including an artist bio, catalogue and photo zine"
-              style={{ width: "30%", marginLeft: "1rem" }}
+              style={{ width: "70%", minWidth: "40rem", maxWidth: "90rem" }}
             />
           </figure>
         </Fragment>
@@ -198,8 +193,8 @@ const RiseToUbiquity = ({ data }) => (
             </p>
             <p>
               To accompany the exhibition, we created the RRM Retrospective
-              Publication, Rise To Ubiquity exhibition catalogue and flyer as
-              well as a temporary website experience.
+              Publication, Rise To Ubiquity exhibition catalogue, flyer and
+              temporary website experience.
             </p>
           </div>
         </Fragment>
@@ -465,6 +460,13 @@ export const query = graphql`
       }
     }
     img16: file(relativePath: { eq: "web/rise-to-ubiquity/16.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img17: file(relativePath: { eq: "web/rise-to-ubiquity/17.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

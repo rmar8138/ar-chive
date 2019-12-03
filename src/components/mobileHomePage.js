@@ -131,7 +131,7 @@ export class MobileHomePage extends Component {
         image: this.props.data.img1.childImageSharp.fluid,
       },
       {
-        title: "Montel Blac",
+        title: "Montel",
         clicked: false,
         linkActive: false,
         spotlight: false,
@@ -214,7 +214,7 @@ export class MobileHomePage extends Component {
           <MobileMenu toggleMenu={this.toggleMenu} />
         ) : (
           <Container>
-            <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+            <SEO title="Home" keywords={[`ar-chive`, `design`, `sydney`]} />
             <ProjectsList>
               {this.state.projects.map((project, index) => {
                 if (index < this.state.projects.length) {
@@ -269,7 +269,7 @@ export default props => (
             }
           }
         }
-        img2: file(relativePath: { eq: "web/montel-blac/1.png" }) {
+        img2: file(relativePath: { eq: "web/montel/1.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

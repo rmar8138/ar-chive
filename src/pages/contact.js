@@ -51,6 +51,10 @@ const ClientList = styled.div`
   align-self: flex-end;
   width: 50%;
 
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
   @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
     display: none;
   }
@@ -116,7 +120,7 @@ class Contact extends Component {
         transitionTime={500}
       >
         <Layout>
-          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+          <SEO title="Home" keywords={[`ar-chive`, `design`, `sydney`]} />
 
           <Container>
             <Fragment>
@@ -156,10 +160,12 @@ class Contact extends Component {
                     })}
                 </p>
               </ClientList>
+
               <Email>
                 <a href="mailto:a@ar-chive.studio">a@ar-chive.studio</a>
                 <a href="mailto:r@ar-chive.studio">r@ar-chive.studio</a>
               </Email>
+
               <HomeButton to="/">Back</HomeButton>
             </Fragment>
           </Container>

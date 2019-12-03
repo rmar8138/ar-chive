@@ -77,7 +77,7 @@ class Clients extends Component {
         transitionTime={500}
       >
         <Layout>
-          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+          <SEO title="Home" keywords={[`ar-chive`, `design`, `sydney`]} />
 
           <Container>
             <p>Together, we’ve worked with:</p>

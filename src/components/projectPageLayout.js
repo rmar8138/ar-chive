@@ -198,7 +198,7 @@ class ProjectPageLayout extends Component {
         <Container>
           <SEO
             title={this.props.heading}
-            keywords={[`gatsby`, `application`, `react`]}
+            keywords={[`ar-chive`, `design`, `sydney`]}
           />
           <h1>{this.props.heading}</h1>
           <PageCounter>

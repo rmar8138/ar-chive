@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 /* IMAGES */
 
 const aLoveBelow = require("../assets/images/web/a-love-below/1.png")
-const montelBlac = require("../assets/images/web/montel-blac/1.png")
+const montelBlac = require("../assets/images/web/montel/1.png")
 const riseToUbiquity = require("../assets/images/web/rise-to-ubiquity/1.png")
 const coolMacCafe = require("../assets/images/web/cool-mac-cafe/1.png")
 const micra = require("../assets/images/web/micra/1.png")
@@ -113,7 +113,7 @@ class Projects extends Component {
         year: 2019,
       },
       {
-        title: "Rise to Ubiquity",
+        title: "Rise To Ubiquity",
         spotlight: false,
         hovered: false,
         image: riseToUbiquity,
@@ -134,7 +134,7 @@ class Projects extends Component {
         year: 2019,
       },
       {
-        title: "Montel Blac",
+        title: "Montel",
         spotlight: false,
         hovered: false,
         image: montelBlac,
@@ -214,7 +214,7 @@ class Projects extends Component {
     return (
       <Layout>
         <Container>
-          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+          <SEO title="Home" keywords={[`ar-chive`, `design`, `sydney`]} />
           <h1>All Projects</h1>
           <AllProjectsList>
             {this.renderProjectsByYear(2019)}

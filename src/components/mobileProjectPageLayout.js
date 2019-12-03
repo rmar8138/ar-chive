@@ -154,7 +154,7 @@ class MobileProjectPageLayout extends Component {
           <Container>
             <SEO
               title={this.props.heading}
-              keywords={[`gatsby`, `application`, `react`]}
+              keywords={[`ar-chive`, `design`, `sydney`]}
             />
             <MobileHeading>
               <h1>{this.props.heading}</h1>

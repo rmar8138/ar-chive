@@ -92,6 +92,30 @@ const ALoveBelow = ({ data }) => (
             />
           </figure>
         </Fragment>
+        <Fragment>
+          <figure>
+            <Img
+              fluid={data.img5.childImageSharp.fluid}
+              alt="Live beat set and painting in process"
+              style={{
+                width: "30%",
+                minWidth: "15rem",
+                maxWidth: "35rem",
+                marginRight: "1rem",
+              }}
+            />
+            <Img
+              fluid={data.img6.childImageSharp.fluid}
+              alt="Live beat set and painting in process"
+              style={{
+                width: "30%",
+                minWidth: "15rem",
+                maxWidth: "35rem",
+                marginLeft: "1rem",
+              }}
+            />
+          </figure>
+        </Fragment>
       </ProjectPageLayout>
     </UserAgent>
     <UserAgent mobile>
@@ -171,6 +195,24 @@ const ALoveBelow = ({ data }) => (
             />
           </figure>
         </Fragment>
+        <Fragment>
+          <figure>
+            <Img
+              fluid={data.img5.childImageSharp.fluid}
+              alt="Live beat set and painting in process"
+              style={{ width: "80%", marginRight: "auto" }}
+            />
+          </figure>
+        </Fragment>
+        <Fragment>
+          <figure>
+            <Img
+              fluid={data.img6.childImageSharp.fluid}
+              alt="Live beat set and painting in process"
+              style={{ width: "80%" }}
+            />
+          </figure>
+        </Fragment>
       </MobileProjectPageLayout>
     </UserAgent>
   </Fragment>
@@ -202,6 +244,20 @@ export const query = graphql`
       }
     }
     img4: file(relativePath: { eq: "web/a-love-below/4.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "web/a-love-below/5.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img6: file(relativePath: { eq: "web/a-love-below/6.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

@@ -36,9 +36,17 @@ const CopyText = styled.div`
   }
 `
 
-const LogoSmall = styled.img`
-  width: 5.2rem;
-  cursor: pointer;
+const Copyright = styled.div`
+  font-family: "Grotesk Regular";
+  font-size: ${props => props.theme.fs_small};
+  position: absolute;
+  bottom: 2rem;
+  left: 2.5rem;
+
+  @media only screen and (max-width: ${props => props.theme.bp_mobile}) {
+    font-size: 1rem;
+    width: 80%;
+  }
 `
 
 class About extends Component {
@@ -61,7 +69,7 @@ class About extends Component {
         transitionTime={500}
       >
         <Layout>
-          <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+          <SEO title="Home" keywords={[`ar-chive`, `design`, `sydney`]} />
 
           <Container>
             {this.state.isMenuOpen ? (
@@ -79,6 +87,13 @@ class About extends Component {
                     any given brief.
                   </p>
                 </CopyText>
+                <Copyright>
+                  <p>Design by ar–chive. Coded by Ragan Martinez</p>
+                  <p>
+                    &copy; ar–chive {new Date().getFullYear()}. All Rights
+                    Reserved
+                  </p>
+                </Copyright>
                 <HomeButton to="/">Back</HomeButton>
               </Fragment>
             )}

@@ -22,7 +22,7 @@ const Kurumac = ({ data }) => (
           <p>
             <span>
               Kurumac is a cafe on Addison Rd in Marrickville serving Campos
-              coffee, an assortment of Japanese comfort food by Jun Okamatsu.
+              coffee and an assortment of Japanese comfort food by Jun Okamatsu.
             </span>
             <span>
               We were approached by owners Eugene Leung and Dika Prianata with a
@@ -50,11 +50,11 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <p>
             We found beauty in the balance of efficiency and convenience... The
-            overwhelming feeling of visiting a Konbini like 100yen Lawson to
+            overwhelming feeling of visiting a konbini like 100yen Lawson to
             searching for the perfect drink of past trips - the white Kirin
             vending machine with lemon water and then peering into minimal
             signage storefronts - stumbling upon the most comforting bowl of
-            Tsukemen.
+            tsukemen.
           </p>
         </Fragment>
         <Fragment>
@@ -115,7 +115,7 @@ const Kurumac = ({ data }) => (
           <div>
             <p>
               Kurumac is a cafe on Addison Rd in Marrickville serving Campos
-              coffee, an assortment of Japanese comfort food by Jun Okamatsu.
+              coffee and an assortment of Japanese comfort food by Jun Okamatsu.
             </p>
             <p>
               We were approached by owners Eugene Leung and Dika Prianata with a
@@ -140,11 +140,11 @@ const Kurumac = ({ data }) => (
         <Fragment>
           <p>
             We found beauty in the balance of efficiency and convenience... The
-            overwhelming feeling of visiting a Konbini like 100yen Lawson to
+            overwhelming feeling of visiting a konbini like 100yen Lawson to
             searching for the perfect drink of past trips - the white Kirin
             vending machine with lemon water and then peering into minimal
             signage storefronts - stumbling upon the most comforting bowl of
-            Tsukemen.
+            tsukemen.
           </p>
         </Fragment>
         <Fragment>

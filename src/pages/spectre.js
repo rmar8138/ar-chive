@@ -35,13 +35,6 @@ const Spectre = ({ data }) => (
         </Fragment>
         <Fragment>
           <p>
-            Through all of life’s trials and tribulations, triumphs and
-            betrayals we find ourselves moving continent to continent, catching
-            glimpses of the humble story led by APOLLO4OOO.
-          </p>
-        </Fragment>
-        <Fragment>
-          <p>
             <span>
               ‘Spectre’ is the debut release by APOLLO4OOO, an 8-track EP with a
               groove and energy that keeps you moving and flowing to a diverse
@@ -83,11 +76,6 @@ const Spectre = ({ data }) => (
         </Fragment>
         <Fragment>
           <div>
-            <p>
-              Through all of life’s trials and tribulations, triumphs and
-              betrayals we find ourselves moving continent to continent,
-              catching glimpses of the humble story led by APOLLO4OOO.
-            </p>
             <p>
               ‘Spectre’ is the debut release by APOLLO4OOO, an 8-track EP with a
               groove and energy that keeps you moving and flowing to a diverse

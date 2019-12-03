@@ -25,7 +25,7 @@ const Micra = ({ data }) => (
               lyrical composition.
             </span>
             <span>
-              ar-chive art directed and photographed press images for Micra’s
+              ar–chive art directed and photographed press images for Micra’s
               release of their second single ‘Plastic’.
             </span>
           </p>
@@ -56,7 +56,7 @@ const Micra = ({ data }) => (
             The first cover we worked on with Micra was their debut single,
             ‘Child Grows Old’. The track invites listeners on a sonic journey
             with a rhythm reminiscent of the nature of life’s serendipitous
-            timeline. At the time we were in New York City so it came naturally
+            timeline. At the time, we were in New York City so it came naturally
             to include elements of the city that influenced our perspective and
             heightened the sense of distortion between expectations and one’s
             experience.
@@ -102,7 +102,7 @@ const Micra = ({ data }) => (
               Micra brings together multi-instrumentalist, Robbie Cain and
               singer-guitarist, Ivana Kay. The Sydney based duo create a
               wistful, atmospheric sound with floating melodies and vulnerable
-              lyrical composition. ar-chive art directed and photographed press
+              lyrical composition. ar–chive art directed and photographed press
               images for Micra’s release of their second single ‘Plastic’.
             </p>
           </div>
@@ -138,7 +138,7 @@ const Micra = ({ data }) => (
             The first cover we worked on with Micra was their debut single,
             ‘Child Grows Old’. The track invites listeners on a sonic journey
             with a rhythm reminiscent of the nature of life’s serendipitous
-            timeline. At the time we were in New York City so it came naturally
+            timeline. At the time, we were in New York City so it came naturally
             to include elements of the city that influenced our perspective and
             heightened the sense of distortion between expectations and one’s
             experience.
