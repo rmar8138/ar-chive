@@ -22,7 +22,7 @@
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-sharp": "^2.1.17",
     "gatsby-v2-plugin-page-transitions": "^1.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-device-detect": "^1.7.5",
