@@ -8,7 +8,7 @@
     "@brainhubeu/react-carousel": "^1.10.17",
     "@quentin-sommer/react-useragent": "^3.0.0",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.3.3",
+    "gatsby": "^2.32.13",
     "gatsby-cli": "^2.7.49",
     "gatsby-image": "^2.2.18",
     "gatsby-plugin-client-side-redirect": "0.0.2",
